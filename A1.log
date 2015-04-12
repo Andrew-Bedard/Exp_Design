@@ -1,0 +1,362 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.27)  12 APR 2015 23:22
+entering extended mode
+**A1.tex
+(E:\School\Exp_Design\A1.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\subcaption.sty"
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen105
+\captionmargin@=\dimen106
+\captionwidth=\dimen107
+\caption@tempdima=\dimen108
+\caption@indent=\dimen109
+\caption@parindent=\dimen110
+\caption@hangindent=\dimen111
+)
+\c@ContinuedFloat=\count88
+)
+\c@subfigure=\count89
+\c@subtable=\count90
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
+\lst@mode=\count91
+\lst@gtempboxa=\box26
+\lst@token=\toks15
+\lst@length=\count92
+\lst@currlwidth=\dimen112
+\lst@column=\count93
+\lst@pos=\count94
+\lst@lostspace=\dimen113
+\lst@width=\dimen114
+\lst@newlines=\count95
+\lst@lineno=\count96
+\lst@maxwidth=\dimen115
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+\c@lstnumber=\count97
+\lst@skipnumbers=\count98
+\lst@framebox=\box27
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2014/09/06 1.5e listings configuration
+))
+Package: listings 2014/09/06 1.5e (Carsten Heinz)
+
+(E:\School\Exp_Design\A1.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count99
+\scratchdimen=\dimen116
+\scratchbox=\box28
+\nofMPsegments=\count100
+\nofMParguments=\count101
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count102
+\MPscratchDim=\dimen117
+\MPnumerator=\count103
+\makeMPintoPDFobject=\count104
+\everyMPtoPDFconversion=\toks17
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count105
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 13.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 13.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 13.
+ <results/X1.png, id=1, 572.1375pt x 512.91624pt>
+File: results/X1.png Graphic file (type png)
+ <use results/X1.png>
+Package pdftex.def Info: results/X1.png used on input line 26.
+(pdftex.def)             Requested size: 138.00052pt x 123.71288pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 28.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 28.
+
+<results/X1_2.png, id=2, 572.1375pt x 512.91624pt>
+File: results/X1_2.png Graphic file (type png)
+ <use results/X1_2.png>
+Package pdftex.def Info: results/X1_2.png used on input line 31.
+(pdftex.def)             Requested size: 138.00052pt x 123.71288pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 24--34
+[]$[]$ $[]$ 
+ []
+
+<results/X2.png, id=3, 572.1375pt x 512.91624pt>
+File: results/X2.png Graphic file (type png)
+ <use results/X2.png>
+Package pdftex.def Info: results/X2.png used on input line 41.
+(pdftex.def)             Requested size: 138.00052pt x 123.71288pt.
+
+<results/X2_2.png, id=4, 572.1375pt x 512.91624pt>
+File: results/X2_2.png Graphic file (type png)
+ <use results/X2_2.png>
+Package pdftex.def Info: results/X2_2.png used on input line 46.
+(pdftex.def)             Requested size: 138.00052pt x 123.71288pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 39--49
+[]$[]$ $[]$ 
+ []
+
+<results/X3.png, id=5, 572.1375pt x 512.91624pt>
+File: results/X3.png Graphic file (type png)
+ <use results/X3.png>
+Package pdftex.def Info: results/X3.png used on input line 56.
+(pdftex.def)             Requested size: 138.00052pt x 123.71288pt.
+
+<results/X3_2.png, id=6, 572.1375pt x 512.91624pt>
+File: results/X3_2.png Graphic file (type png)
+ <use results/X3_2.png>
+Package pdftex.def Info: results/X3_2.png used on input line 61.
+(pdftex.def)             Requested size: 138.00052pt x 123.71288pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 54--64
+[]$[]$ $[]$ 
+ []
+
+<results/X4.png, id=7, 572.1375pt x 512.91624pt>
+File: results/X4.png Graphic file (type png)
+ <use results/X4.png>
+Package pdftex.def Info: results/X4.png used on input line 71.
+(pdftex.def)             Requested size: 138.00052pt x 123.71288pt.
+
+<results/X4_2.png, id=8, 572.1375pt x 512.91624pt>
+File: results/X4_2.png Graphic file (type png)
+ <use results/X4_2.png>
+Package pdftex.def Info: results/X4_2.png used on input line 76.
+(pdftex.def)             Requested size: 138.00052pt x 123.71288pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 69--79
+[]$[]$ $[]$ 
+ []
+
+<results/X5.png, id=9, 572.1375pt x 512.91624pt>
+File: results/X5.png Graphic file (type png)
+ <use results/X5.png>
+Package pdftex.def Info: results/X5.png used on input line 86.
+(pdftex.def)             Requested size: 138.00052pt x 123.71288pt.
+
+<results/X5_2.png, id=10, 572.1375pt x 512.91624pt>
+File: results/X5_2.png Graphic file (type png)
+ <use results/X5_2.png>
+Package pdftex.def Info: results/X5_2.png used on input line 91.
+(pdftex.def)             Requested size: 138.00052pt x 123.71288pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 84--94
+[]$[]$ $[]$ 
+ []
+
+[1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <E:/School/Exp_Design/resu
+lts/X1.png> <E:/School/Exp_Design/results/X1_2.png>] [2 <E:/School/Exp_Design/r
+esults/X2.png> <E:/School/Exp_Design/results/X2_2.png> <E:/School/Exp_Design/re
+sults/X3.png> <E:/School/Exp_Design/results/X3_2.png> <E:/School/Exp_Design/res
+ults/X4.png> <E:/School/Exp_Design/results/X4_2.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 103.
+
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 103.
+
+<results/2_1.png, id=31, 572.1375pt x 512.91624pt>
+File: results/2_1.png Graphic file (type png)
+ <use results/2_1.png>
+Package pdftex.def Info: results/2_1.png used on input line 111.
+(pdftex.def)             Requested size: 138.00052pt x 123.71288pt.
+
+<results/2_1_2.png, id=32, 418.56375pt x 544.0325pt>
+File: results/2_1_2.png Graphic file (type png)
+ <use results/2_1_2.png>
+Package pdftex.def Info: results/2_1_2.png used on input line 116.
+(pdftex.def)             Requested size: 138.00052pt x 179.36525pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 109--119
+[]$[]$ $[]$ 
+ []
+
+[3 <E:/School/Exp_Design/results/X5.png> <E:/School/Exp_Design/results/X5_2.png
+> <E:/School/Exp_Design/results/2_1.png> <E:/School/Exp_Design/results/2_1_2.pn
+g>] <results/2_discussion.png, id=41, 418.56375pt x 544.0325pt>
+File: results/2_discussion.png Graphic file (type png)
+
+<use results/2_discussion.png>
+Package pdftex.def Info: results/2_discussion.png used on input line 127.
+(pdftex.def)             Requested size: 209.28136pt x 272.01558pt.
+
+<results/2_2.png, id=42, 572.1375pt x 512.91624pt>
+File: results/2_2.png Graphic file (type png)
+ <use results/2_2.png>
+Package pdftex.def Info: results/2_2.png used on input line 143.
+(pdftex.def)             Requested size: 138.00052pt x 123.71288pt.
+
+<results/2_2_2.png, id=43, 418.56375pt x 544.0325pt>
+File: results/2_2_2.png Graphic file (type png)
+ <use results/2_2_2.png>
+Package pdftex.def Info: results/2_2_2.png used on input line 148.
+(pdftex.def)             Requested size: 138.00052pt x 179.36525pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 141--151
+[]$[]$ $[]$ 
+ []
+
+[4 <E:/School/Exp_Design/results/2_discussion.png>]
+<results/2_3.png, id=48, 572.1375pt x 512.91624pt>
+File: results/2_3.png Graphic file (type png)
+ <use results/2_3.png>
+Package pdftex.def Info: results/2_3.png used on input line 169.
+(pdftex.def)             Requested size: 138.00052pt x 123.71288pt.
+
+<results/2_3_2.png, id=49, 418.56375pt x 544.0325pt>
+File: results/2_3_2.png Graphic file (type png)
+ <use results/2_3_2.png>
+Package pdftex.def Info: results/2_3_2.png used on input line 174.
+(pdftex.def)             Requested size: 138.00052pt x 179.36525pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 167--177
+[]$[]$ $[]$ 
+ []
+
+[5 <E:/School/Exp_Design/results/2_2.png> <E:/School/Exp_Design/results/2_2_2.p
+ng>] [6 <E:/School/Exp_Design/results/2_3.png> <E:/School/Exp_Design/results/2_
+3_2.png>] <results/3_1.png, id=61, 455.7025pt x 396.48125pt>
+File: results/3_1.png Graphic file (type png)
+
+<use results/3_1.png>
+Package pdftex.def Info: results/3_1.png used on input line 195.
+(pdftex.def)             Requested size: 276.00105pt x 240.13506pt.
+ [7 <E:/School/Exp_Design/results/3_1.png>] [8]
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang2.sty"
+File: lstlang2.sty 2014/09/06 1.5e listings language file
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang3.sty"
+File: lstlang3.sty 2014/09/06 1.5e listings language file
+) [9]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 253.
+
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 253.
+ [10] [11]
+[12] (E:\School\Exp_Design\A1.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 4389 strings out of 493921
+ 64024 string characters out of 3144864
+ 160522 words of memory out of 3000000
+ 7666 multiletter control sequences out of 15000+200000
+ 8540 words of font info for 30 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 42i,7n,43p,680b,1638s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on A1.pdf (12 pages, 211291 bytes).
+PDF statistics:
+ 113 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+
