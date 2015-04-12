@@ -50,15 +50,11 @@ for (b in 1:B) {
 
 sum(p<0.05)
 sum(p<0.1)
+par(pin=c(5,5))
 hist(p)
 
 #2.2
-m=30
-n=30
-mu=180
-nu=180
 sd=1
-B=1000
 p=numeric(B)
 
 for (b in 1:B) {
@@ -72,12 +68,8 @@ sum(p<0.1)
 hist(p)
 
 #2.3
-m=30
-n=30
-mu=180
 nu=175
 sd=5
-B=1000
 p=numeric(B)
 
 for (b in 1:B) {
@@ -111,12 +103,10 @@ for (nu_tmp in nu) {
 
 plot(nu, p)
 
+
 #3.2
 m=100
 n=100
-mu=180
-nu = seq(175,185,by=0.1)
-sd=5
 p = numeric(length(nu))
 b = 0
 
@@ -129,11 +119,10 @@ for (nu_tmp in nu) {
 
 plot(nu, p)
 
+
 #3.3
 m=30
 n=30
-mu=180
-nu = seq(175,185,by=0.1)
 sd=100
 p = numeric(length(nu))
 b = 0
