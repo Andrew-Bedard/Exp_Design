@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.22)  21 APR 2015 15:45
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.22)  21 APR 2015 20:15
 entering extended mode
 **C:/Users/Simone/Documents/Master/ExpDesignAndDataAnalysis/Assignments/Assgn2/
 report/A2.tex
@@ -102,44 +102,71 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \c@ContinuedFloat=\count92
 Package caption Info: subfigure package is loaded.
 )
+(C:\Users\Simone\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
+\lst@mode=\count93
+\lst@gtempboxa=\box26
+\lst@token=\toks15
+\lst@length=\count94
+\lst@currlwidth=\dimen114
+\lst@column=\count95
+\lst@pos=\count96
+\lst@lostspace=\dimen115
+\lst@width=\dimen116
+\lst@newlines=\count97
+\lst@lineno=\count98
+\lst@maxwidth=\dimen117
+
+(C:\Users\Simone\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+\c@lstnumber=\count99
+\lst@skipnumbers=\count100
+\lst@framebox=\box27
+)
+(C:\Users\Simone\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
+File: listings.cfg 2014/09/06 1.5e listings configuration
+))
+Package: listings 2014/09/06 1.5e (Carsten Heinz)
+
 (C:\Users\Simone\Documents\Master\ExpDesignAndDataAnalysis\Assignments\Assgn2\r
 eport\A2.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count93
-\scratchdimen=\dimen114
-\scratchbox=\box26
-\nofMPsegments=\count94
-\nofMParguments=\count95
-\everyMPshowfont=\toks15
-\MPscratchCnt=\count96
-\MPscratchDim=\dimen115
-\MPnumerator=\count97
-\makeMPintoPDFobject=\count98
-\everyMPtoPDFconversion=\toks16
+\scratchcounter=\count101
+\scratchdimen=\dimen118
+\scratchbox=\box28
+\nofMPsegments=\count102
+\nofMParguments=\count103
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count104
+\MPscratchDim=\dimen119
+\MPnumerator=\count105
+\makeMPintoPDFobject=\count106
+\everyMPtoPDFconversion=\toks17
 )
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count107
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 12.
+(Font)              <12> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 12.
+(Font)              <8> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 12.
+(Font)              <6> on input line 13.
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--25
+Underfull \hbox (badness 10000) in paragraph at lines 19--26
 
  []
 
@@ -147,45 +174,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--25
 File: ../results/Hist1879.png Graphic file (type png)
 
 <use ../results/Hist1879.png>
-Package pdftex.def Info: ../results/Hist1879.png used on input line 28.
+Package pdftex.def Info: ../results/Hist1879.png used on input line 29.
 (pdftex.def)             Requested size: 171.64256pt x 153.87605pt.
 
 <../results/Hist1882.png, id=2, 572.1375pt x 512.91624pt>
 File: ../results/Hist1882.png Graphic file (type png)
 
 <use ../results/Hist1882.png>
-Package pdftex.def Info: ../results/Hist1882.png used on input line 30.
+Package pdftex.def Info: ../results/Hist1882.png used on input line 31.
 (pdftex.def)             Requested size: 171.64256pt x 153.87605pt.
 
-Overfull \hbox (7.174pt too wide) in paragraph at lines 28--31
+Overfull \hbox (7.174pt too wide) in paragraph at lines 29--32
 [][] [] 
+ []
+
+(C:\Users\Simone\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+)
+(C:\Users\Simone\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang2.sty
+File: lstlang2.sty 2014/09/06 1.5e listings language file
+)
+(C:\Users\Simone\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang3.sty
+File: lstlang3.sty 2014/09/06 1.5e listings language file
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 41.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 41.
+
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 45--46
+[][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [1
 
-{C:/Users/Simone/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2 <C:/Use
-rs/Simone/Documents/Master/ExpDesignAndDataAnalysis/Assignments/Assgn2/results/
-Hist1879.png> <C:/Users/Simone/Documents/Master/ExpDesignAndDataAnalysis/Assign
-ments/Assgn2/results/Hist1882.png>]
+{C:/Users/Simone/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<../results/HistKLM.png, id=13, 572.1375pt x 512.91624pt>
+File: ../results/HistKLM.png Graphic file (type png)
+
+<use ../results/HistKLM.png>
+Package pdftex.def Info: ../results/HistKLM.png used on input line 60.
+(pdftex.def)             Requested size: 171.64256pt x 153.87605pt.
+ [2 <C:/Users/Simone/Documents/Master/ExpDesignAndDataAnalysis/Assignments/Assg
+n2/results/Hist1879.png> <C:/Users/Simone/Documents/Master/ExpDesignAndDataAnal
+ysis/Assignments/Assgn2/results/Hist1882.png>]
+[3 <C:/Users/Simone/Documents/Master/ExpDesignAndDataAnalysis/Assignments/Assgn
+2/results/HistKLM.png>]
 (C:\Users\Simone\Documents\Master\ExpDesignAndDataAnalysis\Assignments\Assgn2\r
 eport\A2.aux) ) 
 Here is how much of TeX's memory you used:
- 2336 strings out of 494045
- 36538 string characters out of 3145965
- 92455 words of memory out of 3000000
- 5656 multiletter control sequences out of 15000+200000
- 7280 words of font info for 26 fonts, out of 3000000 for 9000
+ 4360 strings out of 494045
+ 63845 string characters out of 3145965
+ 142212 words of memory out of 3000000
+ 7656 multiletter control sequences out of 15000+200000
+ 7588 words of font info for 27 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 36i,7n,38p,320b,269s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,7n,43p,320b,2146s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
-12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.
-pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-
-Output written on A2.pdf (2 pages, 72070 bytes).
+m/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+r10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12
+.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pf
+b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on A2.pdf (3 pages, 97449 bytes).
 PDF statistics:
- 33 PDF objects out of 1000 (max. 8388607)
+ 46 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

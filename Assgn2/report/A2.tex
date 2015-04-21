@@ -3,6 +3,7 @@
 \usepackage{graphicx}
 \usepackage{subfigure}
 \usepackage[hypcap]{caption}
+\usepackage{listings}
 
 \title{Experimental Design and Data Analysis: Assignment 2}
 \author{Andrew Bedard \& Simone van Gompel(2567525) \\ Group 19}
@@ -33,7 +34,33 @@
     \end{figure}
 
   \section{Exercise 3}
-    Exercise 3 stuff...
+    Looking at the histogram of the data, see Fig:\ref{fig:HistKLM} , it is clear that it is not normally distributed.
+    So the t-test should not be used.
+    Instead of this, we use the sign-test.
+    \begin{lstlisting}[language=R]
+        One-sample Sign-Test
+
+      data:  klm
+      s = 36, p-value = 0.155
+      alternative hypothesis: true median is not equal to 35
+      95 percent confidence interval:
+       32.00000 56.07713
+      sample estimates:
+      median of x 
+               42 
+
+                        Conf.Level L.E.pt  U.E.pt
+      Lower Achieved CI     0.9481     32 56.0000
+      Interpolated CI       0.9500     32 56.0771
+      Upper Achieved CI     0.9727     32 57.0000
+    \end{lstlisting}
+    
+
+    \begin{figure}
+      \includegraphics[scale=0.3]{../results/HistKLM.png}
+      \caption{Histogram of the dataset klm}
+      \label{fig:HistKLM}
+    \end{figure}
 
   \section{Exercise 4}
     Exercise 4 stuff...
