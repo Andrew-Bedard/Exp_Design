@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.22)  21 APR 2015 20:15
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.22)  21 APR 2015 21:16
 entering extended mode
 **C:/Users/Simone/Documents/Master/ExpDesignAndDataAnalysis/Assignments/Assgn2/
 report/A2.tex
@@ -175,16 +175,16 @@ File: ../results/Hist1879.png Graphic file (type png)
 
 <use ../results/Hist1879.png>
 Package pdftex.def Info: ../results/Hist1879.png used on input line 29.
-(pdftex.def)             Requested size: 171.64256pt x 153.87605pt.
+(pdftex.def)             Requested size: 200.25111pt x 179.52338pt.
 
 <../results/Hist1882.png, id=2, 572.1375pt x 512.91624pt>
 File: ../results/Hist1882.png Graphic file (type png)
 
 <use ../results/Hist1882.png>
 Package pdftex.def Info: ../results/Hist1882.png used on input line 31.
-(pdftex.def)             Requested size: 171.64256pt x 153.87605pt.
+(pdftex.def)             Requested size: 200.25111pt x 179.52338pt.
 
-Overfull \hbox (7.174pt too wide) in paragraph at lines 29--32
+Overfull \hbox (64.3911pt too wide) in paragraph at lines 29--32
 [][] [] 
  []
 
@@ -197,49 +197,79 @@ File: lstlang2.sty 2014/09/06 1.5e listings language file
 (C:\Users\Simone\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang3.sty
 File: lstlang3.sty 2014/09/06 1.5e listings language file
 )
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 41.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 41.
+Underfull \hbox (badness 10000) in paragraph at lines 37--41
 
-Overfull \hbox (15.00366pt too wide) in paragraph at lines 45--46
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 42.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 42.
+
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 46--47
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [1
 
 {C:/Users/Simone/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<../results/HistKLM.png, id=13, 572.1375pt x 512.91624pt>
-File: ../results/HistKLM.png Graphic file (type png)
+Underfull \hbox (badness 10000) in paragraph at lines 58--62
 
-<use ../results/HistKLM.png>
-Package pdftex.def Info: ../results/HistKLM.png used on input line 60.
-(pdftex.def)             Requested size: 171.64256pt x 153.87605pt.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--62
+
+ []
+
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 66.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 66.
+
+Overfull \hbox (99.00452pt too wide) in paragraph at lines 66--67
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (117.0047pt too wide) in paragraph at lines 67--68
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+<../results/resultKLM.png, id=13, 572.1375pt x 512.91624pt>
+File: ../results/resultKLM.png Graphic file (type png)
+
+<use ../results/resultKLM.png>
+Package pdftex.def Info: ../results/resultKLM.png used on input line 77.
+(pdftex.def)             Requested size: 343.28514pt x 307.75212pt.
  [2 <C:/Users/Simone/Documents/Master/ExpDesignAndDataAnalysis/Assignments/Assg
 n2/results/Hist1879.png> <C:/Users/Simone/Documents/Master/ExpDesignAndDataAnal
 ysis/Assignments/Assgn2/results/Hist1882.png>]
 [3 <C:/Users/Simone/Documents/Master/ExpDesignAndDataAnalysis/Assignments/Assgn
-2/results/HistKLM.png>]
+2/results/resultKLM.png>]
 (C:\Users\Simone\Documents\Master\ExpDesignAndDataAnalysis\Assignments\Assgn2\r
 eport\A2.aux) ) 
 Here is how much of TeX's memory you used:
- 4360 strings out of 494045
- 63845 string characters out of 3145965
- 142212 words of memory out of 3000000
- 7656 multiletter control sequences out of 15000+200000
- 7588 words of font info for 27 fonts, out of 3000000 for 9000
+ 4391 strings out of 494045
+ 64293 string characters out of 3145965
+ 151101 words of memory out of 3000000
+ 7684 multiletter control sequences out of 15000+200000
+ 7895 words of font info for 28 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  36i,7n,43p,320b,2146s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-r10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12
-.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pf
-b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on A2.pdf (3 pages, 97449 bytes).
+mi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
+0.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.p
+fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on A2.pdf (3 pages, 108981 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
+ 50 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
