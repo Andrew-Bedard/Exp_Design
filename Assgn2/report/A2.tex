@@ -1,7 +1,6 @@
 \documentclass{article}
 
 \usepackage{graphicx}
-\usepackage{subcaption}
 \usepackage{subfigure}
 \usepackage[hypcap]{caption}
 
@@ -16,12 +15,15 @@
     Exercise 1 stuff...
 
   \section{Exercise 2}
-    Exercise 2 stuff...
+    I needed to put the light1882 on 1 line, else it can't be imported as a table,
+    because it would not have a full last line.
+    See Fig:\ref{fig:HistEx2} for the histograms of the two datasets.
+
     \begin{figure}
       \subfigure[1879]
-      {\includegraphics[scale=0.25]{../results/Hist1879.png} }
+      {\includegraphics[scale=0.3]{../results/Hist1879.png} }
       \subfigure[1882]
-      {\includegraphics[scale=0.25]{../results/Hist1882.png} }
+      {\includegraphics[scale=0.3]{../results/Hist1882.png} }
       \caption{Histograms of the datasets Light1879 and Light1882}
       \label{fig:HistEx2}
     \end{figure}
