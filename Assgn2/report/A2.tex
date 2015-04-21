@@ -4,6 +4,9 @@
 \usepackage{subfigure}
 \usepackage[hypcap]{caption}
 \usepackage{listings}
+\usepackage{float}
+\floatstyle{plaintop}
+\restylefloat{table}
 
 \title{Experimental Design and Data Analysis: Assignment 2}
 \author{Andrew Bedard \& Simone van Gompel(2567525) \\ Group 19}
@@ -16,13 +19,41 @@
     Exercise 1 stuff...
 
   \section{Exercise 2}
-    I needed to put the light1882 on 1 line, else it can't be imported as a table,
-    because it would not have a full last line.
-    See Fig:\ref{fig:HistEx2} for the histograms of the two datasets.\\
-    The 95\% confidence interval of the mean of Light1879 is 836.7226 - 868.0774\\
-    The 95\% confidence interval of the mean of Light1879 is 712.4417 - 799.9931\\
-    The 95\% confidence interval of the median of Light1879 is 834.5142 - 865.4858\\
-    The 95\% confidence interval of the median of Light1879 is 730.2243 - 817.7757\\
+    In this exercise two datasets are handled and compared to each other.
+    Both the datasets contain data about the measured speed of light minus 299000.
+    The first dataset was measured in 1879 and is called Light1879
+    and the second dataset was measured in 1882 and is called Light1882.
+    Firstly histograms of the two datasets are made and compared.
+    In Fig:\ref{fig:HistEx2} the histograms are shown and a few things can be concluded from them.
+    The first dataset contains more data, 100 measurements, than the second dataset, 23 measurements.
+    But it also shows that the data from 1879 contains higher values than the data from 1882.
+    This can also be shown by calculating and comparing the confidence intervals of the mean/median of both datasets.
+    The results can be seen in Table:\ref{table:LightMeanMedian}.
+    The mean and median of the 1879 dataset are roughly the same,
+    which can be explained by the large number of measurements.
+    The larger the number of measurements the closer the median will be to the mean.
+    The calculated confidence intervals of 1882 are lower than the ones in 1879.
+    This can be explained due to different equipment, measuring devices or processing of the data.
+    But a more logical explanation is that there are too few measurements,
+    where the 1879 dataset has 100 measurements, the 1882 dataset has only 23.
+    The median of the 1882 dataset also differs from the mean more than the 1879 dataset did.
+    This is because of the lack of measurements,
+    the chance that the median is the same as the mean increases with the number of measurements taken.
+
+    \begin{table}
+    \begin{center}
+    \begin{tabular}{l|ll}
+        \hline 
+        Dataset & Mean & Median \\
+        \hline
+        Light1879 & 836.7226 - 868.0774 & 834.5142 - 865.4858 \\
+        Light1882 & 712.4417 - 799.9931 & 730.2243 - 817.7757 \\
+        \hline
+    \end{tabular}
+    \caption{95\% Confidence interval of the datasets and their mean and median.}
+    \label{table:LightMeanMedian}
+    \end{center}
+    \end{table}
 
     \begin{figure}
       \subfigure[1879]
@@ -34,10 +65,15 @@
     \end{figure}
 
   \section{Exercise 3}
-    Looking at the graphs of the data, see Fig:\ref{fig:GraphKLM} , it is clear that this dataset is not normally distributed.
-    So the t-test should not be used.
-    Instead of this, we use the sign-test, which can be used for any other sort of distribution.
-    The results of this test are as follows:\\
+    In this exercise the klm dataset will be examined.
+    This dataset contains data of the duration of deliveries in days.
+    In Fig:\ref{fig:GraphKLM} the histogram and boxplot of this dataset are shown.
+    Looking at these graphs, it is clear that the dataset is not normally distributed.
+    So for hypothesis testing the t-test can't be used, because it assumes the dataset is normally distributed.
+    Because of this the sign-test will be used, which can be used for any sort of distribution.
+    To test the hypothesis if the meadian duration is smaller than or equal to 35 days,
+    the code in Sec:\ref{sec:RE3} is used.
+    The results are as follows:\\
     \begin{lstlisting}[language=R]
         One-sample Sign-Test
 
@@ -55,10 +91,12 @@
       Interpolated CI       0.9500     32 56.0771
       Upper Achieved CI     0.9727     32 57.0000
     \end{lstlisting}
-    This means that H0 is rejected, the mean is not equal to 35.\\\\    
+    This means that H0 is rejected, the median is not equal to 35 but it is 42.\\\\
+    To test the hypothesis if at most 10\% of the parts arrives after the maximum delivery period of 70 days,
+    the code in Sec:\ref{sec:RE3} is used.
     Now for the test if at most 10\% of the parts arrives after the maximum delivery period of 70 days.
     The self written program can be found in \ref{sec:RE3}.
-    The results of this test are as follows:\\
+    The results are as follows:\\
     \begin{lstlisting}[language=R]
         Exact binomial test
 
@@ -71,7 +109,7 @@
       probability of success 
                   0.00404157 
     \end{lstlisting}
-    This means that H0 is not rejected and that less than 10\% of the parts arrive after the 70 day mark.
+    This means that H0 is not rejected and that less than 10\% of the parts arrive after 70 days.
 
     \begin{figure}
       \includegraphics[scale=0.6]{../results/resultKLM.png}
@@ -84,8 +122,66 @@
 
   \section{R-Code}
     \subsection{Exercise 1}\label{sec:RE1}
+      \begin{lstlisting}[language=R]
+      
+      \end{lstlisting}
     \subsection{Exercise 2}\label{sec:RE2}
+      \begin{lstlisting}[language=R]
+      data79 = read.table("light1879.txt", header=F)
+      data82 = read.table("light1882.txt", header=F)
+
+      #2.1
+      data79 = as.matrix(data79)
+      hist(data79)
+      data82 = as.matrix(data82)
+      hist(data82)
+
+      #2.2
+      error = qnorm(0.975)*sd(data79)/sqrt(length(data79))
+      left = mean(data79)-error
+      right = mean(data79)+error
+      c(left, right)
+
+      #2.3
+      error = qnorm(0.975)*sd(data82)/sqrt(length(data82))
+      left = mean(data82)-error
+      right = mean(data82)+error
+      c(left, right)
+
+      #2.4
+      error = qnorm(0.975)*sd(data79)/sqrt(length(data79))
+      left = median(data79)-error
+      right = median(data79)+error
+      c(left, right)
+
+      #2.5
+      error = qnorm(0.975)*sd(data82)/sqrt(length(data82))
+      left = median(data82)-error
+      right = median(data82)+error
+      c(left, right)
+      \end{lstlisting}
     \subsection{Exercise 3}\label{sec:RE3}
+      \begin{lstlisting}[language=R]
+      library(BSDA)
+
+      #3.1
+      klm = scan(file = "klm.txt")
+
+      par(mfrow=c(1,2))
+      hist(klm)
+      boxplot(klm)
+
+      SIGN.test(klm, md=35, conf.level = 0.995)
+
+      #3.2
+      sum(klm)
+      sum(klm > 70)
+      binom.test(14,3464,conf.level = 0.995)
+
+      \end{lstlisting}
     \subsection{Exercise 4}\label{sec:RE4}
+      \begin{lstlisting}[language=R]
+      
+      \end{lstlisting}
 
 \end{document}
