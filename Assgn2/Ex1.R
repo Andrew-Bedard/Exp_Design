@@ -1,0 +1,2 @@
+read.table("dataexp.txt")
+
