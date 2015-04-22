@@ -112,7 +112,7 @@
     This means that H0 is not rejected and that less than 10\% of the parts arrive after 70 days.
 
     \begin{figure}
-      \includegraphics[scale=0.6]{../results/resultKLM.png}
+      \includegraphics[scale=0.3]{../results/resultKLM.png}
       \caption{Graphs of the dataset klm}
       \label{fig:GraphKLM}
     \end{figure}
@@ -124,16 +124,29 @@
     Here you can see that the lemon group had the worst runners in the before the drink and is normally distributed.
     The energy group had a more uniformally distributed before the drink.
     After the drink the lemo drinkers where faster than the energy group, while the name energy drink suggests that you would perform better.
+    In Fig:\ref{fig:LineRunDrink} the individual improvements are shown on lemo and energy.
+    In the lemo category some of the pupils dropped in results.
+    But most of them are above or around the 0 mark,
+    which means that they improved or where the same as before.
+    In the energy category most of the pupils dropped in result, are below the 0 mark.
+    This means that they actually performed worse after drinking the energy drink, which is supported by earlier findings.\\\\
+    To be able to do a viable test on this subject you need to wait before the energy is processed by the body.
+    The sugar in lemo probably was processed more quickly than the energy substance in the energy drink.
 
     \begin{figure}
-      \includegraphics[scale=0.6]{../results/GraphBeforeAfter.png}
+      \includegraphics[scale=0.3]{../results/GraphBeforeAfter.png}
       \caption{Histogram and boxplot of the running times before and after the drink}
       \label{fig:RunBefAf}
     \end{figure}
     \begin{figure}
-      \includegraphics[scale=0.6]{../results/HistLemoEnergy.png}
+      \includegraphics[scale=0.3]{../results/HistLemoEnergy.png}
       \caption{Histograms of the before and after times sorted on the drink}
       \label{fig:RunDrink}
+    \end{figure}
+    \begin{figure}
+      \includegraphics[scale=0.3]{../results/LineLemoEnergy.png}
+      \caption{Histograms of the before and after times sorted on the drink}
+      \label{fig:LineRunDrink}
     \end{figure}
 
 
@@ -223,6 +236,18 @@
       hist(lemoafter)
       hist(energybefore)
       hist(energyafter)
+
+      #4.3
+      lemo = run[which(run[,3]=="lemo"), 1:2]
+      energy = run[which(run[,3]=="energy"), 1:2]
+      deltaLemo = as.numeric(lemo[,2]) - as.numeric(lemo[,1])
+      deltaEnergy = as.numeric(energy[,2]) - as.numeric(energy[,1])
+      par(mfrow=c(1,2))
+      plot(deltaLemo)
+      lines(deltaLemo)
+      plot(deltaEnergy)
+      lines(deltaEnergy)
+
       \end{lstlisting}
 
 \end{document}

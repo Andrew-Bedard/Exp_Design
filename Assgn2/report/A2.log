@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.22)  21 APR 2015 23:12
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.22)  22 APR 2015 12:55
 entering extended mode
 **C:/Users/Simone/Documents/Master/ExpDesignAndDataAnalysis/Assignments/Assgn2/
 report/A2.tex
@@ -253,45 +253,85 @@ File: ../results/resultKLM.png Graphic file (type png)
 
 <use ../results/resultKLM.png>
 Package pdftex.def Info: ../results/resultKLM.png used on input line 115.
-(pdftex.def)             Requested size: 343.28514pt x 307.75212pt.
- [3] [4 <C:/Users/Simone/Documents/Master/ExpDesignAndDataAnalysis/Assignments/
-Assgn2/results/resultKLM.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 140.
+(pdftex.def)             Requested size: 171.64256pt x 153.87605pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--135
+
+ []
+
+[3] <../results/GraphBeforeAfter.png, id=24, 572.1375pt x 512.91624pt>
+File: ../results/GraphBeforeAfter.png Graphic file (type png)
+
+<use ../results/GraphBeforeAfter.png>
+Package pdftex.def Info: ../results/GraphBeforeAfter.png used on input line 137
+.
+(pdftex.def)             Requested size: 171.64256pt x 153.87605pt.
+
+<../results/HistLemoEnergy.png, id=25, 572.1375pt x 512.91624pt>
+File: ../results/HistLemoEnergy.png Graphic file (type png)
+
+<use ../results/HistLemoEnergy.png>
+Package pdftex.def Info: ../results/HistLemoEnergy.png used on input line 142.
+(pdftex.def)             Requested size: 171.64256pt x 153.87605pt.
+
+<../results/LineLemoEnergy.png, id=26, 572.1375pt x 512.91624pt>
+File: ../results/LineLemoEnergy.png Graphic file (type png)
+
+<use ../results/LineLemoEnergy.png>
+Package pdftex.def Info: ../results/LineLemoEnergy.png used on input line 147.
+(pdftex.def)             Requested size: 171.64256pt x 153.87605pt.
+ [4 <C:/Users/Simone/Documents/Master/ExpDesignAndDataAnalysis/Assignments/Assg
+n2/results/resultKLM.png>] [5 <C:/Users/Simone/Documents/Master/ExpDesignAndDat
+aAnalysis/Assignments/Assgn2/results/GraphBeforeAfter.png> <C:/Users/Simone/Doc
+uments/Master/ExpDesignAndDataAnalysis/Assignments/Assgn2/results/HistLemoEnerg
+y.png> <C:/Users/Simone/Documents/Master/ExpDesignAndDataAnalysis/Assignments/A
+ssgn2/results/LineLemoEnergy.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 170.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 140.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 170.
 
-Overfull \hbox (3.00354pt too wide) in paragraph at lines 140--141
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 170--171
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (3.00354pt too wide) in paragraph at lines 146--147
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 176--177
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (3.00354pt too wide) in paragraph at lines 152--153
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 182--183
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (3.00354pt too wide) in paragraph at lines 158--159
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 188--189
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[5] [6]
+[6]
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 243--244
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (57.00409pt too wide) in paragraph at lines 244--245
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[7]
 (C:\Users\Simone\Documents\Master\ExpDesignAndDataAnalysis\Assignments\Assgn2\r
 eport\A2.aux) ) 
 Here is how much of TeX's memory you used:
- 4483 strings out of 494045
- 65558 string characters out of 3145965
- 159265 words of memory out of 3000000
- 7767 multiletter control sequences out of 15000+200000
+ 4512 strings out of 494045
+ 66214 string characters out of 3145965
+ 163475 words of memory out of 3000000
+ 7793 multiletter control sequences out of 15000+200000
  8496 words of font info for 30 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  36i,7n,43p,320b,1625s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -305,9 +345,9 @@ b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><
 C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/P
 rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Pro
 gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on A2.pdf (6 pages, 133960 bytes).
+Output written on A2.pdf (7 pages, 153196 bytes).
 PDF statistics:
- 67 PDF objects out of 1000 (max. 8388607)
+ 78 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
