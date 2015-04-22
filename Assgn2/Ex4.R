@@ -2,6 +2,7 @@ library(BSDA)
 
 run = read.table(file = "run.txt")
 
+#4.1
 before = as.numeric(run[,1])
 after = as.numeric(run[,2])
 par(mfrow=c(2,2))
@@ -10,6 +11,7 @@ boxplot(before)
 hist(after)
 boxplot(after)
 
+#4.2
 lemo = run[which(run[,3]=="lemo"), 1:2]
 energy = run[which(run[,3]=="energy"), 1:2]
 lemobefore = as.numeric(lemo[,1])

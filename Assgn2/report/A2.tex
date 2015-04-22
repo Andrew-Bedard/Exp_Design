@@ -118,7 +118,24 @@
     \end{figure}
 
   \section{Exercise 4}
-    Exercise 4 stuff...
+    In Fig:\ref{fig:RunBefAf} the data of the before and after the drink running times are visualized.
+    Here it is clear that overall the running times where higher after the drink and a bit less normally distributed.
+    In Fig:\ref{fig:RunDrink} the before and after times of the two drinks are compared.
+    Here you can see that the lemon group had the worst runners in the before the drink and is normally distributed.
+    The energy group had a more uniformally distributed before the drink.
+    After the drink the lemo drinkers where faster than the energy group, while the name energy drink suggests that you would perform better.
+
+    \begin{figure}
+      \includegraphics[scale=0.6]{../results/GraphBeforeAfter.png}
+      \caption{Histogram and boxplot of the running times before and after the drink}
+      \label{fig:RunBefAf}
+    \end{figure}
+    \begin{figure}
+      \includegraphics[scale=0.6]{../results/HistLemoEnergy.png}
+      \caption{Histograms of the before and after times sorted on the drink}
+      \label{fig:RunDrink}
+    \end{figure}
+
 
   \section{R-Code}
     \subsection{Exercise 1}\label{sec:RE1}
@@ -181,7 +198,31 @@
       \end{lstlisting}
     \subsection{Exercise 4}\label{sec:RE4}
       \begin{lstlisting}[language=R]
-      
+      library(BSDA)
+
+      run = read.table(file = "run.txt")
+
+      #4.1
+      before = as.numeric(run[,1])
+      after = as.numeric(run[,2])
+      par(mfrow=c(2,2))
+      hist(before)
+      boxplot(before)
+      hist(after)
+      boxplot(after)
+
+      #4.2
+      lemo = run[which(run[,3]=="lemo"), 1:2]
+      energy = run[which(run[,3]=="energy"), 1:2]
+      lemobefore = as.numeric(lemo[,1])
+      energybefore = as.numeric(energy[,1])
+      lemoafter = as.numeric(lemo[,2])
+      energyafter = as.numeric(energy[,2])
+      par(mfrow=c(2,2))
+      hist(lemobefore)
+      hist(lemoafter)
+      hist(energybefore)
+      hist(energyafter)
       \end{lstlisting}
 
 \end{document}
