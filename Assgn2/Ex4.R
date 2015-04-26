@@ -23,3 +23,14 @@ hist(lemobefore)
 hist(lemoafter)
 hist(energybefore)
 hist(energyafter)
+
+#4.3
+lemo = run[which(run[,3]=="lemo"), 1:2]
+energy = run[which(run[,3]=="energy"), 1:2]
+deltaLemo = as.numeric(lemo[,2]) - as.numeric(lemo[,1])
+deltaEnergy = as.numeric(energy[,2]) - as.numeric(energy[,1])
+par(mfrow=c(1,2))
+plot(deltaLemo)
+lines(deltaLemo)
+plot(deltaEnergy)
+lines(deltaEnergy)
