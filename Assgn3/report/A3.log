@@ -1,21 +1,18 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.22)  25 APR 2015 11:52
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.27)  27 APR 2015 21:44
 entering extended mode
-**C:/Users/Simone/Documents/Master/ExpDesignAndDataAnalysis/Assignments/Assgn3/
-report/A3.tex
-
-(C:/Users/Simone/Documents/Master/ExpDesignAndDataAnalysis/Assignments/Assgn3/r
-eport/A3.tex
+**A3.tex
+(E:\School\Exp_Design\Assgn3\report\A3.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
 croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
-vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
-an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
-romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
-sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
-senglishmax, welsh, loaded.
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
@@ -102,7 +99,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \c@ContinuedFloat=\count92
 Package caption Info: subfigure package is loaded.
 )
-(C:\Users\Simone\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
 \lst@mode=\count93
 \lst@gtempboxa=\box26
 \lst@token=\toks15
@@ -116,13 +113,13 @@ Package caption Info: subfigure package is loaded.
 \lst@lineno=\count98
 \lst@maxwidth=\dimen117
 
-(C:\Users\Simone\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 \c@lstnumber=\count99
 \lst@skipnumbers=\count100
 \lst@framebox=\box27
 )
-(C:\Users\Simone\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
 File: listings.cfg 2014/09/06 1.5e listings configuration
 ))
 Package: listings 2014/09/06 1.5e (Carsten Heinz)
@@ -137,8 +134,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 \@float@every@table=\toks18
 
-(C:\Users\Simone\Documents\Master\ExpDesignAndDataAnalysis\Assignments\Assgn3\r
-eport\A3.aux)
+(E:\School\Exp_Design\Assgn3\report\A3.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
@@ -151,7 +147,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count102
 \scratchdimen=\dimen118
@@ -180,29 +177,35 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: ../results/Pairs.png Graphic file (type png)
 
 <use ../results/Pairs.png>
-Package pdftex.def Info: ../results/Pairs.png used on input line 22.
+Package pdftex.def Info: ../results/Pairs.png used on input line 24.
 (pdftex.def)             Requested size: 343.28514pt x 307.75212pt.
- [1
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 33.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 33.
 
-{C:/Users/Simone/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2 <C:/Use
-rs/Simone/Documents/Master/ExpDesignAndDataAnalysis/Assignments/Assgn3/results/
-Pairs.png>]
-(C:\Users\Simone\Documents\Master\ExpDesignAndDataAnalysis\Assignments\Assgn3\r
-eport\A3.aux) ) 
+Overfull \hbox (125.50111pt too wide) in paragraph at lines 30--40
+ [] 
+ []
+
+[1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2 <E:/School/Exp_Design/
+Assgn3/results/Pairs.png>] (E:\School\Exp_Design\Assgn3\report\A3.aux) ) 
 Here is how much of TeX's memory you used:
- 3557 strings out of 494045
- 54528 string characters out of 3145965
- 104766 words of memory out of 3000000
- 6862 multiletter control sequences out of 15000+200000
- 7280 words of font info for 26 fonts, out of 3000000 for 9000
- 715 hyphenation exceptions out of 8191
- 36i,6n,38p,320b,258s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
-12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.
-pfb>
-Output written on A3.pdf (2 pages, 63159 bytes).
+ 3560 strings out of 493921
+ 54165 string characters out of 3144864
+ 106912 words of memory out of 3000000
+ 6866 multiletter control sequences out of 15000+200000
+ 7587 words of font info for 27 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 36i,6n,38p,236b,258s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on A3.pdf (2 pages, 67689 bytes).
 PDF statistics:
  27 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
