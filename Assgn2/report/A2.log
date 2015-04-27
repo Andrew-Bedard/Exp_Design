@@ -1,21 +1,22 @@
+<<<<<<< HEAD
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.17)  22 APR 2015 12:56
+=======
 This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.22)  22 APR 2015 12:55
+>>>>>>> 09af07fd884d691390ec345f15dbb6c25d40a896
 entering extended mode
-**C:/Users/Simone/Documents/Master/ExpDesignAndDataAnalysis/Assignments/Assgn2/
-report/A2.tex
-
-(C:/Users/Simone/Documents/Master/ExpDesignAndDataAnalysis/Assignments/Assgn2/r
-eport/A2.tex
+**A2.tex
+(C:\Users\Andy\Documents\Github\Exp_Design\Assgn2\report\A2.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
 croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
-vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
-an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
-romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
-sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
-senglishmax, welsh, loaded.
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
@@ -102,7 +103,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \c@ContinuedFloat=\count92
 Package caption Info: subfigure package is loaded.
 )
-(C:\Users\Simone\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
 \lst@mode=\count93
 \lst@gtempboxa=\box26
 \lst@token=\toks15
@@ -116,13 +117,13 @@ Package caption Info: subfigure package is loaded.
 \lst@lineno=\count98
 \lst@maxwidth=\dimen117
 
-(C:\Users\Simone\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 \c@lstnumber=\count99
 \lst@skipnumbers=\count100
 \lst@framebox=\box27
 )
-(C:\Users\Simone\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
 File: listings.cfg 2014/09/06 1.5e listings configuration
 ))
 Package: listings 2014/09/06 1.5e (Carsten Heinz)
@@ -137,8 +138,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 \@float@every@table=\toks18
 
-(C:\Users\Simone\Documents\Master\ExpDesignAndDataAnalysis\Assignments\Assgn2\r
-eport\A2.aux)
+(C:\Users\Andy\Documents\Github\Exp_Design\Assgn2\report\A2.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
@@ -151,7 +151,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count102
 \scratchdimen=\dimen118
@@ -198,13 +199,13 @@ Overfull \hbox (64.3911pt too wide) in paragraph at lines 60--63
 [][] [] 
  []
 
-(C:\Users\Simone\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
-(C:\Users\Simone\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang2.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang2.sty"
 File: lstlang2.sty 2014/09/06 1.5e listings language file
 )
-(C:\Users\Simone\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang3.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang3.sty"
 File: lstlang3.sty 2014/09/06 1.5e listings language file
 )
 Underfull \hbox (badness 10000) in paragraph at lines 68--77
@@ -213,10 +214,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--77
 
 [1
 
-{C:/Users/Simone/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2 <C:/Use
-rs/Simone/Documents/Master/ExpDesignAndDataAnalysis/Assignments/Assgn2/results/
-Hist1879.png> <C:/Users/Simone/Documents/Master/ExpDesignAndDataAnalysis/Assign
-ments/Assgn2/results/Hist1882.png>]
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2 <C:/Users/Andy/Documen
+ts/Github/Exp_Design/Assgn2/results/Hist1879.png> <C:/Users/Andy/Documents/Gith
+ub/Exp_Design/Assgn2/results/Hist1882.png>]
 Overfull \hbox (15.00366pt too wide) in paragraph at lines 82--83
 [][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -253,6 +253,17 @@ File: ../results/resultKLM.png Graphic file (type png)
 
 <use ../results/resultKLM.png>
 Package pdftex.def Info: ../results/resultKLM.png used on input line 115.
+<<<<<<< HEAD
+(pdftex.def)             Requested size: 343.28514pt x 307.75212pt.
+ [3]
+<../results/GraphBeforeAfter.png, id=24, 572.1375pt x 512.91624pt>
+File: ../results/GraphBeforeAfter.png Graphic file (type png)
+
+<use ../results/GraphBeforeAfter.png>
+Package pdftex.def Info: ../results/GraphBeforeAfter.png used on input line 129
+.
+(pdftex.def)             Requested size: 343.28514pt x 307.75212pt.
+=======
 (pdftex.def)             Requested size: 171.64256pt x 153.87605pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 121--135
@@ -266,11 +277,21 @@ File: ../results/GraphBeforeAfter.png Graphic file (type png)
 Package pdftex.def Info: ../results/GraphBeforeAfter.png used on input line 137
 .
 (pdftex.def)             Requested size: 171.64256pt x 153.87605pt.
+>>>>>>> 09af07fd884d691390ec345f15dbb6c25d40a896
 
 <../results/HistLemoEnergy.png, id=25, 572.1375pt x 512.91624pt>
 File: ../results/HistLemoEnergy.png Graphic file (type png)
 
 <use ../results/HistLemoEnergy.png>
+<<<<<<< HEAD
+Package pdftex.def Info: ../results/HistLemoEnergy.png used on input line 134.
+(pdftex.def)             Requested size: 343.28514pt x 307.75212pt.
+ [4 <C:/Users/Andy/Documents/Github/Exp_Design/Assgn2/results/resultKLM.png>] [
+5 <C:/Users/Andy/Documents/Github/Exp_Design/Assgn2/results/GraphBeforeAfter.pn
+g>] [6 <C:/Users/Andy/Documents/Github/Exp_Design/Assgn2/results/HistLemoEnergy
+.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 147.
+=======
 Package pdftex.def Info: ../results/HistLemoEnergy.png used on input line 142.
 (pdftex.def)             Requested size: 171.64256pt x 153.87605pt.
 
@@ -287,29 +308,78 @@ uments/Master/ExpDesignAndDataAnalysis/Assignments/Assgn2/results/HistLemoEnerg
 y.png> <C:/Users/Simone/Documents/Master/ExpDesignAndDataAnalysis/Assignments/A
 ssgn2/results/LineLemoEnergy.png>]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 170.
+>>>>>>> 09af07fd884d691390ec345f15dbb6c25d40a896
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 147.
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10> not available
+<<<<<<< HEAD
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 156.
+
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 176--177
+=======
 (Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 170.
 
 Overfull \hbox (3.00354pt too wide) in paragraph at lines 170--171
+>>>>>>> 09af07fd884d691390ec345f15dbb6c25d40a896
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
+<<<<<<< HEAD
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 182--183
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[7]
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 188--189
+=======
 Overfull \hbox (3.00354pt too wide) in paragraph at lines 176--177
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
 Overfull \hbox (3.00354pt too wide) in paragraph at lines 182--183
+>>>>>>> 09af07fd884d691390ec345f15dbb6c25d40a896
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
+<<<<<<< HEAD
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 194--195
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[8] [9] (C:\Users\Andy\Documents\Github\Exp_Design\Assgn2\report\A2.aux) ) 
+Here is how much of TeX's memory you used:
+ 4522 strings out of 493921
+ 65896 string characters out of 3144879
+ 163733 words of memory out of 3000000
+ 7805 multiletter control sequences out of 15000+200000
+ 8496 words of font info for 30 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 36i,7n,43p,434b,1625s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on A2.pdf (9 pages, 151570 bytes).
+PDF statistics:
+ 82 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+=======
 Overfull \hbox (3.00354pt too wide) in paragraph at lines 188--189
 [][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -350,4 +420,5 @@ PDF statistics:
  78 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
+>>>>>>> 09af07fd884d691390ec345f15dbb6c25d40a896
 

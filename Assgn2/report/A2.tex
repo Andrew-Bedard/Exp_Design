@@ -9,14 +9,14 @@
 \restylefloat{table}
 
 \title{Experimental Design and Data Analysis: Assignment 2}
-\author{Andrew Bedard \& Simone van Gompel(2567525) \\ Group 19}
+\author{Andrew Bedard(2566978) \& Simone van Gompel(2567525) \\ Group 19}
 
 \begin{document}
 
   \maketitle
 
   \section{Exercise 1}
-    Exercise 1 stuff...
+    In this exercise the data was imported to apply the bootstrapping method based on the statistic mean(data) - median(data). Upon comparing the statistic to that of the known exponential distribution using our statistic we found for our data the 95\% bootstrap confidence interval for our statistic was[-0.1268,0.8936] around mean 0.3743. Compared to the random exponential distribution which was [-1.299,1.4849] around 1.
 
   \section{Exercise 2}
     In this exercise two datasets are handled and compared to each other.
@@ -153,7 +153,26 @@
   \section{R-Code}
     \subsection{Exercise 1}\label{sec:RE1}
       \begin{lstlisting}[language=R]
-      
+      mydata= as.vector(t(dataexp))
+
+	Tstar = numeric(25)
+	for(i in 1:25)
+	{
+	  Xstar = sample(mydata, replace=TRUE)
+ 	 Tstar[i] = mean(Xstar) - median(Xstar)
+	}
+
+
+	Tstar25 = quantile(Tstar,0.025)
+	Tstar975 = quantile(Tstar,0.975)
+	T1 = mean(Tstar)
+	ans1 = c(2*T1 - Tstar975, 2*T1 - Tstar25)
+
+	test = rexp(25)
+	ans2 = mean(test)
+	test25 = quantile(test, 0.025)
+	test975 = quantile(test, 0.975)
+	ans3 = c(2*ans2 - test975, 2*ans2 - test25)
       \end{lstlisting}
     \subsection{Exercise 2}\label{sec:RE2}
       \begin{lstlisting}[language=R]
