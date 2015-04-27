@@ -4,10 +4,7 @@ peru = peru[,-c(5,6,7)]
 pairs(peru)
 
 #1.2
-#This shows the pearson rank correlation against all variables
-correl_p = cor(peru)
 #This shows the spearman rank correlation against all variables
 correl_s = cor(peru, method="spearman")
 
-correl_p[2, ]
 correl_s[2, ]

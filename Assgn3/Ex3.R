@@ -18,3 +18,11 @@ for (i in 1:7) {
 }
 
 #3.4
+
+#Create data-frames for the origional genal data, and the squareroot genal data
+genalframe=data.frame(yield=as.vector(as.matrix(genal)),
+                      variety=factor(rep(1:7,each=100)))
+
+sqframe=data.frame(yield=as.vector(as.matrix(sqgenal)),
+                      variety=factor(rep(1:7,each=100)))
+
