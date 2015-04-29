@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.27)  29 APR 2015 12:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.27)  29 APR 2015 12:19
 entering extended mode
 **A3.tex
 (E:\School\Exp_Design\Assgn3\report\A3.tex
@@ -134,7 +134,11 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 \@float@every@table=\toks18
 
-(E:\School\Exp_Design\Assgn3\report\A3.aux)
+(E:\School\Exp_Design\Assgn3\report\A3.aux
+
+LaTeX Warning: Label `table:1anova' multiply defined.
+
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
@@ -147,8 +151,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count102
 \scratchdimen=\dimen118
@@ -173,11 +176,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 16.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 16.
-
-
-LaTeX Warning: Reference `fig:Pairs' on page 1 undefined on input line 20.
-
-<../results/Pairs.png, id=1, 572.1375pt x 512.91624pt>
+ <../results/Pairs.png, id=1, 572.1375pt x 512.91624pt>
 File: ../results/Pairs.png Graphic file (type png)
 
 <use ../results/Pairs.png>
@@ -201,92 +200,42 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
-
-
-LaTeX Warning: Reference `fig:Pairs' on page 2 undefined on input line 47.
-
-
-LaTeX Warning: Reference `fig:Pairs' on page 2 undefined on input line 48.
-
-[2 <E:/School/Exp_Design/Assgn3/results/Pairs.png>]
-
-LaTeX Warning: Reference `fig:Pairs' on page 3 undefined on input line 49.
-
-
-LaTeX Warning: Reference `fig:Pairs' on page 3 undefined on input line 50.
-
-
-LaTeX Warning: Reference `fig:Pairs' on page 3 undefined on input line 51.
-
-
-LaTeX Warning: Reference `fig:Pairs' on page 3 undefined on input line 52.
-
-
-LaTeX Warning: Reference `fig:clouds' on page 3 undefined on input line 59.
-
-
-LaTeX Warning: Reference `fig:normal' on page 3 undefined on input line 59.
-
-
-LaTeX Warning: Reference `fig:normal' on page 3 undefined on input line 59.
-
-
-LaTeX Warning: Reference `fig:clouds' on page 3 undefined on input line 59.
-
-<../results/2_1.png, id=17, 652.4375pt x 501.875pt>
+ [2 <E:/School/Exp_Design/Assgn3/results/Pairs.png>]
+<../results/2_1.png, id=16, 652.4375pt x 501.875pt>
 File: ../results/2_1.png Graphic file (type png)
  <use ../results/2_1.png>
 Package pdftex.def Info: ../results/2_1.png used on input line 65.
 (pdftex.def)             Requested size: 326.21794pt x 250.93687pt.
 
-[3]
-
-LaTeX Warning: Reference `fig:sq(clouds)' on page 4 undefined on input line 73.
-
-
-[4 <E:/School/Exp_Design/Assgn3/results/2_1.png>]
-<../results/2_2.png, id=25, 652.4375pt x 501.875pt>
+[3] [4 <E:/School/Exp_Design/Assgn3/results/2_1.png>]
+<../results/2_2.png, id=24, 652.4375pt x 501.875pt>
 File: ../results/2_2.png Graphic file (type png)
  <use ../results/2_2.png>
 Package pdftex.def Info: ../results/2_2.png used on input line 79.
 (pdftex.def)             Requested size: 326.21794pt x 250.93687pt.
 
-
-LaTeX Warning: Reference `fig:sqsqclouds' on page 5 undefined on input line 87.
-
-
 [5 <E:/School/Exp_Design/Assgn3/results/2_2.png>]
-<../results/2_3.png, id=30, 652.4375pt x 501.875pt>
+<../results/2_3.png, id=29, 652.4375pt x 501.875pt>
 File: ../results/2_3.png Graphic file (type png)
  <use ../results/2_3.png>
 Package pdftex.def Info: ../results/2_3.png used on input line 93.
 (pdftex.def)             Requested size: 326.21794pt x 250.93687pt.
 
-<../results/2_3_nrml.png, id=31, 877.2775pt x 444.66125pt>
+<../results/2_3_nrml.png, id=30, 877.2775pt x 444.66125pt>
 File: ../results/2_3_nrml.png Graphic file (type png)
 
 <use ../results/2_3_nrml.png>
 Package pdftex.def Info: ../results/2_3_nrml.png used on input line 99.
 (pdftex.def)             Requested size: 263.18527pt x 133.3994pt.
-
-
-LaTeX Warning: Reference `fig:box' on page 6 undefined on input line 106.
-
-[6 <E:/School/Exp_Design/Assgn3/results/2_3.png> <E:/School/Exp_Design/Assgn3/r
-esults/2_3_nrml.png>] <../results/3_1.png, id=37, 805.0075pt x 727.71875pt>
+ [6 <E:/School/Exp_Design/Assgn3/results/2_3.png> <E:/School/Exp_Design/Assgn3/
+results/2_3_nrml.png>]
+<../results/3_1.png, id=36, 805.0075pt x 727.71875pt>
 File: ../results/3_1.png Graphic file (type png)
-
-<use ../results/3_1.png>
+ <use ../results/3_1.png>
 Package pdftex.def Info: ../results/3_1.png used on input line 110.
 (pdftex.def)             Requested size: 241.50412pt x 218.3173pt.
 
-
-LaTeX Warning: Reference `fig:qq-genal' on page 7 undefined on input line 116.
-
-
-LaTeX Warning: Reference `fig:qq-nrml' on page 7 undefined on input line 116.
-
-<../results/3_2_1.png, id=38, 1003.75pt x 1003.75pt>
+<../results/3_2_1.png, id=37, 1003.75pt x 1003.75pt>
 File: ../results/3_2_1.png Graphic file (type png)
 
 <use ../results/3_2_1.png>
@@ -298,21 +247,14 @@ Overfull \hbox (56.49289pt too wide) in paragraph at lines 119--120
  []
 
 [7 <E:/School/Exp_Design/Assgn3/results/3_1.png>]
-<../results/3_2_2.png, id=44, 702.625pt x 702.625pt>
+<../results/3_2_2.png, id=43, 702.625pt x 702.625pt>
 File: ../results/3_2_2.png Graphic file (type png)
 
 <use ../results/3_2_2.png>
 Package pdftex.def Info: ../results/3_2_2.png used on input line 126.
 (pdftex.def)             Requested size: 210.78912pt x 210.78912pt.
  [8 <E:/School/Exp_Design/Assgn3/results/3_2_1.png>]
-
-LaTeX Warning: Reference `fig:qq-sqgenal' on page 9 undefined on input line 132
-.
-
-
-LaTeX Warning: Reference `fig:qq-nrml' on page 9 undefined on input line 132.
-
-<../results/3_3.png, id=49, 1003.75pt x 1003.75pt>
+<../results/3_3.png, id=48, 1003.75pt x 1003.75pt>
 File: ../results/3_3.png Graphic file (type png)
  <use ../results/3_3.png>
 Package pdftex.def Info: ../results/3_3.png used on input line 135.
@@ -334,55 +276,33 @@ Overfull \hbox (3.19513pt too wide) in paragraph at lines 176--177
 ity, be-cause 0.9033-
  []
 
-
-LaTeX Warning: Reference `fig:qq-resid' on page 11 undefined on input line 179.
-
-
-<../results/3_6.png, id=58, 546.04pt x 440.64626pt>
+<../results/3_6.png, id=57, 546.04pt x 440.64626pt>
 File: ../results/3_6.png Graphic file (type png)
  <use ../results/3_6.png>
 Package pdftex.def Info: ../results/3_6.png used on input line 183.
 (pdftex.def)             Requested size: 218.41212pt x 176.25537pt.
 
-[11]
-
-LaTeX Warning: Reference `fig:dbox' on page 12 undefined on input line 190.
-
-<../results/4_1.png, id=62, 670.505pt x 619.31375pt>
+[11] <../results/4_1.png, id=61, 670.505pt x 619.31375pt>
 File: ../results/4_1.png Graphic file (type png)
- <use ../results/4_1.png>
+
+<use ../results/4_1.png>
 Package pdftex.def Info: ../results/4_1.png used on input line 194.
 (pdftex.def)             Requested size: 201.15305pt x 185.79555pt.
-
-
-LaTeX Warning: Reference `fig:qq dog' on page 12 undefined on input line 200.
-
-[12 <E:/School/Exp_Design/Assgn3/results/3_6.png> <E:/School/Exp_Design/Assgn3/
-results/4_1.png>] <../results/4_2.png, id=68, 606.265pt x 628.3475pt>
+ [12 <E:/School/Exp_Design/Assgn3/results/3_6.png> <E:/School/Exp_Design/Assgn3
+/results/4_1.png>]
+<../results/4_2.png, id=67, 606.265pt x 628.3475pt>
 File: ../results/4_2.png Graphic file (type png)
-
-<use ../results/4_2.png>
+ <use ../results/4_2.png>
 Package pdftex.def Info: ../results/4_2.png used on input line 204.
 (pdftex.def)             Requested size: 242.5017pt x 251.33455pt.
- [13 <E:/School/Exp_Design/Assgn3/results/4_2.png>]
 
-LaTeX Warning: Reference `table:doganova' on page 14 undefined on input line 24
-6.
-
-
+[13 <E:/School/Exp_Design/Assgn3/results/4_2.png>]
 Overfull \hbox (0.11166pt too wide) in paragraph at lines 250--251
 \OT1/cmr/m/n/10 The Kruskal-Wallis test for the same hy-poth-e-sis gives Kruska
 l-Wallis chi-squared
  []
 
-
-LaTeX Warning: Reference `fig:dog-resid' on page 14 undefined on input line 253
-.
-
-
-LaTeX Warning: Reference `fig:dbox' on page 14 undefined on input line 254.
-
-<../results/4_5.png, id=74, 544.0325pt x 450.68375pt>
+<../results/4_5.png, id=73, 544.0325pt x 450.68375pt>
 File: ../results/4_5.png Graphic file (type png)
  <use ../results/4_5.png>
 Package pdftex.def Info: ../results/4_5.png used on input line 265.
@@ -423,20 +343,17 @@ Overfull \hbox (45.00397pt too wide) in paragraph at lines 373--374
 
 [17] [18] (E:\School\Exp_Design\Assgn3\report\A3.aux)
 
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
  4523 strings out of 493921
  65890 string characters out of 3144864
- 165862 words of memory out of 3000000
+ 166057 words of memory out of 3000000
  7802 multiletter control sequences out of 15000+200000
  8241 words of font info for 29 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 36i,8n,43p,796b,1638s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,8n,43p,795b,1638s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/P
@@ -444,7 +361,7 @@ rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Prog
 ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on A3.pdf (18 pages, 232471 bytes).
+Output written on A3.pdf (18 pages, 231628 bytes).
 PDF statistics:
  114 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
