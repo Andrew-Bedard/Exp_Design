@@ -2,7 +2,7 @@
 
 dogs = read.table("dogs.txt", header=T)
 len=length(dogs[,1])
-boxplot(dogs)
+boxplot(dogs,ylab="Concentration (1.0e-9g/mm)")
 
 #4.2
 par(mfrow=c(2,2))

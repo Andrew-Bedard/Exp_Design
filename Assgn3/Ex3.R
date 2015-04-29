@@ -3,7 +3,7 @@ genal = read.table("genal.txt", header=T)
 len=length(genal[,1])
 nrml=rnorm(len)
 
-par(mfrow=c(1,1));boxplot(genal)
+par(mfrow=c(1,1));boxplot(genal,xlab="Mutation Factor",ylab="Minimum Score")
 
 #3.2
 #Loops through, creating QQ-plot for each mutation probability

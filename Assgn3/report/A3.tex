@@ -26,122 +26,151 @@
     \end{figure}
     
     \subsection*{2}
-    Using the Pearson (rank?) correlation test for all variables against migration we obtain the following results:
-    \newline
-    \begin{tabular}{|c|c|c|c|c|c|c|c|}
-    \hline 
-     & age & migration & weight & length & wrist & systolic & diastolic \\ 
-    \hline 
-    migration & 0.47605753 & 1 & 0.35069559 & 0.08458432 & 0.21934983 & -0.16842856 & 0.07514098 \\ 
-    \hline 
-    \end{tabular} 
+    Using the Spearman rank correlation test for all variables against migration we obtain the following results:
+	\begin{table}
+    \begin{center}
+    \begin{tabular}{l|llllll}
+        \hline 
+        & age & weight & length & wrist & systolic & diastolic \\
+        \hline
+        migration &0.47605753 & 0.35069559 & 0.08458432 & 0.21934983 & -0.16842856 & 0.07514098 \\
+        \hline
+    \end{tabular}
+    \caption{Spearman Rank Correlation test between each variable and \textit{migration} data}
+    \label{table:rankcorr}
+    \end{center}
+    \end{table}
     
-    Age was the most obviously correlated variable between migration when the pairs scatter plots (Fig: \ref{fig:Pairs}), and age is the most correlated variable with migration.
-    Weight is the second most correlated variable with migration, ...
+    
+    The rank correlation between:
+    \begin{itemize}
+    \item age and migration is 0.47605753, this is visible in Fig\ref{fig:Pairs} in the form of an approximate linear relationship.
+    \item weight and migration is 0.35069559, this is visible in Fig\ref{fig:Pairs} as an approximate linear relationship.
+    \item Length and migration is 0.08458432, as can be seen in Fig \ref{fig:Pairs}, there is no discernible relationships between the two variables.
+    \item wrist and migration is 0.21934983, this result is surprisingly high considering Fig\ref{fig:Pairs}, as any relationship between these two variables is very difficult to see.
+    \item systolic and migration is -0.16842856, which is obvious given the very small downward sloping structure seen in Fig\ref{fig:Pairs}.
+    \item diastolic and migration is 0.07514098, which is unsurprising considering the lack of structure seen in Fig\ref{fig:Pairs}
+    \end{itemize}
     
     \section{Exercise 2}
     \subsection*{1}
-    
-    Two sample t-test assumes that both samples come from a normal population. 
-    t-test: p-value =0.05375. The 95\% confidence interval is [-4.7405,559.5859] with mean of x = 441.9846 mean of y = 164.5619.
-    We accept the null hypothesis
-    The Mann-Whitney test: W=473, p-value = 0.01383
-    we reject the null hypothesis
-    Kolmogorov-Smirnov test: D = 0.4231, p-value = 0.01905
-    we reject the null hypothesis
+    From the data in \textit{clouds.txt}, we can perform various tests to determine whether the two independent samples: values of seeded clouds, and un-seeded clouds are equal.
+    \begin{itemize}
+    \item The two sample t-test produces:t = 1.9984, df = 33.856, 95\% confidence interval of [-4.7405,559.5859] with mean of x = 441.9846 mean of y = 164.5619 and a p-value of 0.05375, which suggests that we accept the null hypothesis, and thus our samples are the same, this is misleading however. Consider Fig\ref{fig:clouds}, and Fig \ref{fig:normal}; The two sample t-test assumes that both our samples come from a normal population, Fig \ref{fig:normal} represents a randomly generated normally distributed sample of equal size to both seeded and un-seeded cloud data, clearly Fig\ref{fig:clouds} is very different, thus this assumption that our samples are from a normal population is not reasonable, and the two sample t-test is not suitable for this data as is.
+    \item The Mann-Whitney test gives: W=473 with a p-value of 0.01383, suggesting that we reject the null hypothesis, and thus, our samples are not equal. The Mann-Whitney test makes no assumptions about the nature of the data but combine our samples to measure their differences, so it is suitable in this case.
+    \item The Kolmogorov-Smirnov test gives: D= 0.4231 with a p-value of 0.01905, suggesting that we reject the null hypothesis and that our samples are not equal. The Kolmogorov-Smirnov test measures the differences in the histograms between the two sets of data, and with no constraints on the requirements for our data, this test is suitable.
+    \end{itemize}
     
     \begin{figure}[!htb]
-      \includegraphics[scale=0.4]{../results/2_1.png}
-      \caption{clouds}
+      \includegraphics[scale=0.5]{../results/2_1.png}
+      \caption{Histograms and QQ-Plots of Seeded Clouds and Un-Seeded Clouds respectively}
       \label{fig:clouds}
     \end{figure}
-    
-    Two sample t-test
-    
+     
     \subsection*{2}
-    t-test: t=2.4246, p-value = 0.01956, 95\% confidence interval [1.2021,13.0713], mean x=17.068, mean y= 9.9313
-    Mann-Whitney test: The Mann-Whitney test: W=473, p-value = 0.01383
-    Kolmogorov-Smirnov test: D = 0.4231, p-value = 0.01905
+    We repeat the previous procedure after taking the square root of each data point from both seeded and un-seeded cloud samples.
+    \begin{itemize}
+    \item The two sample t-test produces t=2.4246, df = 43.363, and a p-value of 0.01956, which suggests that we reject the null hypothesis and that our two samples are not equal. In this case the 95\% confidence interval is [1.2021,13.0713] with mean x=17.068 and mean y= 9.9313. The transformed data, seen in Fig\ref{fig:sq(clouds)} is still too far from normal for the t-test to be suitable in this case.
+    \item The Mann-Whitney test gives: W=473 with a p-value of 0.01383, suggesting that we reject the null hypothesis, and thus, our samples are not equal. This is the same result as the original data, which is unsurprising considering the test measures the ranks of a combined sample, once again this test is suitable.
+    \item The Kolmogorov-Smirnov test gives: D= 0.4231 with a p-value of 0.01905, suggesting that we reject the null hypothesis and that our samples are not equal. Again, this is the same result obtained with the original data, and as this test only measures the difference between histograms, it is again suitable.
+    \end{itemize}
     
     \begin{figure}[!htb]
-      \includegraphics[scale=0.4]{../results/2_2.png}
-      \caption{sq(clouds)}
+      \includegraphics[scale=0.5]{../results/2_2.png}
+      \caption{Histograms and QQ-Plots of Seeded Clouds and Un-Seeded Clouds after taking the square root of each data point}
       \label{fig:sq(clouds)}
     \end{figure}
     
     \subsection*{3}
-    t-test: t=2.5968, p-value=0.0124, 95\% [0.2196,1.7236], mean x = 3.8789, mean y = 2.9073
-    Mann-Whitney test: The Mann-Whitney test: W=473, p-value = 0.01383
-    Kolmogorov-Smirnov test: D = 0.4231, p-value = 0.01905
+    We repeat the same procedure again, now obtaining the square root of the square root of the original data point in our samples seeded and un-seeded clouds.
+    \begin{itemize}
+    \item The two sample t-test produces: t=2.5968, df = 48.826, p-value=0.0124, 95\% confidence interval [0.2196,1.7236], mean x = 3.8789 and mean y = 2.9073. This suggests that we reject the null hypothesis, and that our samples are not equal. If we observe Fig\ref{fig:sqsqclouds}, the data is apparently normal, thus this test is suitable in this case.
+    \item The Mann-Whitney test gives: W=473 with a p-value of 0.01383, suggesting that we reject the null hypothesis, and thus, our samples are not equal. This is the same result as obtained in both cases before, once again this test is suitable.
+    \item The Kolmogorov-Smirnov test gives: D= 0.4231 with a p-value of 0.01905, suggesting that we reject the null hypothesis and that our samples are not equal. Again, this is the same result obtained in the previous two cases, and it is again suitable.
+    \end{itemize}
     
     \begin{figure}[!htb]
-      \includegraphics[scale=0.4]{../results/2_3.png}
-      \caption{sq(sq(clouds))}
+      \includegraphics[scale=0.5]{../results/2_3.png}
+      \caption{Histograms and QQ-Plots of Seeded Clouds and Un-Seeded Clouds after taking the square root of each data point twice}
       \label{fig:sqsqclouds}
     \end{figure}
     
     \begin{figure}[!htb]
       \includegraphics[scale=0.3]{../results/2_3_nrml.png}
-      \caption{normal}
+      \caption{Histogram and QQ-Plot of randomly generated normally distributed data of same size as both Seeded and Un-Seeded Clouds}
       \label{fig:normal}
     \end{figure}
     
     \section{3}
     \subsection*{1}
+    
     \begin{figure}[!htb]
     \centering
       \includegraphics[scale=0.3]{../results/3_1.png}
-      \caption{box}
+      \caption{Box Plot of mutation factor and the resulting minimum result obtained}
       \label{fig:box}
     \end{figure}
+    
     \subsection*{2}
+    
     \begin{figure}[!htb]
       \includegraphics[scale=0.4]{../results/3_2_1.png}
-      \caption{qq-genal}
+      \caption{QQ-Plots for each mutation factor}
       \label{fig:qq-genal}
     \end{figure}
+    
     \begin{figure}[!htb]
     \centering
       \includegraphics[scale=0.3]{../results/3_2_2.png}
-      \caption{qq-nrml}
+      \caption{QQ-Plot of randomly generated normally distributed population of the same size as those in \textit{genal.txt}}
       \label{fig:qq-nrml}
     \end{figure}
     
     No
+    
     \subsection*{3}
+    
     \begin{figure}[!htb]
       \includegraphics[scale=0.4]{../results/3_3.png}
-      \caption{qq-sq(genal)}
+      \caption{QQ-Plot for each mutation factor after take the square root of each data point}
       \label{fig:qq-sqgenal}
     \end{figure}
     
     Yes
+    
     \subsection*{4}
     
     Using sq(genal) we find a p-value of 2.2e-16, therefore we reject the null hypothesis
+    
     \subsection*{5}
+    
     Based on summary(sqaov) X=0.03 is the best, because 0.9033-0.2227 is the smallest value, and we are estimating the smallest value obtained from an optimization where smaller is better.
+    
     \subsection*{6}
+    
     \begin{figure}[!htb]
     \centering
       \includegraphics[scale=0.4]{../results/3_6.png}
-      \caption{qq-resid}
+      \caption{QQ-Plot of the residuals of 1-way Anova test}
       \label{fig:qq-resid}
     \end{figure}
     
     \section{4}
     \subsection*{1}
+    
     \begin{figure}[!htb]
     \centering
-      \includegraphics[scale=0.4]{../results/4_1.png}
-      \caption{dog box}
+      \includegraphics[scale=0.3]{../results/4_1.png}
+      \caption{Box plot of plasma epinephrine concentrations under various anaesthesias}
       \label{fig:dbox}
     \end{figure}
+    
     \subsection*{2}
+    
     \begin{figure}[!htb]
     \centering
-      \includegraphics[scale=0.6]{../results/4_2.png}
-      \caption{qq dog}
+      \includegraphics[scale=0.4]{../results/4_2.png}
+      \caption{QQ-Plots for data from each type of anaesthesia}
       \label{fig:qq dog}
     \end{figure}
     
@@ -153,10 +182,11 @@
     \subsection*{5}
     The differences between the 1-way Anova and the Kruskal-Wallis test could be explained by our initial assumption that the 3 samples represented in the data do not in fact come from a normal population, because 1-way Anova assumes that we are sampling from normal populations this could produce conflicting results, though as we see in Figure \ref{fig:dog-resid} the residuals do not deviate from the normal significantly.
     It is perhaps more compelling that the differences between the 1-way Anova and the Kruskal-Wallis are due to the fact that 1-way Anova assumes our populations have equal population variances, and as is observed in Figure \ref{fig:dbox}, they are obviously not equal.
+    
     \begin{figure}[!htb]
     \centering
-      \includegraphics[scale=0.4]{../results/4_5.png}
-      \caption{dog-resid}
+      \includegraphics[scale=0.3]{../results/4_5.png}
+      \caption{QQ-Plot of residuals of 1-way Anova analysis}
       \label{fig:dog-resid}
     \end{figure}
     

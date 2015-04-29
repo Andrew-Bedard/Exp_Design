@@ -8,3 +8,7 @@ pairs(peru)
 correl_s = cor(peru, method="spearman")
 
 correl_s[2, ]
+
+for (i in 1:7){
+  plot(peru[,i],peru[,2],ylab="migration",xlab="")
+}
