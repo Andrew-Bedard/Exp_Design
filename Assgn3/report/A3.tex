@@ -19,7 +19,7 @@
   \subsection*{1}
   Using data from \textit{peruvians.txt} we use the pairs command in R to produce a scatter plot of every variable against every other. The result can be seen in Fig:\ref{fig:Pairs}. From this figure, the variables age and weight seem to have a linear relationship, which would suggest that they are correlated.
 
-    \begin{figure}[!htb]
+    \begin{figure}[H]
       \includegraphics[scale=0.6]{../results/Pairs.png}
       \caption{Pairwise scatterplots of the dataset peruvians}
       \label{fig:Pairs}
@@ -27,7 +27,7 @@
     
     \subsection*{2}
     Using the Spearman rank correlation test for all variables against migration we obtain the following results:
-	\begin{table}
+	\begin{table}[H]
     \begin{center}
     \begin{tabular}{l|llllll}
         \hline 
@@ -56,12 +56,12 @@
     \subsection*{1}
     From the data in \textit{clouds.txt}, we can perform various tests to determine whether the two independent samples: values of seeded clouds, and un-seeded clouds are equal.
     \begin{itemize}
-    \item The two sample t-test produces:t = 1.9984, df = 33.856, 95\% confidence interval of [-4.7405,559.5859] with mean of x = 441.9846 mean of y = 164.5619 and a p-value of 0.05375, which suggests that we accept the null hypothesis, and thus our samples are the same, this is misleading however. Consider Fig\ref{fig:clouds}, and Fig \ref{fig:normal}; The two sample t-test assumes that both our samples come from a normal population, Fig \ref{fig:normal} represents a randomly generated normally distributed sample of equal size to both seeded and un-seeded cloud data, clearly Fig\ref{fig:clouds} is very different, thus this assumption that our samples are from a normal population is not reasonable, and the two sample t-test is not suitable for this data as is.
+    \item The two sample t-test produces: t = 1.9984, df = 33.856, 95\% confidence interval of [-4.7405,559.5859] with mean of x = 441.9846 mean of y = 164.5619 and a p-value of 0.05375, which suggests that we accept the null hypothesis, and thus our samples are the same, this is misleading however. Consider Fig\ref{fig:clouds}, and Fig \ref{fig:normal}; The two sample t-test assumes that both our samples come from a normal population, Fig \ref{fig:normal} represents a randomly generated normally distributed sample of equal size to both seeded and un-seeded cloud data, clearly Fig\ref{fig:clouds} is very different, thus this assumption that our samples are from a normal population is not reasonable, and the two sample t-test is not suitable for this data as is.
     \item The Mann-Whitney test gives: W=473 with a p-value of 0.01383, suggesting that we reject the null hypothesis, and thus, our samples are not equal. The Mann-Whitney test makes no assumptions about the nature of the data but combine our samples to measure their differences, so it is suitable in this case.
     \item The Kolmogorov-Smirnov test gives: D= 0.4231 with a p-value of 0.01905, suggesting that we reject the null hypothesis and that our samples are not equal. The Kolmogorov-Smirnov test measures the differences in the histograms between the two sets of data, and with no constraints on the requirements for our data, this test is suitable.
     \end{itemize}
     
-    \begin{figure}[!htb]
+    \begin{figure}[H]
       \includegraphics[scale=0.5]{../results/2_1.png}
       \caption{Histograms and QQ-Plots of Seeded Clouds and Un-Seeded Clouds respectively}
       \label{fig:clouds}
@@ -70,12 +70,12 @@
     \subsection*{2}
     We repeat the previous procedure after taking the square root of each data point from both seeded and un-seeded cloud samples.
     \begin{itemize}
-    \item The two sample t-test produces t=2.4246, df = 43.363, and a p-value of 0.01956, which suggests that we reject the null hypothesis and that our two samples are not equal. In this case the 95\% confidence interval is [1.2021,13.0713] with mean x=17.068 and mean y= 9.9313. The transformed data, seen in Fig\ref{fig:sq(clouds)} is still too far from normal for the t-test to be suitable in this case.
+    \item The two sample t-test produces: t=2.4246, df = 43.363, and a p-value of 0.01956, which suggests that we reject the null hypothesis and that our two samples are not equal. In this case the 95\% confidence interval is [1.2021,13.0713] with mean x=17.068 and mean y= 9.9313. The transformed data, seen in Fig\ref{fig:sq(clouds)} is still too far from normal for the t-test to be suitable in this case.
     \item The Mann-Whitney test gives: W=473 with a p-value of 0.01383, suggesting that we reject the null hypothesis, and thus, our samples are not equal. This is the same result as the original data, which is unsurprising considering the test measures the ranks of a combined sample, once again this test is suitable.
     \item The Kolmogorov-Smirnov test gives: D= 0.4231 with a p-value of 0.01905, suggesting that we reject the null hypothesis and that our samples are not equal. Again, this is the same result obtained with the original data, and as this test only measures the difference between histograms, it is again suitable.
     \end{itemize}
     
-    \begin{figure}[!htb]
+    \begin{figure}[H]
       \includegraphics[scale=0.5]{../results/2_2.png}
       \caption{Histograms and QQ-Plots of Seeded Clouds and Un-Seeded Clouds after taking the square root of each data point}
       \label{fig:sq(clouds)}
@@ -84,27 +84,28 @@
     \subsection*{3}
     We repeat the same procedure again, now obtaining the square root of the square root of the original data point in our samples seeded and un-seeded clouds.
     \begin{itemize}
-    \item The two sample t-test produces: t=2.5968, df = 48.826, p-value=0.0124, 95\% confidence interval [0.2196,1.7236], mean x = 3.8789 and mean y = 2.9073. This suggests that we reject the null hypothesis, and that our samples are not equal. If we observe Fig\ref{fig:sqsqclouds}, the data is apparently normal, thus this test is suitable in this case.
+    \item The two sample t-test produces: t=2.5968, df = 48.826, p-value=0.0124, 95\% confidence interval [0.2196,1.7236], mean x = 3.8789 and mean y = 2.9073. This suggests that we reject the null hypothesis, and that our samples are not equal. If we observe Fig\ref{fig:sqsqclouds}, we have no reason to believe our data is not normal, thus this test is suitable in this case.
     \item The Mann-Whitney test gives: W=473 with a p-value of 0.01383, suggesting that we reject the null hypothesis, and thus, our samples are not equal. This is the same result as obtained in both cases before, once again this test is suitable.
     \item The Kolmogorov-Smirnov test gives: D= 0.4231 with a p-value of 0.01905, suggesting that we reject the null hypothesis and that our samples are not equal. Again, this is the same result obtained in the previous two cases, and it is again suitable.
     \end{itemize}
     
-    \begin{figure}[!htb]
+    \begin{figure}[H]
       \includegraphics[scale=0.5]{../results/2_3.png}
       \caption{Histograms and QQ-Plots of Seeded Clouds and Un-Seeded Clouds after taking the square root of each data point twice}
       \label{fig:sqsqclouds}
     \end{figure}
     
-    \begin{figure}[!htb]
+    \begin{figure}[H]
       \includegraphics[scale=0.3]{../results/2_3_nrml.png}
       \caption{Histogram and QQ-Plot of randomly generated normally distributed data of same size as both Seeded and Un-Seeded Clouds}
       \label{fig:normal}
     \end{figure}
     
-    \section{3}
+    \section{}
     \subsection*{1}
+    Using data in \textit{genal.txt} which is a collection of minimum values output by a genetic algorithm, based on different mutation factors, we produce a box plot of these minimum values for each factor. As we can see in Fig \ref{fig:box}, the variances appear to be similar across all factors.
     
-    \begin{figure}[!htb]
+    \begin{figure}[H]
     \centering
       \includegraphics[scale=0.3]{../results/3_1.png}
       \caption{Box Plot of mutation factor and the resulting minimum result obtained}
@@ -112,43 +113,72 @@
     \end{figure}
     
     \subsection*{2}
+    Observing the QQ-Plots of each mutation factor in Fig\ref{fig:qq-genal}, and comparing these to those of a randomly normally distributed sample of the same size (Fig\ref{fig:qq-nrml}), it is obvious they differ significantly, and thus it is not a fair assumption that our data from a normal population.
     
-    \begin{figure}[!htb]
+    \begin{figure}[H]
       \includegraphics[scale=0.4]{../results/3_2_1.png}
       \caption{QQ-Plots for each mutation factor}
       \label{fig:qq-genal}
     \end{figure}
     
-    \begin{figure}[!htb]
+    \begin{figure}[H]
     \centering
       \includegraphics[scale=0.3]{../results/3_2_2.png}
       \caption{QQ-Plot of randomly generated normally distributed population of the same size as those in \textit{genal.txt}}
       \label{fig:qq-nrml}
     \end{figure}
     
-    No
-    
     \subsection*{3}
-    
-    \begin{figure}[!htb]
+    We transform the original data by taking the square root of each data point in our sample, and produce the QQ-Plots as seen in Fig\ref{fig:qq-sqgenal}. Comparing these with those of the random normal QQ-Plot Fig \ref{fig:qq-nrml}, it is clear that they do not differ noticeably, so in this case it is reasonable to assume these samples are from a normal population.
+     
+    \begin{figure}[H]
       \includegraphics[scale=0.4]{../results/3_3.png}
       \caption{QQ-Plot for each mutation factor after take the square root of each data point}
       \label{fig:qq-sqgenal}
     \end{figure}
     
-    Yes
-    
     \subsection*{4}
+    Performing the 1-way Anova test on the new square root data, we obtain the following results:
+    \begin{table}[H]
+    \begin{center}
+    \begin{tabular}{l|lllll}
+        \hline 
+        & Df & Sum & Sq Mean & Sq F Value & Pr(>F) \\
+        \hline
+        Variety & 6 & 7.824 & 1.30408 & 15.987 & 2.2e-16 \\
+        \hline
+        Residuals & 693 & 56.529 & 0.08157\\
+        \hline
+    \end{tabular}
+    \caption{Results of 1-way Anova on square root of \textit{genal.txt} data}
+    \label{table:1anova}
+    \end{center}
+    \end{table}
     
-    Using sq(genal) we find a p-value of 2.2e-16, therefore we reject the null hypothesis
+    With a p-value of 2.2e-16, this suggests that we reject the nully hypothesis, that is to say that the mutation probability does in fact have an influence on the genetic algorithm.
     
     \subsection*{5}
+    If we use the summary() command on the data we have obtained with the 1-way Anova test, we obtain the estimates:
+    \begin{table}[H]
+    \begin{center}
+    \begin{tabular}{c|c|c|c|c|c|c|c|}
+        \hline 
+        mean(X=0.01) - mean(X= ) &  & 0.02 & 0.03 & 0.04 & 0.05 & 0.06 & 0.07 \\
+        \hline
+        Estimate & 0.903272 & -0.145905 & -0.222653 & -0.161817 & -0.074234 & -0.007617 & 0.108791 \\
+        \hline
+    \end{tabular}
+    \caption{Results of 1-way Anova on square root of \textit{genal.txt} data}
+    \label{table:1anova}
+    \end{center}
+    \end{table}
     
-    Based on summary(sqaov) X=0.03 is the best, because 0.9033-0.2227 is the smallest value, and we are estimating the smallest value obtained from an optimization where smaller is better.
+    Based on summary() X=0.03 is the best mutation probability, because 0.9033-0.2227 is the smallest value, and we are estimating the smallest value obtained from an optimization where smaller is better.
     
     \subsection*{6}
+    By making a QQ-Plot of the residuals of our 1-way Anova analysis we obtaing Fig\ref{fig:qq-resid}. It appears to be normal, which suggests that we made a correct assumption that our data is from a normal population once transformed by taking the square root.
     
-    \begin{figure}[!htb]
+    \begin{figure}[H]
     \centering
       \includegraphics[scale=0.4]{../results/3_6.png}
       \caption{QQ-Plot of the residuals of 1-way Anova test}
@@ -157,8 +187,9 @@
     
     \section{4}
     \subsection*{1}
+    From the data in \textit{dogs.txt}, we make a box plot that measures the plasma epinephrine concentrations of dogs under various anaesthesias, Fig \ref{fig:dbox}.
     
-    \begin{figure}[!htb]
+    \begin{figure}[H]
     \centering
       \includegraphics[scale=0.3]{../results/4_1.png}
       \caption{Box plot of plasma epinephrine concentrations under various anaesthesias}
@@ -166,24 +197,70 @@
     \end{figure}
     
     \subsection*{2}
+    By making QQ-Plots of our samples for each type of anaesthesia (Fig\ref{fig:qq dog}) we can see that the data appears normally distributed, we do not believe however that this is a reasonable assumption to make as the sample sizes are all so small they can easily be misinterpreted.
     
-    \begin{figure}[!htb]
+    \begin{figure}[H]
     \centering
       \includegraphics[scale=0.4]{../results/4_2.png}
       \caption{QQ-Plots for data from each type of anaesthesia}
       \label{fig:qq dog}
     \end{figure}
     
-    No, the sample sizes are far too small to reasonably judge whether or not they are normal populations.
     \subsection*{3}
-    Reject the null, p-value 0.011, estimated value of Isofluorane: 0.4340, of Halothane: 0.469 and of Cyclopropane: 0.853
+    Using 1-way Anova to test the influence of the different anaesthesias we obtain:
+    
+    \begin{table}[H]
+    \begin{center}
+    \begin{tabular}{l|lllll}
+        \hline 
+        & Df & Sum & Sq Mean & Sq F Value & Pr(>F) \\
+        \hline
+        Variety & 2 & 1.0808 & 0.54040 & 5.355 & 0.011 \\
+        \hline
+        Residuals & 27 & 2.7247 & 0.10092 \\
+        \hline
+    \end{tabular}
+    \caption{Results of 1-way Anova on \textit{dogs.txt} data}
+    \label{table:2anova}
+    \end{center}
+    \end{table}
+    
+    With a p-value=0.011 we should reject the null hypothesis, and thus the different drugs do affect the plasma epinephrine.
+    
+    Using the summary() command in R on our Anova data again we obtain:
+    
+    \begin{table}[H]
+    \begin{center}
+    \begin{tabular}{c|c|c|c|}
+        \hline 
+        mean(isoflourane) - mean( )&  & halothane  & cyclopropane \\
+        \hline
+        Estimate & 0.4340 & 0.0350 & 0.4190\\
+        \hline
+    \end{tabular}
+    \caption{Estimated values for plasma epinephrine concentrations for different drugs}
+    \label{table:doganova}
+    \end{center}
+    \end{table}
+    
+    Reject the null, p-value 0.011, estimated value of Isofluorane: 0.4340, of Halothane: 0.469 and of Cyclopropane: 0.853 based on table \ref{table:doganova}.
+    
     \subsection*{4}
-    The Kruskal-Wallis test for the same hypothesis gives a p-value of 0.05948, thus we do not reject the null hypothesis. 
+    
+    The Kruskal-Wallis test for the same hypothesis gives Kruskal-Wallis chi-squared = 5.6442, df=2, p-value=0.05948, which suggests that we do not reject the null hypothesis, and that the different drugs do not have an influence on the plasma epinephrine concentrations.
+     
     \subsection*{5}
     The differences between the 1-way Anova and the Kruskal-Wallis test could be explained by our initial assumption that the 3 samples represented in the data do not in fact come from a normal population, because 1-way Anova assumes that we are sampling from normal populations this could produce conflicting results, though as we see in Figure \ref{fig:dog-resid} the residuals do not deviate from the normal significantly.
-    It is perhaps more compelling that the differences between the 1-way Anova and the Kruskal-Wallis are due to the fact that 1-way Anova assumes our populations have equal population variances, and as is observed in Figure \ref{fig:dbox}, they are obviously not equal.
+    It is perhaps more compelling that the differences between the 1-way Anova and the Kruskal-Wallis are due to the fact that 1-way Anova assumes our populations have equal population variances, and as is observed in Figure \ref{fig:dbox}, they are obviously not equal. If we calculate these population variances explicitly they are:
+    \begin{itemize}
+    \item For isofluorane, population variance 0.05967111
+    \item for halothane, population variance 0.04214333
+    \item for cyclopropane, population variance 0.2009344 
+    \end{itemize}
     
-    \begin{figure}[!htb]
+    So clearly the population variance for cyclopropane is too large in comparison to the other two drugs to use 1-way Anova effectively.
+
+    \begin{figure}[H]
     \centering
       \includegraphics[scale=0.3]{../results/4_5.png}
       \caption{QQ-Plot of residuals of 1-way Anova analysis}

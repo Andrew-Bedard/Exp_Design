@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.27)  29 APR 2015 11:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.27)  29 APR 2015 12:13
 entering extended mode
 **A3.tex
 (E:\School\Exp_Design\Assgn3\report\A3.tex
@@ -134,7 +134,11 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 \@float@every@table=\toks18
 
-(E:\School\Exp_Design\Assgn3\report\A3.aux)
+(E:\School\Exp_Design\Assgn3\report\A3.aux
+
+LaTeX Warning: Label `table:1anova' multiply defined.
+
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
@@ -147,8 +151,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count102
 \scratchdimen=\dimen118
@@ -179,6 +182,9 @@ File: ../results/Pairs.png Graphic file (type png)
 <use ../results/Pairs.png>
 Package pdftex.def Info: ../results/Pairs.png used on input line 23.
 (pdftex.def)             Requested size: 343.28514pt x 307.75212pt.
+ [1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 32.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -194,109 +200,115 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
- [1
-
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Overfull \hbox (13.55618pt too wide) in paragraph at lines 59--60
-[]\OT1/cmr/m/n/10 The two sam-ple t-test pro-duces a 95% con-fi-dence in-ter-va
-l of [-4.7405,559.5859]
- []
-
-[2 <E:/School/Exp_Design/Assgn3/results/Pairs.png>]
+ [2 <E:/School/Exp_Design/Assgn3/results/Pairs.png>]
 <../results/2_1.png, id=16, 652.4375pt x 501.875pt>
 File: ../results/2_1.png Graphic file (type png)
  <use ../results/2_1.png>
-Package pdftex.def Info: ../results/2_1.png used on input line 73.
+Package pdftex.def Info: ../results/2_1.png used on input line 65.
 (pdftex.def)             Requested size: 326.21794pt x 250.93687pt.
 
-[3] <../results/2_2.png, id=20, 652.4375pt x 501.875pt>
+[3] [4 <E:/School/Exp_Design/Assgn3/results/2_1.png>]
+<../results/2_2.png, id=24, 652.4375pt x 501.875pt>
 File: ../results/2_2.png Graphic file (type png)
-
-<use ../results/2_2.png>
-Package pdftex.def Info: ../results/2_2.png used on input line 90.
+ <use ../results/2_2.png>
+Package pdftex.def Info: ../results/2_2.png used on input line 79.
 (pdftex.def)             Requested size: 326.21794pt x 250.93687pt.
- <../results/2_3.png, id=21, 652.4375pt x 501.875pt>
+
+[5 <E:/School/Exp_Design/Assgn3/results/2_2.png>]
+<../results/2_3.png, id=29, 652.4375pt x 501.875pt>
 File: ../results/2_3.png Graphic file (type png)
-
-<use ../results/2_3.png>
-Package pdftex.def Info: ../results/2_3.png used on input line 105.
+ <use ../results/2_3.png>
+Package pdftex.def Info: ../results/2_3.png used on input line 93.
 (pdftex.def)             Requested size: 326.21794pt x 250.93687pt.
 
-<../results/2_3_nrml.png, id=22, 877.2775pt x 444.66125pt>
+<../results/2_3_nrml.png, id=30, 877.2775pt x 444.66125pt>
 File: ../results/2_3_nrml.png Graphic file (type png)
 
 <use ../results/2_3_nrml.png>
-Package pdftex.def Info: ../results/2_3_nrml.png used on input line 111.
+Package pdftex.def Info: ../results/2_3_nrml.png used on input line 99.
 (pdftex.def)             Requested size: 263.18527pt x 133.3994pt.
-
-<../results/3_1.png, id=23, 805.0075pt x 727.71875pt>
+ [6 <E:/School/Exp_Design/Assgn3/results/2_3.png> <E:/School/Exp_Design/Assgn3/
+results/2_3_nrml.png>]
+<../results/3_1.png, id=36, 805.0075pt x 727.71875pt>
 File: ../results/3_1.png Graphic file (type png)
  <use ../results/3_1.png>
-Package pdftex.def Info: ../results/3_1.png used on input line 121.
+Package pdftex.def Info: ../results/3_1.png used on input line 110.
 (pdftex.def)             Requested size: 241.50412pt x 218.3173pt.
 
-<../results/3_2_1.png, id=24, 1003.75pt x 1003.75pt>
+<../results/3_2_1.png, id=37, 1003.75pt x 1003.75pt>
 File: ../results/3_2_1.png Graphic file (type png)
 
 <use ../results/3_2_1.png>
-Package pdftex.def Info: ../results/3_2_1.png used on input line 129.
+Package pdftex.def Info: ../results/3_2_1.png used on input line 119.
 (pdftex.def)             Requested size: 401.49289pt x 401.49289pt.
 
-Overfull \hbox (56.49289pt too wide) in paragraph at lines 129--130
+Overfull \hbox (56.49289pt too wide) in paragraph at lines 119--120
 [][] 
- []
-
-<../results/3_2_2.png, id=25, 702.625pt x 702.625pt>
-File: ../results/3_2_2.png Graphic file (type png)
-
-<use ../results/3_2_2.png>
-Package pdftex.def Info: ../results/3_2_2.png used on input line 136.
-(pdftex.def)             Requested size: 210.78912pt x 210.78912pt.
- [4 <E:/School/Exp_Design/Assgn3/results/2_1.png>]
-<../results/3_3.png, id=30, 1003.75pt x 1003.75pt>
-File: ../results/3_3.png Graphic file (type png)
- <use ../results/3_3.png>
-Package pdftex.def Info: ../results/3_3.png used on input line 146.
-(pdftex.def)             Requested size: 401.49289pt x 401.49289pt.
-
-Overfull \hbox (56.49289pt too wide) in paragraph at lines 146--147
-[][] 
- []
-
-[5 <E:/School/Exp_Design/Assgn3/results/2_2.png>]
-<../results/3_6.png, id=35, 546.04pt x 440.64626pt>
-File: ../results/3_6.png Graphic file (type png)
- <use ../results/3_6.png>
-Package pdftex.def Info: ../results/3_6.png used on input line 165.
-(pdftex.def)             Requested size: 218.41212pt x 176.25537pt.
-
-<../results/4_1.png, id=36, 670.505pt x 619.31375pt>
-File: ../results/4_1.png Graphic file (type png)
- <use ../results/4_1.png>
-Package pdftex.def Info: ../results/4_1.png used on input line 175.
-(pdftex.def)             Requested size: 201.15305pt x 185.79555pt.
-
-[6 <E:/School/Exp_Design/Assgn3/results/2_3.png> <E:/School/Exp_Design/Assgn3/r
-esults/2_3_nrml.png>] <../results/4_2.png, id=42, 606.265pt x 628.3475pt>
-File: ../results/4_2.png Graphic file (type png)
-
-<use ../results/4_2.png>
-Package pdftex.def Info: ../results/4_2.png used on input line 184.
-(pdftex.def)             Requested size: 242.5017pt x 251.33455pt.
-
-Overfull \hbox (8.72295pt too wide) in paragraph at lines 191--192
-\OT1/cmr/m/n/10 Reject the null, p-value 0.011, es-ti-mated value of Isoflu-o-r
-ane: 0.4340, of Halothane:
  []
 
 [7 <E:/School/Exp_Design/Assgn3/results/3_1.png>]
-<../results/4_5.png, id=48, 544.0325pt x 450.68375pt>
+<../results/3_2_2.png, id=43, 702.625pt x 702.625pt>
+File: ../results/3_2_2.png Graphic file (type png)
+
+<use ../results/3_2_2.png>
+Package pdftex.def Info: ../results/3_2_2.png used on input line 126.
+(pdftex.def)             Requested size: 210.78912pt x 210.78912pt.
+ [8 <E:/School/Exp_Design/Assgn3/results/3_2_1.png>]
+<../results/3_3.png, id=48, 1003.75pt x 1003.75pt>
+File: ../results/3_3.png Graphic file (type png)
+ <use ../results/3_3.png>
+Package pdftex.def Info: ../results/3_3.png used on input line 135.
+(pdftex.def)             Requested size: 401.49289pt x 401.49289pt.
+
+Overfull \hbox (56.49289pt too wide) in paragraph at lines 135--136
+[][] 
+ []
+
+[9 <E:/School/Exp_Design/Assgn3/results/3_2_2.png>] [10 <E:/School/Exp_Design/A
+ssgn3/results/3_3.png>]
+Overfull \hbox (156.00105pt too wide) in paragraph at lines 164--171
+ [] 
+ []
+
+
+Overfull \hbox (3.19513pt too wide) in paragraph at lines 176--177
+[]\OT1/cmr/m/n/10 Based on sum-mary() X=0.03 is the best mu-ta-tion prob-a-bil-
+ity, be-cause 0.9033-
+ []
+
+<../results/3_6.png, id=57, 546.04pt x 440.64626pt>
+File: ../results/3_6.png Graphic file (type png)
+ <use ../results/3_6.png>
+Package pdftex.def Info: ../results/3_6.png used on input line 183.
+(pdftex.def)             Requested size: 218.41212pt x 176.25537pt.
+
+[11] <../results/4_1.png, id=61, 670.505pt x 619.31375pt>
+File: ../results/4_1.png Graphic file (type png)
+
+<use ../results/4_1.png>
+Package pdftex.def Info: ../results/4_1.png used on input line 194.
+(pdftex.def)             Requested size: 201.15305pt x 185.79555pt.
+ [12 <E:/School/Exp_Design/Assgn3/results/3_6.png> <E:/School/Exp_Design/Assgn3
+/results/4_1.png>]
+<../results/4_2.png, id=67, 606.265pt x 628.3475pt>
+File: ../results/4_2.png Graphic file (type png)
+ <use ../results/4_2.png>
+Package pdftex.def Info: ../results/4_2.png used on input line 204.
+(pdftex.def)             Requested size: 242.5017pt x 251.33455pt.
+
+[13 <E:/School/Exp_Design/Assgn3/results/4_2.png>]
+Overfull \hbox (0.11166pt too wide) in paragraph at lines 250--251
+\OT1/cmr/m/n/10 The Kruskal-Wallis test for the same hy-poth-e-sis gives Kruska
+l-Wallis chi-squared
+ []
+
+<../results/4_5.png, id=73, 544.0325pt x 450.68375pt>
 File: ../results/4_5.png Graphic file (type png)
  <use ../results/4_5.png>
-Package pdftex.def Info: ../results/4_5.png used on input line 200.
+Package pdftex.def Info: ../results/4_5.png used on input line 265.
 (pdftex.def)             Requested size: 163.211pt x 135.20616pt.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+[14] ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang2.sty"
@@ -304,47 +316,44 @@ File: lstlang2.sty 2014/09/06 1.5e listings language file
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang3.sty"
 File: lstlang3.sty 2014/09/06 1.5e listings language file
-) [8 <E:/School/Exp_Design/Assgn3/results/3_2_1.png>]
-Overfull \hbox (33.00385pt too wide) in paragraph at lines 214--215
+)
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 279--280
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
-[9 <E:/School/Exp_Design/Assgn3/results/3_2_2.png>] [10 <E:/School/Exp_Design/A
-ssgn3/results/3_3.png>] [11 <E:/School/Exp_Design/Assgn3/results/3_6.png> <E:/S
-chool/Exp_Design/Assgn3/results/4_1.png>] [12 <E:/School/Exp_Design/Assgn3/resu
-lts/4_2.png> <E:/School/Exp_Design/Assgn3/results/4_5.png>]
-Overfull \hbox (27.00378pt too wide) in paragraph at lines 292--293
+[15 <E:/School/Exp_Design/Assgn3/results/4_5.png>] [16]
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 357--358
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (45.00397pt too wide) in paragraph at lines 296--297
+Overfull \hbox (45.00397pt too wide) in paragraph at lines 361--362
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[13]
-Overfull \hbox (27.00378pt too wide) in paragraph at lines 304--305
+
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 369--370
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (45.00397pt too wide) in paragraph at lines 308--309
+Overfull \hbox (45.00397pt too wide) in paragraph at lines 373--374
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[14] [15] (E:\School\Exp_Design\Assgn3\report\A3.aux)
+[17] [18] (E:\School\Exp_Design\Assgn3\report\A3.aux)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4519 strings out of 493921
- 65836 string characters out of 3144864
- 166654 words of memory out of 3000000
- 7798 multiletter control sequences out of 15000+200000
+ 4523 strings out of 493921
+ 65890 string characters out of 3144864
+ 166057 words of memory out of 3000000
+ 7802 multiletter control sequences out of 15000+200000
  8241 words of font info for 29 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 36i,8n,43p,771b,1638s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,8n,43p,795b,1638s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/P
@@ -352,9 +361,9 @@ rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Prog
 ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on A3.pdf (15 pages, 227009 bytes).
+Output written on A3.pdf (18 pages, 231606 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
+ 114 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
