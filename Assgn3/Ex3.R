@@ -1,22 +1,29 @@
 #3.1
 genal = read.table("genal.txt", header=T)
+len=length(genal[,1])
+nrml=rnorm(len)
 
-boxplot(genal)
+par(mfrow=c(1,1));boxplot(genal)
 
 #3.2
 #Loops through, creating QQ-plot for each mutation probability
 par(mfrow=c(3,3))
 for (i in 1:7) {
-  qqnorm(genal[,i],main =paste("Normal Q-Q Plot for Mutation Probabiliy =",i/10))
+  qqnorm(genal[,i],
+         main =paste("Normal Q-Q Plot for Mutation Probabiliy =",
+                     i/100))
 }
-
+#qqplot of normal random sample of same size as genal[,i]
+par(mfrow=c(1,1));qqnorm(nrml)
 #3.3
 sqgenal=sqrt(genal)
 
 #Loops through, creating QQ-plot for each mutation probability
 par(mfrow=c(3,3))
 for (i in 1:7) {
-  qqnorm(sqgenal[,i],main =paste("Normal Q-Q Plot for Mutation Probabiliy =",i/10))
+  qqnorm(sqgenal[,i],
+         main =paste("Normal Q-Q Plot for Mutation Probabiliy =",
+                     i/10))
 }
 
 #3.4

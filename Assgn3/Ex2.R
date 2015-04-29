@@ -4,8 +4,11 @@ len = length(clouds[,1])
 nrml = rnorm(len)
 
 #Histograms,boxplots,qqplots to see if data is normal
-hist(clouds[,1])
-hist(clouds[,2])
+par(mfrow=c(2,2))
+hist(clouds[,1],
+     main="Histogram of Seeded Clouds")
+hist(clouds[,2],
+     main="Histogram of Un-Seeded Clouds")
 qqnorm(clouds[,1])
 qqnorm(clouds[,2])
 #These graphs should show the data is not normal
@@ -21,6 +24,7 @@ ks.test(clouds[,1],clouds[,2])
 sqclouds = sqrt(clouds)
 
 #Histograms,boxplots,qqplots to see if data is normal
+par(mfrow=c(2,2))
 hist(sqclouds[,1])
 hist(sqclouds[,2])
 qqnorm(sqclouds[,1])
@@ -38,6 +42,7 @@ ks.test(sqclouds[,1],sqclouds[,2])
 sq2clouds = sqrt(sqclouds)
 
 #Histograms,boxplots,qqplots to see if data is normal
+par(mfrow=c(2,2))
 hist(sq2clouds[,1])
 hist(sq2clouds[,2])
 qqnorm(sq2clouds[,1])
@@ -51,6 +56,7 @@ wilcox.test(sq2clouds[ ,1],sq2clouds[ ,2])
 #Kolmogorov-Smirnov test
 ks.test(sq2clouds[,1],sq2clouds[,2])
 
+par(mfrow=c(1,2))
 hist(nrml, prob=TRUE)
 curve(dnorm(x,mean=mean(nrml),sd=sd(nrml)), add=TRUE)
 qqnorm(nrml)

@@ -1,14 +1,14 @@
 #4.1
 
 dogs = read.table("dogs.txt", header=T)
-
+len=length(dogs[,1])
 boxplot(dogs)
 
 #4.2
 par(mfrow=c(2,2))
-for (i in 1:3){
-  qqnorm(dogs[,i])
-}
+qqnorm(dogs[,1],ylab="Isofluorane Concentration")
+qqnorm(dogs[,2],ylab="Halothane Concentration")
+qqnorm(dogs[,3],ylab="Cyclopropane Concentration")
 
 #4.3
 dogframe = data.frame(yield=as.vector(as.matrix(dogs)),
@@ -17,10 +17,19 @@ dogaov=lm(yield~variety,data=dogframe)
 anova(dogaov)
 summary(dogaov)
 
-#u1=0.4340, u2=0.0350+0.4340, u3=0.4190+4340
+#Calculate expected value
+u1=0.4340; 
+u2=0.0350+u1
+u3=0.4190+u1
 
+print(u1,u2,u3)
 #4.4
 
 attach(dogframe)
 kruskal.test(yield,variety)
 par(mfrow=c(1,1));qqnorm(dogaov$residuals)
+
+#Calculate and print population variances
+for (i in 1:3){
+  print(sum((dogs[,i]-mean(dogs[,i]))^2)/(len-1))
+}
