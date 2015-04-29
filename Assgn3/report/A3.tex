@@ -8,7 +8,7 @@
 \floatstyle{plaintop}
 \restylefloat{table}
 
-\title{Experimental Design and Data Analysis: Assignment 2}
+\title{Experimental Design and Data Analysis: Assignment 3}
 \author{Andrew Bedard(2566978) \& Simone van Gompel(2567525) \\ Group 19}
 
 \begin{document}
@@ -19,7 +19,7 @@
   \subsection*{1}
   Using data from \textit{peruvians.txt} we use the pairs command in R to produce a scatter plot of every variable against every other. The result can be seen in Fig:\ref{fig:Pairs}. From this figure, the variables age and weight seem to have a linear relationship, which would suggest that they are correlated.
 
-    \begin{figure}[H]
+    \begin{figure}
       \includegraphics[scale=0.6]{../results/Pairs.png}
       \caption{Pairwise scatterplots of the dataset peruvians}
       \label{fig:Pairs}
@@ -155,17 +155,17 @@
     \end{center}
     \end{table}
     
-    With a p-value of 2.2e-16, this suggests that we reject the nully hypothesis, that is to say that the mutation probability does in fact have an influence on the genetic algorithm.
+    With a p-value of 2.2e-16, this suggests that we reject the null hypothesis, that is to say that the mutation probability does in fact have an influence on the genetic algorithm.
     
     \subsection*{5}
     If we use the summary() command on the data we have obtained with the 1-way Anova test, we obtain the estimates:
     \begin{table}[H]
     \begin{center}
-    \begin{tabular}{c|c|c|c|c|c|c|c|}
+    \begin{tabular}{c|c|c|c|c|c|c|c}
         \hline 
         mean(X=0.01) - mean(X= ) &  & 0.02 & 0.03 & 0.04 & 0.05 & 0.06 & 0.07 \\
         \hline
-        Estimate & 0.903272 & -0.145905 & -0.222653 & -0.161817 & -0.074234 & -0.007617 & 0.108791 \\
+        Estimate & 0.9033 & -0.1459 & -0.2227 & -0.1618 & -0.0742 & -0.0076 & 0.1088 \\
         \hline
     \end{tabular}
     \caption{Results of 1-way Anova on square root of \textit{genal.txt} data}
@@ -174,7 +174,7 @@
     \end{table}
     
     Based on summary() X=0.03 is the best mutation probability, because 0.9033-0.2227 is the smallest value, and we are estimating the smallest value obtained from an optimization where smaller is better.
-    
+      
     \subsection*{6}
     By making a QQ-Plot of the residuals of our 1-way Anova analysis we obtaing Fig\ref{fig:qq-resid}. It appears to be normal, which suggests that we made a correct assumption that our data is from a normal population once transformed by taking the square root.
     
@@ -254,8 +254,8 @@
     It is perhaps more compelling that the differences between the 1-way Anova and the Kruskal-Wallis are due to the fact that 1-way Anova assumes our populations have equal population variances, and as is observed in Figure \ref{fig:dbox}, they are obviously not equal. If we calculate these population variances explicitly they are:
     \begin{itemize}
     \item For isofluorane, population variance 0.05967111
-    \item for halothane, population variance 0.04214333
-    \item for cyclopropane, population variance 0.2009344 
+    \item For halothane, population variance 0.04214333
+    \item For cyclopropane, population variance 0.2009344 
     \end{itemize}
     
     So clearly the population variance for cyclopropane is too large in comparison to the other two drugs to use 1-way Anova effectively.

@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.27)  29 APR 2015 12:19
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.10)  29 APR 2015 12:36
 entering extended mode
 **A3.tex
-(E:\School\Exp_Design\Assgn3\report\A3.tex
+(C:\Users\Simone\Documents\Master\ExpDesign\Assgn3\report\A3.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -134,7 +134,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 \@float@every@table=\toks18
 
-(E:\School\Exp_Design\Assgn3\report\A3.aux
+(C:\Users\Simone\Documents\Master\ExpDesign\Assgn3\report\A3.aux
 
 LaTeX Warning: Label `table:1anova' multiply defined.
 
@@ -182,9 +182,6 @@ File: ../results/Pairs.png Graphic file (type png)
 <use ../results/Pairs.png>
 Package pdftex.def Info: ../results/Pairs.png used on input line 23.
 (pdftex.def)             Requested size: 343.28514pt x 307.75212pt.
- [1
-
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 32.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -200,21 +197,24 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
- [2 <E:/School/Exp_Design/Assgn3/results/Pairs.png>]
+ [1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2 <C:/Users/Simone/Docum
+ents/Master/ExpDesign/Assgn3/results/Pairs.png>]
 <../results/2_1.png, id=16, 652.4375pt x 501.875pt>
 File: ../results/2_1.png Graphic file (type png)
  <use ../results/2_1.png>
 Package pdftex.def Info: ../results/2_1.png used on input line 65.
 (pdftex.def)             Requested size: 326.21794pt x 250.93687pt.
 
-[3] [4 <E:/School/Exp_Design/Assgn3/results/2_1.png>]
+[3] [4 <C:/Users/Simone/Documents/Master/ExpDesign/Assgn3/results/2_1.png>]
 <../results/2_2.png, id=24, 652.4375pt x 501.875pt>
 File: ../results/2_2.png Graphic file (type png)
  <use ../results/2_2.png>
 Package pdftex.def Info: ../results/2_2.png used on input line 79.
 (pdftex.def)             Requested size: 326.21794pt x 250.93687pt.
 
-[5 <E:/School/Exp_Design/Assgn3/results/2_2.png>]
+[5 <C:/Users/Simone/Documents/Master/ExpDesign/Assgn3/results/2_2.png>]
 <../results/2_3.png, id=29, 652.4375pt x 501.875pt>
 File: ../results/2_3.png Graphic file (type png)
  <use ../results/2_3.png>
@@ -227,15 +227,15 @@ File: ../results/2_3_nrml.png Graphic file (type png)
 <use ../results/2_3_nrml.png>
 Package pdftex.def Info: ../results/2_3_nrml.png used on input line 99.
 (pdftex.def)             Requested size: 263.18527pt x 133.3994pt.
- [6 <E:/School/Exp_Design/Assgn3/results/2_3.png> <E:/School/Exp_Design/Assgn3/
-results/2_3_nrml.png>]
-<../results/3_1.png, id=36, 805.0075pt x 727.71875pt>
+ [6 <C:/Users/Simone/Documents/Master/ExpDesign/Assgn3/results/2_3.png> <C:/Use
+rs/Simone/Documents/Master/ExpDesign/Assgn3/results/2_3_nrml.png>] <../results/
+3_1.png, id=36, 805.0075pt x 727.71875pt>
 File: ../results/3_1.png Graphic file (type png)
- <use ../results/3_1.png>
+
+<use ../results/3_1.png>
 Package pdftex.def Info: ../results/3_1.png used on input line 110.
 (pdftex.def)             Requested size: 241.50412pt x 218.3173pt.
-
-<../results/3_2_1.png, id=37, 1003.75pt x 1003.75pt>
+ <../results/3_2_1.png, id=37, 1003.75pt x 1003.75pt>
 File: ../results/3_2_1.png Graphic file (type png)
 
 <use ../results/3_2_1.png>
@@ -246,17 +246,18 @@ Overfull \hbox (56.49289pt too wide) in paragraph at lines 119--120
 [][] 
  []
 
-[7 <E:/School/Exp_Design/Assgn3/results/3_1.png>]
+[7 <C:/Users/Simone/Documents/Master/ExpDesign/Assgn3/results/3_1.png>]
 <../results/3_2_2.png, id=43, 702.625pt x 702.625pt>
 File: ../results/3_2_2.png Graphic file (type png)
 
 <use ../results/3_2_2.png>
 Package pdftex.def Info: ../results/3_2_2.png used on input line 126.
 (pdftex.def)             Requested size: 210.78912pt x 210.78912pt.
- [8 <E:/School/Exp_Design/Assgn3/results/3_2_1.png>]
-<../results/3_3.png, id=48, 1003.75pt x 1003.75pt>
+ [8 <C:/Users/Simone/Documents/Master/ExpDesign/Assgn3/results/3_2_1.png>] <../
+results/3_3.png, id=48, 1003.75pt x 1003.75pt>
 File: ../results/3_3.png Graphic file (type png)
- <use ../results/3_3.png>
+
+<use ../results/3_3.png>
 Package pdftex.def Info: ../results/3_3.png used on input line 135.
 (pdftex.def)             Requested size: 401.49289pt x 401.49289pt.
 
@@ -264,9 +265,9 @@ Overfull \hbox (56.49289pt too wide) in paragraph at lines 135--136
 [][] 
  []
 
-[9 <E:/School/Exp_Design/Assgn3/results/3_2_2.png>] [10 <E:/School/Exp_Design/A
-ssgn3/results/3_3.png>]
-Overfull \hbox (156.00105pt too wide) in paragraph at lines 164--171
+[9 <C:/Users/Simone/Documents/Master/ExpDesign/Assgn3/results/3_2_2.png>]
+[10 <C:/Users/Simone/Documents/Master/ExpDesign/Assgn3/results/3_3.png>]
+Overfull \hbox (86.00084pt too wide) in paragraph at lines 164--171
  [] 
  []
 
@@ -288,15 +289,15 @@ File: ../results/4_1.png Graphic file (type png)
 <use ../results/4_1.png>
 Package pdftex.def Info: ../results/4_1.png used on input line 194.
 (pdftex.def)             Requested size: 201.15305pt x 185.79555pt.
- [12 <E:/School/Exp_Design/Assgn3/results/3_6.png> <E:/School/Exp_Design/Assgn3
-/results/4_1.png>]
-<../results/4_2.png, id=67, 606.265pt x 628.3475pt>
+ [12 <C:/Users/Simone/Documents/Master/ExpDesign/Assgn3/results/3_6.png> <C:/Us
+ers/Simone/Documents/Master/ExpDesign/Assgn3/results/4_1.png>] <../results/4_2.
+png, id=67, 606.265pt x 628.3475pt>
 File: ../results/4_2.png Graphic file (type png)
- <use ../results/4_2.png>
+
+<use ../results/4_2.png>
 Package pdftex.def Info: ../results/4_2.png used on input line 204.
 (pdftex.def)             Requested size: 242.5017pt x 251.33455pt.
-
-[13 <E:/School/Exp_Design/Assgn3/results/4_2.png>]
+ [13 <C:/Users/Simone/Documents/Master/ExpDesign/Assgn3/results/4_2.png>]
 Overfull \hbox (0.11166pt too wide) in paragraph at lines 250--251
 \OT1/cmr/m/n/10 The Kruskal-Wallis test for the same hy-poth-e-sis gives Kruska
 l-Wallis chi-squared
@@ -321,7 +322,8 @@ Overfull \hbox (33.00385pt too wide) in paragraph at lines 279--280
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
-[15 <E:/School/Exp_Design/Assgn3/results/4_5.png>] [16]
+[15 <C:/Users/Simone/Documents/Master/ExpDesign/Assgn3/results/4_5.png>]
+[16]
 Overfull \hbox (27.00378pt too wide) in paragraph at lines 357--358
 [][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -341,15 +343,15 @@ Overfull \hbox (45.00397pt too wide) in paragraph at lines 373--374
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[17] [18] (E:\School\Exp_Design\Assgn3\report\A3.aux)
+[17] [18] (C:\Users\Simone\Documents\Master\ExpDesign\Assgn3\report\A3.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
  4523 strings out of 493921
- 65890 string characters out of 3144864
- 166057 words of memory out of 3000000
+ 66044 string characters out of 3144873
+ 166063 words of memory out of 3000000
  7802 multiletter control sequences out of 15000+200000
  8241 words of font info for 29 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -361,7 +363,7 @@ rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Prog
 ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on A3.pdf (18 pages, 231628 bytes).
+Output written on A3.pdf (18 pages, 231563 bytes).
 PDF statistics:
  114 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
