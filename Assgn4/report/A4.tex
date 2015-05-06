@@ -22,30 +22,40 @@
       \end{lstlisting}
     
     \subsection*{2}
-      \begin{figure}
-        \includegraphics[scale=0.6]{../results/BoxHoursHum.png}
-        \caption{Boxplot Hours and Humidity}
-        \label{fig:BoxHoursHum}
-      \end{figure}
-      \begin{figure}
-        \includegraphics[scale=0.6]{../results/BoxHoursEnv.png}
-        \caption{Boxplot Hours and Environment}
-        \label{fig:BoxHoursHum}
-      \end{figure}
+      \begin{figure}[H]
+          \centering
+          \subfigure[Humidity]
+          {\includegraphics[scale=0.2]{../results/BoxHoursHum.png} }
+          \subfigure[Environment]
+          {\includegraphics[scale=0.2]{../results/BoxHoursEnv.png} }
+          \caption{Boxplots of Hours with Humidity and Environment}
+          \label{fig:BoxHours}
+      \end{figure} 
     
     \subsection*{3}
-      \begin{figure}
-        \includegraphics[scale=0.6]{../results/IntPlotHoursHum.png}
-        \caption{Interaction Plot Hours and Humidity}
-        \label{fig:IntPlotHoursHum}
-      \end{figure}
-      \begin{figure}
-        \includegraphics[scale=0.6]{../results/IntPlotHoursEnv.png}
-        \caption{Interaction Plot Hours and Environment}
-        \label{fig:IntPlotHoursHum}
+      \begin{figure}[H]
+          \centering
+          \subfigure[Humidity]
+          {\includegraphics[scale=0.2]{../results/IntPlotHoursHum.png} }
+          \subfigure[Environment]
+          {\includegraphics[scale=0.2]{../results/IntPlotHoursEnv.png} }
+          \caption{Interactionplots of Hours with Humidity and Environment}
+          \label{fig:IntPlotHours}
       \end{figure}
     
     \subsection*{4}
+      Analysis of variance on both factors:\\\\
+      \begin{lstlisting}[language=R]
+Analysis of Variance Table
+
+Response: hours
+            Df Sum Sq Mean Sq F value    Pr(>F)    
+environment  2 201904  100952 23.1057 3.674e-05 ***
+humidity     1  26912   26912  6.1596   0.02637 *  
+Residuals   14  61168    4369                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+      \end{lstlisting}
     
     \subsection*{5}
     
