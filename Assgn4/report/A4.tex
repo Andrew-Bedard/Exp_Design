@@ -211,9 +211,9 @@ Linear Hypotheses:
 5 - 4 == 0  -3.2940     0.4673  -7.048   <0.001 ***
       \end{lstlisting}
       \label{tble:p-values}
-        Starter 1 and 4 produce significantly different acidity. This is apparent first from table \ref{tble:estimates} we obtain: $\mu_1 = 7.8260$ and $\mu_4 = 7.8260 + 2.8100 = 10.636$ which are the estimates for starter 1 and 4 respectively. Furthermore the p-value for starter 1 obtained from \ref{tble:estimates} of 1.67e-07 suggests that we reject the null hypothesis that our estimate for starter 1 is equal to that of the rest of the population, and the p-values obtained from \ref{tble:p-values} of 0.001 suggests that we reject the null hypothesis that the estimate for the treatment effect of 4 is equal to each of the other respective treatment effects.
+        Starter 1 and 4 produce significantly different acidity. This is apparent first from exercise 3.2 we obtain: $\mu_1 = 7.8260$ and $\mu_4 = 7.8260 + 2.8100 = 10.636$ which are the estimates for starter 1 and 4 respectively. Furthermore the p-value for starter 1 obtained from exercise 3.2, of 1.67e-07 suggests that we reject the null hypothesis that our estimate for starter 1 is equal to that of the rest of the population, and the p-values obtained from the simultaneous method, of 0.001 suggests that we reject the null hypothesis that the estimate for the treatment effect of 4 is equal to each of the other respective treatment effects.
     \subsection*{4}
-    The p-value for the test $H_0: \alpha_2 = \alpha_1$, where $\alpha_i$ is our estimate of the treatment effects is 0.997, whereas in table \ref{tble:estimates} our p-value for the null hypothesis $H_0: \alpha_2 = \alpha_1$ is 0.84186. It is no coincidence that the p-value obtained from exercise 3.2, is different from that of the simultaneous calculation, this is due to the fact that when calculating the simultaneous p-values for the null hypothesis  $H_0: \alpha_i = \alpha_1$ we are doing so in such a way that the probability of rejecting any null hypothesis in error is less than 0.5. In contrast to the method used in exercise 3.2, where for every null hypothesis our chance of making such an error is $N*0.05$ where N is the number of possibilities to make such an error. In this way the Simultaneous p-values method gives us a higher confidence in our conclusions.
+    The p-value for the test $H_0: \alpha_2 = \alpha_1$, where $\alpha_i$ is our estimate of the treatment effects is 0.997, whereas in exercise 3.2 our p-value for the null hypothesis $H_0: \alpha_2 = \alpha_1$ is 0.84186. It is no coincidence that the p-value obtained from exercise 3.2, is different from that of the simultaneous calculation, this is due to the fact that when calculating the simultaneous p-values for the null hypothesis  $H_0: \alpha_i = \alpha_1$ we are doing so in such a way that the probability of rejecting any null hypothesis in error is less than 0.5. In contrast to the method used in exercise 3.2, where for every null hypothesis our chance of making such an error is $N*0.05$ where N is the number of possibilities to make such an error. In this way the Simultaneous p-values method gives us a higher confidence in our conclusions.
     \subsection*{5}
       \begin{lstlisting}[language=R]
 Linear Hypotheses:
@@ -229,7 +229,7 @@ Linear Hypotheses:
 5 - 3 == 0  0.4960  -0.9931  1.9851
 5 - 4 == 0 -3.2940  -4.7831 -1.8049
       \end{lstlisting}
-    
+    The confidence intervals for testing all differences $\alpha_j - \alpha_{j'}$ for $(i,i' \in {1,2...,5})$ of the main effects for starter with simultaneous confidence level 95\% are (4-1),(4-2),(4-3),(4-5),(5-4) so all those containing starter 4. This is likely due to the fact that the estimated value for starter 4, which was earlier calculated as 10.636, is so much larger than every other estimate, for example all the confidence intervals for (4-i) are greater than 0, and the one interval (5-4) is less than 0.
   \section*{Exercise 4}
     \subsection*{1}
     
