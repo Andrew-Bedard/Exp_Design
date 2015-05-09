@@ -17,11 +17,13 @@
 
   \section*{Exercise 1}
     \subsection*{1}
+    To randomise the 6 combinations of conditions for the slices of bread, we may implement the following R code.
       \begin{lstlisting}[language=R]
       sample_slices = sample(1:18, 18)
       \end{lstlisting}
-    
+Which simply samples 18 numbers from the range 1-18 randomly. In this way, if we have the 
     \subsection*{2}
+    From the data bread.txt we make boxplots of hours before bread becomes mouldy versus the two factors, temperature environment and humidity:
       \begin{figure}[H]
           \centering
           \subfigure[Humidity]
@@ -31,8 +33,10 @@
           \caption{Boxplots of Hours with Humidity and Environment}
           \label{fig:BoxHours}
       \end{figure} 
+    There are a few notable features in these boxplots, mainly that the variances in the two humidity factors are significantly differe, and secondly that there is zero overlap between the values obtained from the cold environment and the other two.
     
     \subsection*{3}
+    Next, by creating interaction plots, by letting one of our factors be the continuous x-axis, and plotting for individual values of the other factor, we obtain the following:
       \begin{figure}[H]
           \centering
           \subfigure[Humidity]
@@ -42,8 +46,10 @@
           \caption{Interactionplots of Hours with Humidity and Environment}
           \label{fig:IntPlotHours}
       \end{figure}
+Notice in Fig \ref{fig:IntPlotHours}:(a) the plot of cold environment is significantly different from those of the other two environments, and again in \ref{fig:IntPlotHours}:(b) where the lines for wet and dry cross. Given the relatively extreme values seen in the box plots \ref{fig:BoxHours}, it is plausible there is an interaction between environment and humidity taking place.     
     
     \subsection*{4}
+    Performing an ANOVA test, to test the null hypothesis that the environment, humidity and the interaction between the two are insignificant we obtain the following:
       \begin{lstlisting}[language=R]
 Analysis of Variance Table
 
@@ -55,11 +61,10 @@ environment:humidity  2  55984   27992  64.796 3.705e-07 ***
 Residuals            12   5184     432                      
 ---
       \end{lstlisting}
+The results are quite compelling, we reject all the null hypothesis with all p-values $<< 0.5$, therefore there is an effect of environment, humidity as well as an interaction between the two.    
     
     \subsection*{5}
-      The interaction effect of both factors are significant.
-      This means that they don't have an additive effect on each other.
-      So if you change both the factors, it will have a negative effect on the hours.
+    This interaction effect, which can be more easily seen in Fig:\ref{fig:IntPlotHours}, appears to is surprisingly complex. For wet humidity, the cold temperature allowed the bread to resist mould the longest, but that drops off dramatically as the temperature moves to intermediate, and again to warm. The effect for the dry humidity was also the longest in the cold environment, and again this decreased when moving to an intermediate temperature, but the time to mould again increased as the environment went to warm. Clearly there are strong effects, that are non-obvious.
     
     \subsection*{6}
       The environment has the biggest numerical influence.
