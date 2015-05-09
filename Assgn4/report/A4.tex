@@ -113,9 +113,27 @@ Kruskal-Wallis chi-squared = 4.22, df = 2, p-value =0.1212
     \end{figure}
     It is difficult to say for certain, there may be a slight curve in the qq-plot \ref{fig:diagnostic}(a) but it looks approximately normal, and the fitted value plot \ref{fig:diagnostic}(b) suggests there is no significant difference in the population variances.
     \subsection*{6}
-    
+	\begin{lstlisting}[language=R]
+Friedman rank sum test
+
+data: time, interface and skill
+Friedman chi-squared = 6.4, df = 2, p-value = 0.04076
+	\end{lstlisting}
+	With a p-value of 0.04076 we reject the null hypothesis, thus we conclude there is an effect of interfaces.
     \subsection*{7}
-    
+    Testing the null hypothesis that the search time is the same for all interface by a ANOVA test, ignoring skill we obtain the following:
+    \begin{lstlisting}[language=R]
+    Analysis of Variance Table
+
+Response: time
+          Df  Sum Sq Mean Sq F value  Pr(>F)  
+interface  2  50.465  25.233  2.8605 0.09642 .
+Residuals 12 105.852   8.821                  
+---
+Signif. codes:  
+0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+	\end{lstlisting}
+	
   \section*{Exercise 3}
     \subsection*{1}
     

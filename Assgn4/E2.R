@@ -26,6 +26,9 @@ interface = factor(search$interface)
 skill = factor(search$skill)
 kruskal.test(time,interface)
 
+#contrasts(interface)=contr.sum
+#srchaov2=lm(time~interface)
+#summary(srchaov2)
 
 #2.4
 #library(multcomp)
@@ -37,10 +40,6 @@ aovsrch=lm(time~skill+interface)
 anova(aovsrch)
 summary(aovsrch)
 
-anovskill = lm(time~skill)
-anova(anovskill)
-anovinter = lm(time~interface)
-anova(anovinter)
 #2.5
 
 
@@ -53,6 +52,9 @@ plot(fitted(aovsrch),residuals(aovsrch))
 friedman.test(time,interface,skill)
 
 #2.7
+anovinter = lm(time~interface)
+anova(anovinter)
+summary(anovinter)
 
-anv = lm(time~skill*interface,data=search)
+anv = lm(time~interface*skill,data=search)
 anova(anv)
