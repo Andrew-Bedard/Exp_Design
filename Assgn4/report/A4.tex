@@ -69,13 +69,49 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
     \subsection*{1}
      
     \subsection*{2}
-    
+	\begin{figure}[H]
+		\centering
+          \subfigure[]
+          {\includegraphics[scale=0.35]{../results/2_2_1.png} }
+          \subfigure[]
+          {\includegraphics[scale=0.35]{../results/2_2_2.png} }
+          \caption{Box Plots of Skill and Interface vs Time}
+          \label{fig:srchbox}
+	\end{figure}
+	
+	\begin{figure}[H]
+	\centering
+		\subfigure[]
+          {\includegraphics[scale=0.35]{../results/2_2_3.png} }
+          \subfigure[]
+          {\includegraphics[scale=0.35]{../results/2_2_4.png} }
+          \caption{Interaction plots of Skill and Interface vs Time}
+          \label{fig:srch_interaction}
+	\end{figure}
+	
+	It is difficult to conclude that there is an interaction between skill and interface as they are clearly not parallel, but they follow the same general trajectory, so this interaction may be due to noise. 
     \subsection*{3}
-    
+    Using the Kurskal-Wallis rank sum test, we test if the distributions of our populations in regards to the time measured for different interfaces are the same, and we obtain the following results:\\\\
+      \begin{lstlisting}[language=R]
+Kruskal-Wallis rank sum test
+
+data: time and interface
+Kruskal-Wallis chi-squared = 4.22, df = 2, p-value =0.1212
+      \end{lstlisting}
+      Thus with a p-value of 0.1212 we reject the null hypothesis that our populations are the same, therefore the search time for all interfaces is not equal.
     \subsection*{4}
     
     \subsection*{5}
-    
+    \begin{figure}[H]
+    \centering
+    	\subfigure[]
+		{\includegraphics[scale=0.35]{../results/2_5_1.png} }
+        \subfigure[]
+        {\includegraphics[scale=0.35]{../results/2_5_2.png} }
+        \caption{Diagnostic Plots}
+        \label{fig:diagnostic}
+    \end{figure}
+    It is difficult to say for certain, there may be a slight curve in the qq-plot \ref{fig:diagnostic}(a) but it looks approximately normal, and the fitted value plot \ref{fig:diagnostic}(b) suggests there is no significant difference in the population variances.
     \subsection*{6}
     
     \subsection*{7}
