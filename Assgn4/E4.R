@@ -13,10 +13,11 @@ anova(cowlm)
 summary(cowlm)
 
 #4.2
-summary(cow$milk)
+summary(cow[0:8,]$milk)
+summary(cow[9:16,]$milk)
 
 #4.3
-cowlmer = lmer(milk ~ treatment + order+(1|id), data=cow, REML=FALSE)
+cowlmer = lmer(milk ~ treatment + order+(1|id), data=cow)
 anova(cowlmer)
 summary(cowlmer)
 

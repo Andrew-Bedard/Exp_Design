@@ -94,6 +94,15 @@ The results are quite compelling, we reject all the null hypothesis with all p-v
     
   \section*{Exercise 2}
     \subsection*{1}
+      The used code can be found in \ref{sec:RE2}.
+      It makes an array with the numbered students and an array with the skill level of the related student.
+      The students are randomly distributed among the three different search engines by using this code:
+      \begin{lstlisting}[language=R]
+block_design = matrix(c(samples[0:5], 
+                        samples[6:10], 
+                        samples[11:15]), 
+                      nrow = 3, ncol = 5)
+      \end{lstlisting}
      
     \subsection*{2}
 	\begin{figure}[H]
@@ -285,10 +294,18 @@ F-statistic: 0.1642 on 2 and 15 DF,  p-value: 0.8501
     We can conclude from the F-value and p-value of 0.0016 and 0.9682 respectively for the treatment effect on milk production, we do not reject the null hypothesis, therefore there is no treatment effect on milk production. Further we observe that the p-value for the null hypothesis that the individual treatments effects are all greater than 0.05, thus we accept the null hypothesis that the treatment effects are equal. This stands to reason as if we do not conclude there is any effect for all treatments, there would be no effect for individual treatments when sample sizes are equal.
     
     \subsection*{2}
+      For the treatment order AB, the summary of milk is:
 	\begin{lstlisting}[language=R]
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  17.10   26.82   33.75   35.12   43.02   55.50 	
+  26.50   28.32   34.15   37.05   43.62   54.00 
     \end{lstlisting}
+      For the treatment order BA, the summary of milk is:
+  \begin{lstlisting}[language=R]
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  21.40   30.45   37.80   37.56   44.90   55.50  
+    \end{lstlisting}
+      From these results one can conclude that the cows with the BA order have a higher milk production than the ones with the AB order.
+
     \subsection*{3}
     \begin{lstlisting}[language=R]
     Analysis of Variance Table
@@ -339,7 +356,7 @@ mean of the differences 0.2444444
   \section{R-Code}
     \subsection{Exercise 1}\label{sec:RE1}
       \begin{lstlisting}[language=R]
-      bread = read.table("bread.txt")
+bread = read.table("bread.txt")
 hours = bread$hours
 humidity = bread$humidity
 environment = bread$environment
@@ -356,25 +373,20 @@ interaction.plot(humidity, environment, hours)
 interaction.plot(environment, humidity, hours)
 
 #1.4
-aovenvhum = lm(hours ~ environment+humidity, data=bread)
+aovenvhum = lm(hours ~ environment*humidity, data=bread)
 anova(aovenvhum)
 
-aovenv = lm(hours ~ environment, data=bread)
-anova(aovenv)
-
-aovhum = lm(hours ~ humidity, data=bread)
-anova(aovhum)
-
-#1.5
-residuals(aovhum)
-qqnorm(residuals(aovhum))
-qqnorm(residuals(aovenv))
+#1.7
 qqnorm(residuals(aovenvhum))
+
+#1.8
+par(mfrow=c(2,2))
+plot(aovenvhum)
 
       \end{lstlisting}
     \subsection{Exercise 2}\label{sec:RE2}
       \begin{lstlisting}[language=R]
-      #Note: The interface is of greatest importance
+#Note: The interface is of greatest importance
 
 search = read.table("search.txt")
 
@@ -435,7 +447,7 @@ anova(anv)
       \end{lstlisting}
     \subsection{Exercise 3}\label{sec:RE3}
       \begin{lstlisting}[language=R]
-      library(multcomp)
+library(multcomp)
 
 cream = read.table("cream.txt",header=T)
 cream$starter = factor(cream$starter)
@@ -458,7 +470,7 @@ confint(tmp)
       \end{lstlisting}
     \subsection{Exercise 4}\label{sec:RE4}
       \begin{lstlisting}[language=R]
-      library(lme4)
+library(lme4)
 
 cow = read.table("cow.txt",header=T)
 cow$order = factor(cow$order)
@@ -473,15 +485,17 @@ anova(cowlm)
 summary(cowlm)
 
 #4.2
-summary(cow$milk)
+summary(cow[0:8,]$milk)
+summary(cow[9:16,]$milk)
 
 #4.3
-cowlmer = lmer(milk ~ treatment + order+(1|id), data=cow, REML=FALSE)
+cowlmer = lmer(milk ~ treatment + order+(1|id), data=cow)
 anova(cowlmer)
 summary(cowlmer)
 
 #4.4
 attach(cow)
 t.test(milk[treatment=="A"],milk[treatment=="B"],paired=TRUE)
+
       \end{lstlisting}
 \end{document}
