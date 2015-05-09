@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.27)  9 MAY 2015 22:59
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.27)  9 MAY 2015 23:20
 entering extended mode
 **A4.tex
 (E:\School\Exp_Design\Assgn4\report\A4.tex
@@ -186,155 +186,149 @@ File: lstlang3.sty 2014/09/06 1.5e listings language file
 File: ../results/BoxHoursHum.png Graphic file (type png)
 
 <use ../results/BoxHoursHum.png>
-Package pdftex.def Info: ../results/BoxHoursHum.png used on input line 28.
+Package pdftex.def Info: ../results/BoxHoursHum.png used on input line 30.
 (pdftex.def)             Requested size: 114.42546pt x 102.58142pt.
 
 <../results/BoxHoursEnv.png, id=2, 572.1375pt x 512.91624pt>
 File: ../results/BoxHoursEnv.png Graphic file (type png)
 
 <use ../results/BoxHoursEnv.png>
-Package pdftex.def Info: ../results/BoxHoursEnv.png used on input line 30.
+Package pdftex.def Info: ../results/BoxHoursEnv.png used on input line 32.
 (pdftex.def)             Requested size: 114.42546pt x 102.58142pt.
 
 <../results/IntPlotHoursHum.png, id=3, 572.1375pt x 512.91624pt>
 File: ../results/IntPlotHoursHum.png Graphic file (type png)
 
 <use ../results/IntPlotHoursHum.png>
-Package pdftex.def Info: ../results/IntPlotHoursHum.png used on input line 39.
+Package pdftex.def Info: ../results/IntPlotHoursHum.png used on input line 43.
 (pdftex.def)             Requested size: 114.42546pt x 102.58142pt.
 
 <../results/IntPlotHoursEnv.png, id=4, 572.1375pt x 512.91624pt>
 File: ../results/IntPlotHoursEnv.png Graphic file (type png)
 
 <use ../results/IntPlotHoursEnv.png>
-Package pdftex.def Info: ../results/IntPlotHoursEnv.png used on input line 41.
+Package pdftex.def Info: ../results/IntPlotHoursEnv.png used on input line 45.
 (pdftex.def)             Requested size: 114.42546pt x 102.58142pt.
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <E:/School/Exp_Design/Assg
 n4/results/BoxHoursHum.png> <E:/School/Exp_Design/Assgn4/results/BoxHoursEnv.pn
 g>]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 51.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 57.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 51.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 57.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 52.
+(Font)              <7> on input line 58.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 52.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 52.
+(Font)              <5> on input line 58.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 58.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 52.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 58.
 
-Overfull \hbox (15.00366pt too wide) in paragraph at lines 52--53
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 58--59
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (15.00366pt too wide) in paragraph at lines 53--54
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 59--60
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (15.00366pt too wide) in paragraph at lines 54--55
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 60--61
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-
-LaTeX Warning: Reference `fig:QQRes' on page 2 undefined on input line 69.
-
-<../results/QQResEnvHum.png, id=17, 572.1375pt x 512.91624pt>
+[2 <E:/School/Exp_Design/Assgn4/results/IntPlotHoursHum.png> <E:/School/Exp_Des
+ign/Assgn4/results/IntPlotHoursEnv.png>]
+<../results/QQResEnvHum.png, id=25, 572.1375pt x 512.91624pt>
 File: ../results/QQResEnvHum.png Graphic file (type png)
 
 <use ../results/QQResEnvHum.png>
-Package pdftex.def Info: ../results/QQResEnvHum.png used on input line 74.
+Package pdftex.def Info: ../results/QQResEnvHum.png used on input line 82.
 (pdftex.def)             Requested size: 228.85094pt x 205.16286pt.
- [2 <E:/School/Exp_Design/Assgn4/results/IntPlotHoursHum.png> <E:/School/Exp_De
-sign/Assgn4/results/IntPlotHoursEnv.png>]
-
-LaTeX Warning: Reference `fig:FitVSRes' on page 3 undefined on input line 80.
 
 <../results/FitVSRes.png, id=26, 572.1375pt x 512.91624pt>
 File: ../results/FitVSRes.png Graphic file (type png)
 
 <use ../results/FitVSRes.png>
-Package pdftex.def Info: ../results/FitVSRes.png used on input line 84.
+Package pdftex.def Info: ../results/FitVSRes.png used on input line 92.
 (pdftex.def)             Requested size: 228.85094pt x 205.16286pt.
-
-<../results/2_2_1.png, id=27, 451.6875pt x 451.6875pt>
+ [3 <E:/School/Exp_Design/Assgn4/results/QQResEnvHum.png>] <../results/2_2_1.pn
+g, id=31, 451.6875pt x 451.6875pt>
 File: ../results/2_2_1.png Graphic file (type png)
 
 <use ../results/2_2_1.png>
-Package pdftex.def Info: ../results/2_2_1.png used on input line 97.
+Package pdftex.def Info: ../results/2_2_1.png used on input line 105.
 (pdftex.def)             Requested size: 158.09299pt x 158.09299pt.
 
-<../results/2_2_2.png, id=28, 451.6875pt x 451.6875pt>
+<../results/2_2_2.png, id=32, 451.6875pt x 451.6875pt>
 File: ../results/2_2_2.png Graphic file (type png)
 
 <use ../results/2_2_2.png>
-Package pdftex.def Info: ../results/2_2_2.png used on input line 99.
+Package pdftex.def Info: ../results/2_2_2.png used on input line 107.
 (pdftex.def)             Requested size: 158.09299pt x 158.09299pt.
- [3 <E:/School/Exp_Design/Assgn4/results/QQResEnvHum.png> <E:/School/Exp_Design
-/Assgn4/results/FitVSRes.png>]
-<../results/2_2_3.png, id=34, 451.6875pt x 451.6875pt>
+
+<../results/2_2_3.png, id=33, 451.6875pt x 451.6875pt>
 File: ../results/2_2_3.png Graphic file (type png)
 
 <use ../results/2_2_3.png>
-Package pdftex.def Info: ../results/2_2_3.png used on input line 107.
+Package pdftex.def Info: ../results/2_2_3.png used on input line 115.
 (pdftex.def)             Requested size: 158.09299pt x 158.09299pt.
 
-<../results/2_2_4.png, id=35, 451.6875pt x 451.6875pt>
+<../results/2_2_4.png, id=34, 451.6875pt x 451.6875pt>
 File: ../results/2_2_4.png Graphic file (type png)
 
 <use ../results/2_2_4.png>
-Package pdftex.def Info: ../results/2_2_4.png used on input line 109.
+Package pdftex.def Info: ../results/2_2_4.png used on input line 117.
 (pdftex.def)             Requested size: 158.09299pt x 158.09299pt.
+ [4 <E:/School/Exp_Design/Assgn4/results/FitVSRes.png> <E:/School/Exp_Design/As
+sgn4/results/2_2_1.png> <E:/School/Exp_Design/Assgn4/results/2_2_2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
-
- []
-
-[4 <E:/School/Exp_Design/Assgn4/results/2_2_1.png> <E:/School/Exp_Design/Assgn4
-/results/2_2_2.png> <E:/School/Exp_Design/Assgn4/results/2_2_3.png> <E:/School/
-Exp_Design/Assgn4/results/2_2_4.png>]
-Overfull \hbox (3.00354pt too wide) in paragraph at lines 121--122
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 129--130
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<../results/2_5_1.png, id=43, 451.6875pt x 451.6875pt>
+<../results/2_5_1.png, id=41, 451.6875pt x 451.6875pt>
 File: ../results/2_5_1.png Graphic file (type png)
 
 <use ../results/2_5_1.png>
-Package pdftex.def Info: ../results/2_5_1.png used on input line 130.
+Package pdftex.def Info: ../results/2_5_1.png used on input line 138.
 (pdftex.def)             Requested size: 158.09299pt x 158.09299pt.
 
-<../results/2_5_2.png, id=44, 451.6875pt x 451.6875pt>
+<../results/2_5_2.png, id=42, 451.6875pt x 451.6875pt>
 File: ../results/2_5_2.png Graphic file (type png)
 
 <use ../results/2_5_2.png>
-Package pdftex.def Info: ../results/2_5_2.png used on input line 132.
+Package pdftex.def Info: ../results/2_5_2.png used on input line 140.
 (pdftex.def)             Requested size: 158.09299pt x 158.09299pt.
- [5 <E:/School/Exp_Design/Assgn4/results/2_5_1.png> <E:/School/Exp_Design/Assgn
-4/results/2_5_2.png>] [6]
-Overfull \hbox (39.0039pt too wide) in paragraph at lines 187--189
+ [5 <E:/School/Exp_Design/Assgn4/results/2_2_3.png> <E:/School/Exp_Design/Assgn
+4/results/2_2_4.png>] [6 <E:/School/Exp_Design/Assgn4/results/2_5_1.png> <E:/Sc
+hool/Exp_Design/Assgn4/results/2_5_2.png>]
+Overfull \hbox (39.0039pt too wide) in paragraph at lines 195--197
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 194.
-[7] [8]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 202.
+[7] [8] [9]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
@@ -366,59 +360,56 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
 
-Overfull \hbox (51.00403pt too wide) in paragraph at lines 273--275
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 281--283
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (15.00365pt too wide) in paragraph at lines 276--277
+Overfull \hbox (15.00365pt too wide) in paragraph at lines 284--285
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[9]
-Overfull \hbox (51.00403pt too wide) in paragraph at lines 326--327
+[10]
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 334--335
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[10] [11]
-Overfull \hbox (3.00354pt too wide) in paragraph at lines 393--394
+[11]
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 401--402
 [][][][][][][][][] 
  []
 
 
-Overfull \hbox (51.00403pt too wide) in paragraph at lines 399--400
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 407--408
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (123.00476pt too wide) in paragraph at lines 400--402
+Overfull \hbox (123.00476pt too wide) in paragraph at lines 408--410
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 402--403
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 403--405
-[][][][][][][][][][][][][][][][][][] 
  []
 
 [12]
-Overfull \hbox (69.00421pt too wide) in paragraph at lines 474--475
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 410--411
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 411--413
+[][][][][][][][][][][][][][][][][][] 
  []
 
 [13]
-Overfull \hbox (21.00372pt too wide) in paragraph at lines 480--481
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 482--483
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 488--489
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [14] (E:\School\Exp_Design\Assgn4\report\A4.aux)
-
-LaTeX Warning: There were undefined references.
-
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
@@ -426,11 +417,11 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Here is how much of TeX's memory you used:
  4628 strings out of 493921
  67363 string characters out of 3144864
- 192238 words of memory out of 3000000
+ 182402 words of memory out of 3000000
  7904 multiletter control sequences out of 15000+200000
  8496 words of font info for 30 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 36i,7n,43p,873b,1623s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,8n,43p,873b,1623s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb
 ><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
 C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:
@@ -445,7 +436,7 @@ iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files (x86)/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on A4.pdf (14 pages, 234381 bytes).
+Output written on A4.pdf (14 pages, 236540 bytes).
 PDF statistics:
  128 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
