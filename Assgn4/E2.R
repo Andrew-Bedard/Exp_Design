@@ -1,3 +1,5 @@
+#Note: The interface is of greatest importance
+
 search = read.table("search.txt")
 
 time =search$time
@@ -5,15 +7,11 @@ skill = search$skill
 interface = search$interface
 
 #2.1
-searchframe = data.frame(time=as.vector(as.matrix(search)),
-                         student=factor(rep(1:3,each=15)))
+#student = as.vector(as.matrix)
 
-library(multcomp)
-require(multcomp)
-srcaov = lm(time~skill*interface,data=search)
-summary(srcaov)
+I=3; B=5; N=1
+for (i in 1:B) print(sample(1:(N*I)))
 
-srcmult = glht(srcaov,linfct=mcp(interface="Tukey"))
 #2.2
 
 
@@ -25,19 +23,35 @@ interaction.plot(interface,skill,time,lwd=2,col=rainbow(8))
 
 #2.3
 kruskal.test(time,interface)
+#look at previous assignment for this one
+
 
 #2.4
+#library(multcomp)
+#srcaov = lm(time~skill*interface,data=search)
+#summary(srcaov)
+#srcmult = glht(srcaov,linfct=mcp(skill="Tukey"))
 
-xtabs(time~skill+interface,data=search)
+aovsrch=lm(time~skill+interface,data=search)
+anova(aovsrch)
+summary(aovsrch)
+
+anovskill = lm(time~skill,data=search)
+anova(anovskill)
+anovinter = lm(time~interface, data=search)
+anova(anovinter)
 #2.5
 
-aovpen=lm(time~skill+interface,data=search)
-anova(aovpen)
-summary(aovpen)
 
-qqnorm(residuals(aovpen))
-plot(fitted(aovpen),residuals(aovpen))
+
+qqnorm(residuals(aovsrch))
+plot(fitted(aovsrch),residuals(aovsrch))
 
 #2.6
 
 friedman.test(time,skill,interface)
+
+#2.7
+
+anv = lm(time~skill*interface,data=search)
+anova(anv)
