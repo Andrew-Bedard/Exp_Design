@@ -15,13 +15,8 @@ anova(anovacid)
 summary(anovacid)
 
 #3.3
+tmp = glht(creamlm, linfct=mcp(starter="Tukey"))
+summary(tmp)
 
-#cream = read.table("cream.txt",header=T)
-library(lme4)
-creamlmer = lmer(acidity~starter+position+(1|batch),data=cream,REML=FALSE)
-
-#creamlm = lm(acidity~starter*position+batch+batch:starter,data=cream)
-summary(creamlmer)
-
-creamlmer1 = lmer(acidity~position+(1|batch),data=cream,REML=FALSE)
-anova(creamlmer1,creamlmer)
+#3.4
+confint(tmp)
