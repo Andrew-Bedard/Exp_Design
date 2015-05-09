@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.27)  9 MAY 2015 22:31
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.27)  9 MAY 2015 22:59
 entering extended mode
 **A4.tex
 (E:\School\Exp_Design\Assgn4\report\A4.tex
@@ -214,289 +214,221 @@ Package pdftex.def Info: ../results/IntPlotHoursEnv.png used on input line 41.
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <E:/School/Exp_Design/Assg
 n4/results/BoxHoursHum.png> <E:/School/Exp_Design/Assgn4/results/BoxHoursEnv.pn
 g>]
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 51.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
-
- []
-
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 52.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 52.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 51.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 53.
+(Font)              <7> on input line 52.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 53.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 53.
+(Font)              <5> on input line 52.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 52.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 53.
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ˜ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ˜ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ˜ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ˜ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ˜ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 52.
 
-Overfull \hbox (147.005pt too wide) in paragraph at lines 57--58
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][] 
- []
-
-<../results/2_2_1.png, id=17, 451.6875pt x 451.6875pt>
-File: ../results/2_2_1.png Graphic file (type png)
-
-<use ../results/2_2_1.png>
-Package pdftex.def Info: ../results/2_2_1.png used on input line 75.
-(pdftex.def)             Requested size: 158.09299pt x 158.09299pt.
-
-<../results/2_2_2.png, id=18, 451.6875pt x 451.6875pt>
-File: ../results/2_2_2.png Graphic file (type png)
-
-<use ../results/2_2_2.png>
-Package pdftex.def Info: ../results/2_2_2.png used on input line 77.
-(pdftex.def)             Requested size: 158.09299pt x 158.09299pt.
- [2 <E:/School/Exp_Design/Assgn4/results/IntPlotHoursHum.png> <E:/School/Exp_De
-sign/Assgn4/results/IntPlotHoursEnv.png>]
-<../results/2_2_3.png, id=27, 451.6875pt x 451.6875pt>
-File: ../results/2_2_3.png Graphic file (type png)
-
-<use ../results/2_2_3.png>
-Package pdftex.def Info: ../results/2_2_3.png used on input line 85.
-(pdftex.def)             Requested size: 158.09299pt x 158.09299pt.
-
-<../results/2_2_4.png, id=28, 451.6875pt x 451.6875pt>
-File: ../results/2_2_4.png Graphic file (type png)
-
-<use ../results/2_2_4.png>
-Package pdftex.def Info: ../results/2_2_4.png used on input line 87.
-(pdftex.def)             Requested size: 158.09299pt x 158.09299pt.
- [3 <E:/School/Exp_Design/Assgn4/results/2_2_1.png> <E:/School/Exp_Design/Assgn
-4/results/2_2_2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
-
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 52--53
+[][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
-
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 53--54
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (3.00354pt too wide) in paragraph at lines 99--100
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-<../results/2_5_1.png, id=34, 451.6875pt x 451.6875pt>
-File: ../results/2_5_1.png Graphic file (type png)
-
-<use ../results/2_5_1.png>
-Package pdftex.def Info: ../results/2_5_1.png used on input line 108.
-(pdftex.def)             Requested size: 158.09299pt x 158.09299pt.
-
-<../results/2_5_2.png, id=35, 451.6875pt x 451.6875pt>
-File: ../results/2_5_2.png Graphic file (type png)
-
-<use ../results/2_5_2.png>
-Package pdftex.def Info: ../results/2_5_2.png used on input line 110.
-(pdftex.def)             Requested size: 158.09299pt x 158.09299pt.
- [4 <E:/School/Exp_Design/Assgn4/results/2_2_3.png> <E:/School/Exp_Design/Assgn
-4/results/2_2_4.png>] [5 <E:/School/Exp_Design/Assgn4/results/2_5_1.png> <E:/Sc
-hool/Exp_Design/Assgn4/results/2_5_2.png>]
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ˜ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ˜ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ˜ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ˜ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ˜ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-
-Overfull \hbox (51.00403pt too wide) in paragraph at lines 134--135
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ˜ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ˜ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ˜ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ˜ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ˜ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-
-Overfull \hbox (51.00403pt too wide) in paragraph at lines 149--150
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ˜ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ˜ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ˜ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ˜ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ˜ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-
-Overfull \hbox (147.005pt too wide) in paragraph at lines 164--165
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][] 
- []
-
-
-Overfull \hbox (39.0039pt too wide) in paragraph at lines 171--173
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 54--55
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[6]
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 178.
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ˜ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ˜ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ˜ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ˜ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ˜ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
 
-Overfull \hbox (147.005pt too wide) in paragraph at lines 190--192
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][] 
+LaTeX Warning: Reference `fig:QQRes' on page 2 undefined on input line 69.
+
+<../results/QQResEnvHum.png, id=17, 572.1375pt x 512.91624pt>
+File: ../results/QQResEnvHum.png Graphic file (type png)
+
+<use ../results/QQResEnvHum.png>
+Package pdftex.def Info: ../results/QQResEnvHum.png used on input line 74.
+(pdftex.def)             Requested size: 228.85094pt x 205.16286pt.
+ [2 <E:/School/Exp_Design/Assgn4/results/IntPlotHoursHum.png> <E:/School/Exp_De
+sign/Assgn4/results/IntPlotHoursEnv.png>]
+
+LaTeX Warning: Reference `fig:FitVSRes' on page 3 undefined on input line 80.
+
+<../results/FitVSRes.png, id=26, 572.1375pt x 512.91624pt>
+File: ../results/FitVSRes.png Graphic file (type png)
+
+<use ../results/FitVSRes.png>
+Package pdftex.def Info: ../results/FitVSRes.png used on input line 84.
+(pdftex.def)             Requested size: 228.85094pt x 205.16286pt.
+
+<../results/2_2_1.png, id=27, 451.6875pt x 451.6875pt>
+File: ../results/2_2_1.png Graphic file (type png)
+
+<use ../results/2_2_1.png>
+Package pdftex.def Info: ../results/2_2_1.png used on input line 97.
+(pdftex.def)             Requested size: 158.09299pt x 158.09299pt.
+
+<../results/2_2_2.png, id=28, 451.6875pt x 451.6875pt>
+File: ../results/2_2_2.png Graphic file (type png)
+
+<use ../results/2_2_2.png>
+Package pdftex.def Info: ../results/2_2_2.png used on input line 99.
+(pdftex.def)             Requested size: 158.09299pt x 158.09299pt.
+ [3 <E:/School/Exp_Design/Assgn4/results/QQResEnvHum.png> <E:/School/Exp_Design
+/Assgn4/results/FitVSRes.png>]
+<../results/2_2_3.png, id=34, 451.6875pt x 451.6875pt>
+File: ../results/2_2_3.png Graphic file (type png)
+
+<use ../results/2_2_3.png>
+Package pdftex.def Info: ../results/2_2_3.png used on input line 107.
+(pdftex.def)             Requested size: 158.09299pt x 158.09299pt.
+
+<../results/2_2_4.png, id=35, 451.6875pt x 451.6875pt>
+File: ../results/2_2_4.png Graphic file (type png)
+
+<use ../results/2_2_4.png>
+Package pdftex.def Info: ../results/2_2_4.png used on input line 109.
+(pdftex.def)             Requested size: 158.09299pt x 158.09299pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
+
  []
 
-[7] [8] [9] (E:\School\Exp_Design\Assgn4\report\A4.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
+
+ []
+
+[4 <E:/School/Exp_Design/Assgn4/results/2_2_1.png> <E:/School/Exp_Design/Assgn4
+/results/2_2_2.png> <E:/School/Exp_Design/Assgn4/results/2_2_3.png> <E:/School/
+Exp_Design/Assgn4/results/2_2_4.png>]
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 121--122
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+<../results/2_5_1.png, id=43, 451.6875pt x 451.6875pt>
+File: ../results/2_5_1.png Graphic file (type png)
+
+<use ../results/2_5_1.png>
+Package pdftex.def Info: ../results/2_5_1.png used on input line 130.
+(pdftex.def)             Requested size: 158.09299pt x 158.09299pt.
+
+<../results/2_5_2.png, id=44, 451.6875pt x 451.6875pt>
+File: ../results/2_5_2.png Graphic file (type png)
+
+<use ../results/2_5_2.png>
+Package pdftex.def Info: ../results/2_5_2.png used on input line 132.
+(pdftex.def)             Requested size: 158.09299pt x 158.09299pt.
+ [5 <E:/School/Exp_Design/Assgn4/results/2_5_1.png> <E:/School/Exp_Design/Assgn
+4/results/2_5_2.png>] [6]
+Overfull \hbox (39.0039pt too wide) in paragraph at lines 187--189
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 194.
+[7] [8]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 273--275
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.00365pt too wide) in paragraph at lines 276--277
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[9]
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 326--327
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[10] [11]
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 393--394
+[][][][][][][][][] 
+ []
+
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 399--400
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (123.00476pt too wide) in paragraph at lines 400--402
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 402--403
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 403--405
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+[12]
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 474--475
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[13]
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 480--481
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[14] (E:\School\Exp_Design\Assgn4\report\A4.aux)
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 4535 strings out of 493921
- 66217 string characters out of 3144864
- 188561 words of memory out of 3000000
- 7814 multiletter control sequences out of 15000+200000
- 8150 words of font info for 29 fonts, out of 3000000 for 9000
+ 4628 strings out of 493921
+ 67363 string characters out of 3144864
+ 192238 words of memory out of 3000000
+ 7904 multiletter control sequences out of 15000+200000
+ 8496 words of font info for 30 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  36i,7n,43p,873b,1623s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb
@@ -511,10 +443,11 @@ les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files
 6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on A4.pdf (9 pages, 189613 bytes).
+ 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on A4.pdf (14 pages, 234381 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
+ 128 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
