@@ -7,10 +7,20 @@ skill = search$skill
 interface = search$interface
 
 #2.1
-#student = as.vector(as.matrix)
-
-I=3; B=5; N=1
-for (i in 1:B) print(sample(1:(N*I)))
+students = 1:15
+# set the lvls of the students
+skill_lvls = rep(c(1,2,3,4,5), each=3)
+# sample the students
+samples = sample(students, 15)
+# make the block_design
+block_design = matrix(c(samples[0:5], 
+                        samples[6:10], 
+                        samples[11:15]), 
+                      nrow = 3, ncol = 5)
+skill_block_design = matrix(c(skill_lvls[samples[0:5]], 
+                              skill_lvls[samples[6:10]], 
+                              skill_lvls[samples[11:15]]), 
+                            nrow = 3, ncol = 5)
 
 #2.2
 
