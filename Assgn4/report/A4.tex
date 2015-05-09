@@ -258,14 +258,149 @@ Linear Hypotheses:
   \section{R-Code}
     \subsection{Exercise 1}\label{sec:RE1}
       \begin{lstlisting}[language=R]
+bread = read.table("bread.txt")
+hours = bread$hours
+humidity = bread$humidity
+environment = bread$environment
+
+#1.1
+sample_slices = sample(1:18, 18)
+
+#1.2
+boxplot(hours~humidity)
+boxplot(hours~environment)
+
+#1.3
+interaction.plot(humidity, environment, hours)
+interaction.plot(environment, humidity, hours)
+
+#1.4
+aovenvhum = lm(hours ~ environment*humidity, data=bread)
+anova(aovenvhum)
+
+#1.7
+qqnorm(residuals(aovenvhum))
+
+#1.8
+par(mfrow=c(2,2))
+plot(aovenvhum)
+
       \end{lstlisting}
     \subsection{Exercise 2}\label{sec:RE2}
       \begin{lstlisting}[language=R]
+#Note: The interface is of greatest importance
+
+search = read.table("search.txt")
+
+time =search$time
+skill = search$skill
+interface = search$interface
+
+#2.1
+students = 1:15
+# set the lvls of the students
+skill_lvls = rep(c(1,2,3,4,5), each=3)
+# sample the students
+samples = sample(students, 15)
+# make the block_design
+block_design = matrix(c(samples[0:5], 
+                        samples[6:10], 
+                        samples[11:15]), 
+                      nrow = 3, ncol = 5)
+skill_block_design = matrix(c(skill_lvls[samples[0:5]], 
+                              skill_lvls[samples[6:10]], 
+                              skill_lvls[samples[11:15]]), 
+                            nrow = 3, ncol = 5)
+
+#2.2
+
+
+boxplot(time~skill,xlab="skill",ylab="time", main="Skill vs Time")
+boxplot(time~interface,xlab="interface",ylab="time", main="Interface vs Time")
+
+interaction.plot(skill,interface,time,lwd=2,col=rainbow(3))
+interaction.plot(interface,skill,time,lwd=2,col=rainbow(8))
+
+#2.3
+interface = factor(search$interface)
+skill = factor(search$skill)
+kruskal.test(time,interface)
+
+#2.4
+
+aovsrch=lm(time~skill+interface)
+summary(aovsrch)
+
+#2.5
+
+qqnorm(residuals(aovsrch))
+plot(fitted(aovsrch),residuals(aovsrch))
+
+#2.6
+
+friedman.test(time,interface,skill)
+
+#2.7
+anovinter = lm(time~interface)
+anova(anovinter)
+
+anv = lm(time~interface*skill,data=search)
+anova(anv)
+
       \end{lstlisting}
     \subsection{Exercise 3}\label{sec:RE3}
       \begin{lstlisting}[language=R]
+#Note: Interest was in the effect of the type of Yogurt
+#used as a starter!
+library(multcomp)
+
+cream = read.table("cream.txt",header=T)
+cream$starter = factor(cream$starter)
+cream$position = factor(cream$position)
+
+#3.1
+
+anovacid = lm(acidity~starter+batch+position,data=cream)
+anova(anovacid)
+
+#3.2
+summary(anovacid)
+
+#3.3
+tmp = glht(creamlm, linfct=mcp(starter="Tukey"))
+summary(tmp)
+
+#3.4
+confint(tmp)
+
       \end{lstlisting}
     \subsection{Exercise 4}\label{sec:RE4}
       \begin{lstlisting}[language=R]
+library(lme4)
+
+cow = read.table("cow.txt",header=T)
+cow$order = factor(cow$order)
+order = cow$order
+milk = cow$milk
+cow$treatment = factor(cow$treatment)
+treatment = cow$treatment
+
+#4.1
+cowlm = lm(milk ~ treatment + order, data=cow)
+anova(cowlm)
+summary(cowlm)
+
+#4.2
+summary(cow$milk)
+
+#4.3
+cowlmer = lmer(milk ~ treatment + order+(1|id), data=cow)
+anova(cowlmer)
+summary(cowlmer)
+
+#4.4
+attach(cow)
+t.test(milk[treatment=="A"],milk[treatment=="B"],paired=TRUE)
+
       \end{lstlisting}
 \end{document}
