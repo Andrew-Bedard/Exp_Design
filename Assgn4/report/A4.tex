@@ -133,7 +133,22 @@ Residuals 12 105.852   8.821
 Signif. codes:  
 0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 	\end{lstlisting}
-	
+	With a p-value of 0.09642 we do not reject the null hypothesis, thus the time is not the same for all interfaces.
+	This test is useful to use, if some conditions are met, as of right now, we do not have convincing evidence there is no interaction between skill and interface. It would be more useful to test along with the variable skill, and the interaction between the two as follows:
+	    \begin{lstlisting}[language=R]
+	Analysis of Variance Table
+
+Response: time
+                Df Sum Sq Mean Sq F value    Pr(>F)    
+interface        1 49.729  49.729 21.4145 0.0007313 ***
+skill            1 78.732  78.732 33.9039 0.0001154 ***
+interface:skill  1  2.312   2.312  0.9956 0.3398204    
+Residuals       11 25.544   2.322                      
+---
+Signif. codes:  
+0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+	\end{lstlisting}
+	This way we are able to measure the interaction between the data sets, and determine whether there is a factor which has a greater effect on our results. From the previous table we see that with a p-value of 0.3398 we accept the null hypothesis that there is no significant interaction between skill in and interface, which is what we require for the one-way ANOVA ignoring skill to be valid.
   \section*{Exercise 3}
     \subsection*{1}
       \begin{lstlisting}[language=R]
@@ -148,6 +163,7 @@ Residuals 15 20.475  1.3650
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
       \end{lstlisting}
+      
     
     \subsection*{2}
       \begin{lstlisting}[language=R]
@@ -177,7 +193,8 @@ Residual standard error: 1.168 on 15 degrees of freedom
 Multiple R-squared:  0.7149,  Adjusted R-squared:  0.5438 
 F-statistic: 4.179 on 9 and 15 DF,  p-value: 0.007304
       \end{lstlisting}
-    
+      \label{tble:estimates}
+
     \subsection*{3}
       \begin{lstlisting}[language=R]
 Linear Hypotheses:
@@ -193,9 +210,10 @@ Linear Hypotheses:
 5 - 3 == 0   0.4960     0.4673   1.061    0.822    
 5 - 4 == 0  -3.2940     0.4673  -7.048   <0.001 ***
       \end{lstlisting}
-    
+      \label{tble:p-values}
+        Starter 1 and 4 produce significantly different acidity. This is apparent first from table \ref{tble:estimates} we obtain: $\mu_1 = 7.8260$ and $\mu_4 = 7.8260 + 2.8100 = 10.636$ which are the estimates for starter 1 and 4 respectively. Furthermore the p-value for starter 1 obtained from \ref{tble:estimates} of 1.67e-07 suggests that we reject the null hypothesis that our estimate for starter 1 is equal to that of the rest of the population, and the p-values obtained from \ref{tble:p-values} of 0.001 suggests that we reject the null hypothesis that the estimate for the treatment effect of 4 is equal to each of the other respective treatment effects.
     \subsection*{4}
-    
+    The p-value for the test $H_0: \alpha_2 = \alpha_1$, where $\alpha_i$ is our estimate of the treatment effects is 0.997, whereas in table \ref{tble:estimates} our p-value for the null hypothesis $H_0: \alpha_2 = \alpha_1$ is 0.84186. It is no coincidence that the p-value obtained from exercise 3.2, is different from that of the simultaneous calculation, this is due to the fact that when calculating the simultaneous p-values for the null hypothesis  $H_0: \alpha_i = \alpha_1$ we are doing so in such a way that the probability of rejecting any null hypothesis in error is less than 0.5. In contrast to the method used in exercise 3.2, where for every null hypothesis our chance of making such an error is $N*0.05$ where N is the number of possibilities to make such an error. In this way the Simultaneous p-values method gives us a higher confidence in our conclusions.
     \subsection*{5}
       \begin{lstlisting}[language=R]
 Linear Hypotheses:
