@@ -1,6 +1,6 @@
 #Note: Interest was in the effect of the type of Yogurt
 #used as a starter!
-
+library(multcomp)
 
 cream = read.table("cream.txt",header=T)
 cream$starter = factor(cream$starter)
