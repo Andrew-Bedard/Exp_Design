@@ -1,11 +1,21 @@
-#2.1
-
-#2.2
 search = read.table("search.txt")
 
 time =search$time
 skill = search$skill
 interface = search$interface
+
+#2.1
+searchframe = data.frame(time=as.vector(as.matrix(search)),
+                         student=factor(rep(1:3,each=15)))
+
+library(multcomp)
+require(multcomp)
+srcaov = lm(time~skill*interface,data=search)
+summary(srcaov)
+
+srcmult = glht(srcaov,linfct=mcp(interface="Tukey"))
+#2.2
+
 
 boxplot(time~skill,xlab="skill",ylab="time", main="Time per Skill")
 boxplot(time~interface,xlab="interface",ylab="time", main="Time per Interface")
