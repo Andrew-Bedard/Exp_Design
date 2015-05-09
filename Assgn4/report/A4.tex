@@ -247,18 +247,94 @@ Linear Hypotheses:
     The confidence intervals for testing all differences $\alpha_j - \alpha_{j'}$ for $(i,i' \in {1,2...,5})$ of the main effects for starter with simultaneous confidence level 95\% are (4-1),(4-2),(4-3),(4-5),(5-4) so all those containing starter 4. This is likely due to the fact that the estimated value for starter 4, which was earlier calculated as 10.636, is so much larger than every other estimate, for example all the confidence intervals for (4-i) are greater than 0, and the one interval (5-4) is less than 0.
   \section*{Exercise 4}
     \subsection*{1}
+    Performing ANOVA test using an ordinary fixed effects model fitted with lm, the follow results were obtained:
+      \begin{lstlisting}[language=R]
+      Analysis of Variance Table
+
+Response: milk
+          Df  Sum Sq Mean Sq F value Pr(>F)
+treatment  1    0.27   0.269  0.0016 0.9682
+order      1   53.52  53.515  0.3268 0.5760
+Residuals 15 2456.69 163.779  
+      \end{lstlisting}
+      
+      \begin{lstlisting}[language=R]
+ Residuals:
+    Min      1Q  Median      3Q     Max 
+-16.602 -10.103   0.170   9.431  22.042 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  37.1722     5.4379   6.836 5.64e-06 ***
+treatmentB   -0.2444     6.0329  -0.041    0.968    
+orderBA      -3.4700     6.0704  -0.572    0.576    
+---
+Signif. codes:  
+0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 12.8 on 15 degrees of freedom
+Multiple R-squared:  0.02142,	Adjusted R-squared:  -0.1091 
+F-statistic: 0.1642 on 2 and 15 DF,  p-value: 0.8501   
+    \end{lstlisting}
+    
+    We can conclude from the F-value and p-value of 0.0016 and 0.9682 respectively for the treatment effect on milk production, we do not reject the null hypothesis, therefore there is no treatment effect on milk production. Further we observe that the p-value for the null hypothesis that the individual treatments effects are all greater than 0.05, thus we accept the null hypothesis that the treatment effects are equal. This stands to reason as if we do not conclude there is any effect for all treatments, there would be no effect for individual treatments when sample sizes are equal.
     
     \subsection*{2}
-    
+	\begin{lstlisting}[language=R]
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  17.10   26.82   33.75   35.12   43.02   55.50 	
+    \end{lstlisting}
     \subsection*{3}
-    
+    \begin{lstlisting}[language=R]
+    Analysis of Variance Table
+          Df  Sum Sq Mean Sq F value
+treatment  1 0.26889 0.26889  0.0503
+order      1 0.82889 0.82889  0.1552
+
+
+     AIC      BIC   logLik deviance df.resid 
+   125.4    129.9    -57.7    115.4       13 
+   
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-1.31202 -0.45325 -0.01847  0.33881  1.56294 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ id       (Intercept) 169.755  13.029  
+ Residual               5.341   2.311  
+Number of obs: 18, groups:  id, 9
+
+Fixed effects:
+            Estimate Std. Error t value
+(Intercept)  37.1722     6.5881   5.642
+treatmentB   -0.2444     1.0895  -0.224
+orderBA      -3.4700     8.8086  -0.394
+
+Correlation of Fixed Effects:
+           (Intr) trtmnB
+treatmentB -0.083       
+orderBA    -0.743  0.000
+    \end{lstlisting}
+
     \subsection*{4}
+    \begin{lstlisting}[language=R]
+    	Paired t-test
+
+data:  milk[treatment == "A"] and milk[treatment == "B"]
+t = 0.2244, df = 8, p-value = 0.8281
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -2.267910  2.756799
+sample estimates:
+mean of the differences 0.2444444
+    \end{lstlisting}
 
     
   \section{R-Code}
     \subsection{Exercise 1}\label{sec:RE1}
       \begin{lstlisting}[language=R]
-bread = read.table("bread.txt")
+      bread = read.table("bread.txt")
 hours = bread$hours
 humidity = bread$humidity
 environment = bread$environment
@@ -275,20 +351,25 @@ interaction.plot(humidity, environment, hours)
 interaction.plot(environment, humidity, hours)
 
 #1.4
-aovenvhum = lm(hours ~ environment*humidity, data=bread)
+aovenvhum = lm(hours ~ environment+humidity, data=bread)
 anova(aovenvhum)
 
-#1.7
-qqnorm(residuals(aovenvhum))
+aovenv = lm(hours ~ environment, data=bread)
+anova(aovenv)
 
-#1.8
-par(mfrow=c(2,2))
-plot(aovenvhum)
+aovhum = lm(hours ~ humidity, data=bread)
+anova(aovhum)
+
+#1.5
+residuals(aovhum)
+qqnorm(residuals(aovhum))
+qqnorm(residuals(aovenv))
+qqnorm(residuals(aovenvhum))
 
       \end{lstlisting}
     \subsection{Exercise 2}\label{sec:RE2}
       \begin{lstlisting}[language=R]
-#Note: The interface is of greatest importance
+      #Note: The interface is of greatest importance
 
 search = read.table("search.txt")
 
@@ -346,13 +427,10 @@ anova(anovinter)
 
 anv = lm(time~interface*skill,data=search)
 anova(anv)
-
       \end{lstlisting}
     \subsection{Exercise 3}\label{sec:RE3}
       \begin{lstlisting}[language=R]
-#Note: Interest was in the effect of the type of Yogurt
-#used as a starter!
-library(multcomp)
+      library(multcomp)
 
 cream = read.table("cream.txt",header=T)
 cream$starter = factor(cream$starter)
@@ -372,11 +450,10 @@ summary(tmp)
 
 #3.4
 confint(tmp)
-
       \end{lstlisting}
     \subsection{Exercise 4}\label{sec:RE4}
       \begin{lstlisting}[language=R]
-library(lme4)
+      library(lme4)
 
 cow = read.table("cow.txt",header=T)
 cow$order = factor(cow$order)
@@ -394,13 +471,12 @@ summary(cowlm)
 summary(cow$milk)
 
 #4.3
-cowlmer = lmer(milk ~ treatment + order+(1|id), data=cow)
+cowlmer = lmer(milk ~ treatment + order+(1|id), data=cow, REML=FALSE)
 anova(cowlmer)
 summary(cowlmer)
 
 #4.4
 attach(cow)
 t.test(milk[treatment=="A"],milk[treatment=="B"],paired=TRUE)
-
       \end{lstlisting}
 \end{document}
