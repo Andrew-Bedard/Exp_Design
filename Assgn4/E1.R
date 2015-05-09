@@ -15,17 +15,12 @@ interaction.plot(humidity, environment, hours)
 interaction.plot(environment, humidity, hours)
 
 #1.4
-aovenvhum = lm(hours ~ environment+humidity, data=bread)
+aovenvhum = lm(hours ~ environment*humidity, data=bread)
 anova(aovenvhum)
 
-aovenv = lm(hours ~ environment, data=bread)
-anova(aovenv)
-
-aovhum = lm(hours ~ humidity, data=bread)
-anova(aovhum)
-
-#1.5
-residuals(aovhum)
-qqnorm(residuals(aovhum))
-qqnorm(residuals(aovenv))
+#1.7
 qqnorm(residuals(aovenvhum))
+
+#1.8
+par(mfrow=c(2,2))
+plot(aovenvhum)

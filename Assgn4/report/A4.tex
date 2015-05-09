@@ -44,26 +44,48 @@
       \end{figure}
     
     \subsection*{4}
-      Analysis of variance on both factors:\\\\
       \begin{lstlisting}[language=R]
 Analysis of Variance Table
 
 Response: hours
-            Df Sum Sq Mean Sq F value    Pr(>F)    
-environment  2 201904  100952 23.1057 3.674e-05 ***
-humidity     1  26912   26912  6.1596   0.02637 *  
-Residuals   14  61168    4369                      
+                     Df Sum Sq Mean Sq F value    Pr(>F)    
+environment           2 201904  100952 233.685 2.461e-10 ***
+humidity              1  26912   26912  62.296 4.316e-06 ***
+environment:humidity  2  55984   27992  64.796 3.705e-07 ***
+Residuals            12   5184     432                      
 ---
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
       \end{lstlisting}
     
     \subsection*{5}
+      The interaction effect of both factors are significant.
+      This means that they don't have an additive effect on each other.
+      So if you change both the factors, it will have a negative effect on the hours.
     
     \subsection*{6}
+      The environment has the biggest numerical influence.
+      This is not a good question, it is always better to look at the relative influence of a factor.
     
     \subsection*{7}
+      In Fig\ref{fig:QQRes} the QQ-plot of the residuals is shown.
+      Here you can see that the data is roughly normally distributed.
+      Only the most left and right data points seem to be out of place.
+      \begin{figure}[H]
+          \centering
+          \includegraphics[scale=0.4]{../results/QQResEnvHum.png} 
+          \caption{QQ-plot of the residuals}
+          \label{fig:QQRes}
+      \end{figure}
     
     \subsection*{8}
+      In Fig\ref{fig:FitVSRes} the fitted values versus residual values are shown.
+      It seems that there is no heteroscedasticity present in this data.
+      \begin{figure}[H]
+          \centering
+          \includegraphics[scale=0.4]{../results/FitVSRes.png} 
+          \caption{Fitted Values VS Residual Values}
+          \label{fig:FitVSRes}
+      \end{figure}
+    
     
   \section*{Exercise 2}
     \subsection*{1}
@@ -130,8 +152,6 @@ Response: time
 interface  2  50.465  25.233  2.8605 0.09642 .
 Residuals 12 105.852   8.821                  
 ---
-Signif. codes:  
-0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 	\end{lstlisting}
 	With a p-value of 0.09642 we do not reject the null hypothesis, thus the time is not the same for all interfaces.
 	This test is useful to use, if some conditions are met, as of right now, we do not have convincing evidence there is no interaction between skill and interface. It would be more useful to test along with the variable skill, and the interaction between the two as follows:
@@ -145,8 +165,6 @@ skill            1 78.732  78.732 33.9039 0.0001154 ***
 interface:skill  1  2.312   2.312  0.9956 0.3398204    
 Residuals       11 25.544   2.322                      
 ---
-Signif. codes:  
-0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 	\end{lstlisting}
 	This way we are able to measure the interaction between the data sets, and determine whether there is a factor which has a greater effect on our results. From the previous table we see that with a p-value of 0.3398 we accept the null hypothesis that there is no significant interaction between skill in and interface, which is what we require for the one-way ANOVA ignoring skill to be valid.
   \section*{Exercise 3}
@@ -160,8 +178,6 @@ starter    4 44.136 11.0340  8.0835 0.001106 **
 batch      1  4.855  4.8547  3.5566 0.078826 . 
 position   4  2.348  0.5870  0.4300 0.784786   
 Residuals 15 20.475  1.3650                    
----
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
       \end{lstlisting}
       
     
@@ -187,7 +203,6 @@ position3    -0.0380     0.7389  -0.051  0.95966
 position4    -0.7640     0.7389  -1.034  0.31755    
 position5    -0.2640     0.7389  -0.357  0.72586    
 ---
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 Residual standard error: 1.168 on 15 degrees of freedom
 Multiple R-squared:  0.7149,  Adjusted R-squared:  0.5438 
