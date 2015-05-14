@@ -21,7 +21,7 @@
       \begin{lstlisting}[language=R]
       sample_slices = sample(1:18, 18)
       \end{lstlisting}
-Which simply samples 18 numbers from the range 1-18 randomly. In this way, if we have the 
+Which simply samples 18 numbers from the range 1-18 randomly. In this way, if we have the 18 random id's that correspond to the various conditions already decided upon, and their numerical results for time.
     \subsection*{2}
     From the data bread.txt we make boxplots of hours before bread becomes mouldy versus the two factors, temperature environment and humidity:
       \begin{figure}[H]
@@ -67,13 +67,11 @@ The results are quite compelling, we reject all the null hypothesis with all p-v
     This interaction effect, which can be more easily seen in Fig:\ref{fig:IntPlotHours}, appears to is surprisingly complex. For wet humidity, the cold temperature allowed the bread to resist mould the longest, but that drops off dramatically as the temperature moves to intermediate, and again to warm. The effect for the dry humidity was also the longest in the cold environment, and again this decreased when moving to an intermediate temperature, but the time to mould again increased as the environment went to warm. Clearly there are strong effects, that are non-obvious.
     
     \subsection*{6}
-      The environment has the biggest numerical influence.
-      This is not a good question, it is always better to look at the relative influence of a factor.
-    
+    As we can see from the F-Value in the table of exercise 1.4, environment has the largest numerical influence. In our case this is not really a good question, especially considering that environment had a larger range of values than humidity, thus in this case it is more useful to instead consider the relative influence of our factors.
+      
     \subsection*{7}
       In Fig\ref{fig:QQRes} the QQ-plot of the residuals is shown.
       Here you can see that the data is roughly normally distributed.
-      Only the most left and right data points seem to be out of place.
       \begin{figure}[H]
           \centering
           \includegraphics[scale=0.4]{../results/QQResEnvHum.png} 
@@ -105,6 +103,7 @@ block_design = matrix(c(samples[0:5],
       \end{lstlisting}
      
     \subsection*{2}
+    Making boxplots of our two factors versus time from the data in search.txt, we obtain the following:
 	\begin{figure}[H]
 		\centering
           \subfigure[]
@@ -115,6 +114,9 @@ block_design = matrix(c(samples[0:5],
           \label{fig:srchbox}
 	\end{figure}
 	
+	There are no surprises in Fig \ref{fig:srchbox}(a), it stands to reason that those with the lower score (higher computer experience) will have lower times, however in \ref{fig:srchbox}(b) it is worth noting that interface 3 seems to be related to higher time scores.
+	
+	Continuing we created two interaction plots:
 	\begin{figure}[H]
 	\centering
 		\subfigure[]
@@ -141,6 +143,7 @@ Kruskal-Wallis chi-squared = 4.22, df = 2, p-value =0.1212
       the answer is 22.2.
     
     \subsection*{5}
+    We next make diagnostic plots, a qq-plot of the risiduals, and a plot of fitted values versus residuals: 
     \begin{figure}[H]
     \centering
     	\subfigure[]
@@ -152,6 +155,8 @@ Kruskal-Wallis chi-squared = 4.22, df = 2, p-value =0.1212
     \end{figure}
     It is difficult to say for certain, there may be a slight curve in the qq-plot \ref{fig:diagnostic}(a) but it looks approximately normal, and the fitted value plot \ref{fig:diagnostic}(b) suggests there is no significant difference in the population variances.
     \subsection*{6}
+    
+    Performing the non-parametric Friedman test:
 	\begin{lstlisting}[language=R]
 Friedman rank sum test
 
@@ -186,6 +191,7 @@ Residuals       11 25.544   2.322
 	This way we are able to measure the interaction between the data sets, and determine whether there is a factor which has a greater effect on our results. From the previous table we see that with a p-value of 0.3398 we accept the null hypothesis that there is no significant interaction between skill in and interface, which is what we require for the one-way ANOVA ignoring skill to be valid.
   \section*{Exercise 3}
     \subsection*{1}
+    We begin with analysing the data presented in cream.txt in a three-way experiment without interactions. 
       \begin{lstlisting}[language=R]
 Analysis of Variance Table
 
@@ -302,12 +308,13 @@ F-statistic: 0.1642 on 2 and 15 DF,  p-value: 0.8501
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
   26.50   28.32   34.15   37.05   43.62   54.00 
     \end{lstlisting}
-      For the treatment order BA, the summary of milk is:
+      And for the treatment order BA, the summary of milk is:
   \begin{lstlisting}[language=R]
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
   21.40   30.45   37.80   37.56   44.90   55.50  
     \end{lstlisting}
-      From these results one can conclude that the cows with the BA order have a higher milk production than the ones with the AB order.
+    
+      We may observe that the cows with the BA order have a small increase milk production than the ones with the AB order, but this may be misleading as the effect is quite small.
 
     \subsection*{3}
     \begin{lstlisting}[language=R]
@@ -458,11 +465,11 @@ cream$position = factor(cream$position)
 
 #3.1
 
-anovacid = lm(acidity~starter+batch+position,data=cream)
-anova(anovacid)
+creamlm = lm(acidity~starter+batch+position,data=cream)
+anova(creamlm)
 
 #3.2
-summary(anovacid)
+summary(creamlm)
 
 #3.3
 tmp = glht(creamlm, linfct=mcp(starter="Tukey"))
@@ -470,6 +477,7 @@ summary(tmp)
 
 #3.4
 confint(tmp)
+
       \end{lstlisting}
     \subsection{Exercise 4}\label{sec:RE4}
       \begin{lstlisting}[language=R]
