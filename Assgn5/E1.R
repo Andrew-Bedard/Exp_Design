@@ -16,3 +16,5 @@ nausea.frame=data.frame(nausea,medicin)
 xtabs(~medicin+nausea)
 
 #1.3
+#??
+chisq.test(xtabs(~medicin+nausea))[[1]]
