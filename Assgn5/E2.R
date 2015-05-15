@@ -40,3 +40,4 @@ par(mfrow=c(1,1))
 oxwindtemp = lm(oxidant~wind+temperature, data=data)
 summary(oxwindtemp)
 plot(oxwindtemp, data=data); abline(oxins)
+
