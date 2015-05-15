@@ -1,6 +1,7 @@
 data = read.table("nauseatable.txt")
 
 #1.1
+
 rnames = rownames(data)
 nausea = c()
 medicin = c()
@@ -14,7 +15,24 @@ medicin <- factor(medicin)
 nausea.frame=data.frame(nausea,medicin)
 
 #1.2
-xtabs(~medicin+nausea)
+
+#Create contingency table
+cont_table = xtabs(~medicin+nausea)
+
+#Contingency table has to be in matrix form for calculations
+cont_matrix = matrix(c(100,52,32,35,48,37), byrow=TRUE, ncol=2 ,nrow=3, 
+                     dimnames=list(c(rownames(data)[1],
+                                     rownames(data)[2],rownames(data)[3]),c("No Nausea","Nausea")))
+
+
+rowsum=apply(cont_matrix,1,sum)
+colsum=apply(cont_matrix,2,sum)
+totalsum=sum(cont_matrix)
+
+expected = (rowsum%*%t(colsum))/totalsum
+round(expected,0)
+
+chisq.test(cont_matrix)
 
 #1.3
 
@@ -30,5 +48,8 @@ for (i in 1:B)
 
 hist(tstar)
 
-pl = sum(tstar<teststat.obs)/B
 pr = sum(tstar>teststat.obs)/B
+
+#1.4
+
+chisq.test(cont_matrix,simulate.p.value=TRUE)
