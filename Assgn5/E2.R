@@ -24,6 +24,41 @@ summary(oxhum)
 
 oxins = lm(oxidant~insolation, data=data)
 plot(oxidant~insolation, data=data); abline(oxins)
+<<<<<<< HEAD
+
+summary(oxday)$r.squared
+summary(oxwind)$r.squared
+summary(oxtemp)$r.squared
+summary(oxhum)$r.squared
+summary(oxins)$r.squared
+
+#wind has highest R squared, so add to model
+
+summary(lm(oxidant~wind+day,data=data))$r.squared
+summary(lm(oxidant~wind+temperature,data=data))$r.squared
+summary(lm(oxidant~wind+humidity,data=data))$r.squared
+summary(lm(oxidant~wind+insolation,data=data))$r.squared
+
+#temperature has highest R squared, add to model
+
+summary(lm(oxidant~wind+temperature+day ,data=data))$r.squared
+summary(lm(oxidant~wind+temperature+humidity ,data=data))$r.squared
+summary(lm(oxidant~wind+temperature+insolation ,data=data))$r.squared
+
+#adding humidity still increased R squared, add to model
+
+summary(lm(oxidant~wind+temperature+humidity+day ,data=data))$r.squared
+summary(lm(oxidant~wind+temperature+humidity+insolation ,data=data))$r.squared
+
+#adding either day or insolation yields insignificant explanatory variables
+#so we stop at previous step
+
+##What test to show these are usefull?!
+
+summary(lm(oxidant~wind+temperature+humidity,data=data))
+
+#summary gives coefficients of model in estimate column
+=======
 summary(oxins)
 
 #2.3
@@ -40,4 +75,5 @@ par(mfrow=c(1,1))
 oxwindtemp = lm(oxidant~wind+temperature, data=data)
 summary(oxwindtemp)
 plot(oxwindtemp, data=data); abline(oxins)
+>>>>>>> 361cc5b7d811c639b24571c2377efeee466a561f
 

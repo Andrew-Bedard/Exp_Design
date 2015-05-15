@@ -1,0 +1,1 @@
+data = read.table("expensescrime.txt", header=TRUE)
