@@ -24,7 +24,6 @@ summary(oxhum)
 
 oxins = lm(oxidant~insolation, data=data)
 plot(oxidant~insolation, data=data); abline(oxins)
-<<<<<<< HEAD
 
 summary(oxday)$r.squared
 summary(oxwind)$r.squared
@@ -58,22 +57,4 @@ summary(lm(oxidant~wind+temperature+humidity+insolation ,data=data))$r.squared
 summary(lm(oxidant~wind+temperature+humidity,data=data))
 
 #summary gives coefficients of model in estimate column
-=======
-summary(oxins)
-
-#2.3
-oxfull = lm(oxidant~day+wind+temperature+humidity+insolation, data=data)
-summary(oxfull)
-
-oxdaywindtemphum = lm(oxidant~day+wind+temperature+humidity, data=data)
-summary(oxdaywindtemphum)
-
-oxdaywindtemp = lm(oxidant~day+wind+temperature, data=data)
-summary(oxdaywindtemp)
-
-par(mfrow=c(1,1))
-oxwindtemp = lm(oxidant~wind+temperature, data=data)
-summary(oxwindtemp)
-plot(oxwindtemp, data=data); abline(oxins)
->>>>>>> 361cc5b7d811c639b24571c2377efeee466a561f
 
