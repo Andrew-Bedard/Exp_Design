@@ -32,6 +32,7 @@ totalsum=sum(cont_matrix)
 expected = (rowsum%*%t(colsum))/totalsum
 round(expected,0)
 
+#chisquared test for contigency matrix
 chisq.test(cont_matrix)
 
 #1.3
@@ -46,10 +47,14 @@ for (i in 1:B)
   tstar[i] = chisq.test(xtabs(~nausea+medstar))[[1]]
 }
 
+
 hist(tstar)
 
-pr = sum(tstar>teststat.obs)/B
+#p-value
+
+sum(tstar>teststat.obs)/B
 
 #1.4
 
+#chisquared test for contigency matrix with simulated p value
 chisq.test(cont_matrix,simulate.p.value=TRUE)
