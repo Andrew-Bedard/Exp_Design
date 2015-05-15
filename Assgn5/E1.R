@@ -25,13 +25,6 @@ cont_matrix = matrix(c(100,52,32,35,48,37), byrow=TRUE, ncol=2 ,nrow=3,
                                      rownames(data)[2],rownames(data)[3]),c("No Nausea","Nausea")))
 
 
-rowsum=apply(cont_matrix,1,sum)
-colsum=apply(cont_matrix,2,sum)
-totalsum=sum(cont_matrix)
-
-expected = (rowsum%*%t(colsum))/totalsum
-round(expected,0)
-
 #chisquared test for contigency matrix
 chisq.test(cont_matrix)
 

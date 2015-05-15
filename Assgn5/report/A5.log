@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.27)  15 MAY 2015 16:40
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.27)  15 MAY 2015 23:57
 entering extended mode
 **A5.tex
 (E:\School\Exp_Design\Assgn5\report\A5.tex
@@ -62,61 +62,40 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
-Package: subfigure 2002/07/30 v2.1.4 subfigure package
-\subfigtopskip=\skip43
-\subfigcapskip=\skip44
-\subfigcaptopadj=\dimen105
-\subfigbottomskip=\skip45
-\subfigcapmargin=\dimen106
-\subfiglabelskip=\skip46
-\c@subfigure=\count88
-\c@lofdepth=\count89
-\c@subtable=\count90
-\c@lotdepth=\count91
-
-****************************************
-* Local config file subfigure.cfg used *
-****************************************
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
-\subfig@top=\skip47
-\subfig@bottom=\skip48
-)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
-\captionmargin=\dimen107
-\captionmargin@=\dimen108
-\captionwidth=\dimen109
-\caption@tempdima=\dimen110
-\caption@indent=\dimen111
-\caption@parindent=\dimen112
-\caption@hangindent=\dimen113
+\captionmargin=\dimen105
+\captionmargin@=\dimen106
+\captionwidth=\dimen107
+\caption@tempdima=\dimen108
+\caption@indent=\dimen109
+\caption@parindent=\dimen110
+\caption@hangindent=\dimen111
 )
-\c@ContinuedFloat=\count92
-Package caption Info: subfigure package is loaded.
+\c@ContinuedFloat=\count88
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
-\lst@mode=\count93
+\lst@mode=\count89
 \lst@gtempboxa=\box26
 \lst@token=\toks15
-\lst@length=\count94
-\lst@currlwidth=\dimen114
-\lst@column=\count95
-\lst@pos=\count96
-\lst@lostspace=\dimen115
-\lst@width=\dimen116
-\lst@newlines=\count97
-\lst@lineno=\count98
-\lst@maxwidth=\dimen117
+\lst@length=\count90
+\lst@currlwidth=\dimen112
+\lst@column=\count91
+\lst@pos=\count92
+\lst@lostspace=\dimen113
+\lst@width=\dimen114
+\lst@newlines=\count93
+\lst@lineno=\count94
+\lst@maxwidth=\dimen115
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-\c@lstnumber=\count99
-\lst@skipnumbers=\count100
+\c@lstnumber=\count95
+\lst@skipnumbers=\count96
 \lst@framebox=\box27
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
@@ -126,7 +105,7 @@ Package: listings 2014/09/06 1.5e (Carsten Heinz)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count101
+\c@float@type=\count97
 \float@exts=\toks16
 \float@box=\box28
 \@float@everytoks=\toks17
@@ -134,11 +113,12 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 \@float@every@table=\toks18
 
-(E:\School\Exp_Design\Assgn5\report\A5.aux
-
-LaTeX Warning: Label `fig:BoxHours' multiply defined.
-
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\subcaption.sty"
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+\c@subfigure=\count98
+\c@subtable=\count99
 )
+(E:\School\Exp_Design\Assgn5\report\A5.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
@@ -151,25 +131,26 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count102
-\scratchdimen=\dimen118
+\scratchcounter=\count100
+\scratchdimen=\dimen116
 \scratchbox=\box30
-\nofMPsegments=\count103
-\nofMParguments=\count104
+\nofMPsegments=\count101
+\nofMParguments=\count102
 \everyMPshowfont=\toks19
-\MPscratchCnt=\count105
-\MPscratchDim=\dimen119
-\MPnumerator=\count106
-\makeMPintoPDFobject=\count107
+\MPscratchCnt=\count103
+\MPscratchDim=\dimen117
+\MPnumerator=\count104
+\makeMPintoPDFobject=\count105
 \everyMPtoPDFconversion=\toks20
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count108
+\c@lstlisting=\count106
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 16.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -185,75 +166,434 @@ File: lstlang2.sty 2014/09/06 1.5e listings language file
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang3.sty"
 File: lstlang3.sty 2014/09/06 1.5e listings language file
 )
-<../results/2_1.png, id=1, 572.1375pt x 512.91624pt>
-File: ../results/2_1.png Graphic file (type png)
- <use ../results/2_1.png>
-Package pdftex.def Info: ../results/2_1.png used on input line 40.
-(pdftex.def)             Requested size: 343.28514pt x 307.75212pt.
+<../results/1_3.png, id=1, 451.6875pt x 451.6875pt>
+File: ../results/1_3.png Graphic file (type png)
+ <use ../results/1_3.png>
+Package pdftex.def Info: ../results/1_3.png used on input line 42.
+(pdftex.def)             Requested size: 271.01459pt x 271.01459pt.
 
 [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<../results/2_2.png, id=10, 572.1375pt x 512.91624pt>
-File: ../results/2_2.png Graphic file (type png)
- <use ../results/2_2.png>
-Package pdftex.def Info: ../results/2_2.png used on input line 47.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 51.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
+ [2 <E:/School/Exp_Design/Assgn5/results/1_3.png>]
+<../results/2_1.png, id=15, 572.1375pt x 512.91624pt>
+File: ../results/2_1.png Graphic file (type png)
+ <use ../results/2_1.png>
+Package pdftex.def Info: ../results/2_1.png used on input line 60.
 (pdftex.def)             Requested size: 343.28514pt x 307.75212pt.
 
-[2 <E:/School/Exp_Design/Assgn5/results/2_1.png>]
+[3 <E:/School/Exp_Design/Assgn5/results/2_1.png>]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 66.
+(Font)              <7> on input line 72.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 66.
- [3 <E:/School/Exp_Design/Assgn5/results/2_2.png>] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 108--110
-
- []
-
+(Font)              <5> on input line 72.
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 112.
+
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 112.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 112.
-
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 112.
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 113.
- [5]
-(E:\School\Exp_Design\Assgn5\report\A5.aux)
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 114.
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
 
-LaTeX Warning: There were multiply-defined labels.
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 119--120
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
 
- ) 
+[4]
+Overfull \hbox (18.28185pt too wide) detected at line 126
+\OML/cmm/m/it/10 Oxidant \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 16
+\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 6069 \OMS/cmsy/m/n/10   \OT1/cmr/m/n/10 0\OML
+/cmm/m/it/10 :\OT1/cmr/m/n/10 4462 \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 wind \OT
+1/cmr/m/n/10 + 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 6019 \OMS/cmsy/m/n/10  \OML/
+cmm/m/it/10 temperature \OT1/cmr/m/n/10 + 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 09
+85 \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 humidity \OT1/cmr/m/n/10 + \OML/cmm/m/it
+/10 error
+ []
+
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 183--184
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[5]
+Overfull \hbox (43.28188pt too wide) detected at line 200
+\OML/cmm/m/it/10 Oxidant \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 16
+\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 6069 \OMS/cmsy/m/n/10   \OT1/cmr/m/n/10 0\OML
+/cmm/m/it/10 :\OT1/cmr/m/n/10 4462 \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 wind \OT
+1/cmr/m/n/10 + 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 6019 \OMS/cmsy/m/n/10  \OML/
+cmm/m/it/10 temperature \OT1/cmr/m/n/10 + 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 09
+85 \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 humidity \OT1/cmr/m/n/10 + \OML/cmm/m/it
+/10 error
+ []
+
+[6] <../results/2_5.png, id=35, 740.7675pt x 448.67625pt>
+File: ../results/2_5.png Graphic file (type png)
+
+<use ../results/2_5.png>
+Package pdftex.def Info: ../results/2_5.png used on input line 213.
+(pdftex.def)             Requested size: 444.46393pt x 269.20782pt.
+
+Overfull \hbox (99.46393pt too wide) in paragraph at lines 213--215
+ [][] 
+ []
+
+<../results/3_2.png, id=36, 572.1375pt x 512.91624pt>
+File: ../results/3_2.png Graphic file (type png)
+ <use ../results/3_2.png>
+Package pdftex.def Info: ../results/3_2.png used on input line 228.
+(pdftex.def)             Requested size: 228.85094pt x 205.16286pt.
+
+[7 <E:/School/Exp_Design/Assgn5/results/2_5.png>]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 245--246
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[8 <E:/School/Exp_Design/Assgn5/results/3_2.png>]
+<../results/3_4.png, id=47, 451.6875pt x 451.6875pt>
+File: ../results/3_4.png Graphic file (type png)
+ <use ../results/3_4.png>
+Package pdftex.def Info: ../results/3_4.png used on input line 257.
+(pdftex.def)             Requested size: 271.01459pt x 271.01459pt.
+
+[9 <E:/School/Exp_Design/Assgn5/results/3_4.png>]
+<../results/4_pairs.png, id=52, 572.1375pt x 512.91624pt>
+File: ../results/4_pairs.png Graphic file (type png)
+
+<use ../results/4_pairs.png>
+Package pdftex.def Info: ../results/4_pairs.png used on input line 276.
+(pdftex.def)             Requested size: 343.28514pt x 307.75212pt.
+ [10 <E:/School/Exp_Design/Assgn5/results/4_pairs.png>]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 343--344
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[11]
+Overfull \hbox (12.0563pt too wide) in paragraph at lines 397--399
+[]\OT1/cmr/m/n/10 Both meth-ods end up with the same for-mula, namely Ex-pend~E
+m-ploy+Lawyer.
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 401--403
+
+ []
+
+<../results/4_99.png, id=64, 451.6875pt x 451.6875pt>
+File: ../results/4_99.png Graphic file (type png)
+
+<use ../results/4_99.png>
+Package pdftex.def Info: ../results/4_99.png used on input line 408.
+(pdftex.def)             Requested size: 225.84319pt x 225.84319pt.
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 423--424
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[13 <E:/School/Exp_Design/Assgn5/results/4_99.png>]
+<../results/4_cook.png, id=70, 451.6875pt x 451.6875pt>
+File: ../results/4_cook.png Graphic file (type png)
+
+<use ../results/4_cook.png>
+Package pdftex.def Info: ../results/4_cook.png used on input line 439.
+(pdftex.def)             Requested size: 180.67178pt x 180.67178pt.
+
+<../results/4_res.png, id=71, 451.6875pt x 451.6875pt>
+File: ../results/4_res.png Graphic file (type png)
+
+<use ../results/4_res.png>
+Package pdftex.def Info: ../results/4_res.png used on input line 447.
+(pdftex.def)             Requested size: 271.01459pt x 271.01459pt.
+ [14 <E:/School/Exp_Design/Assgn5/results/4_cook.png>] <../results/4_qq.png, id
+=76, 451.6875pt x 451.6875pt>
+File: ../results/4_qq.png Graphic file (type png)
+
+<use ../results/4_qq.png>
+Package pdftex.def Info: ../results/4_qq.png used on input line 454.
+(pdftex.def)             Requested size: 180.67178pt x 180.67178pt.
+ [15 <E:/School/Exp_Design/Assgn5/results/4_res.png> <E:/School/Exp_Design/Assg
+n5/results/4_qq.png>]
+LaTeX Font Info:    Font shape `OML/cmr/bx/n' in size <10> not available
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 477.
+
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 485--486
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 486--487
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (249.00604pt too wide) in paragraph at lines 488--491
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[16]
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 515--516
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[17]
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 560--561
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (57.00409pt too wide) in paragraph at lines 561--562
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 562--564
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 566--567
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (123.00476pt too wide) in paragraph at lines 567--569
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (105.00458pt too wide) in paragraph at lines 569--570
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (87.0044pt too wide) in paragraph at lines 578--580
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (63.00415pt too wide) in paragraph at lines 581--583
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.00378pt too wide) in paragraph at lines 590--592
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[18]
+Overfull \hbox (165.00519pt too wide) in paragraph at lines 640--641
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][] 
+ []
+
+
+Overfull \hbox (201.00555pt too wide) in paragraph at lines 641--642
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (39.0039pt too wide) in paragraph at lines 642--643
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[19]
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 654--655
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (39.0039pt too wide) in paragraph at lines 683--684
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[20] [21] (E:\School\Exp_Design\Assgn5\report\A5.aux) ) 
 Here is how much of TeX's memory you used:
- 4447 strings out of 493921
- 64652 string characters out of 3144864
- 149385 words of memory out of 3000000
- 7733 multiletter control sequences out of 15000+200000
- 8496 words of font info for 30 fonts, out of 3000000 for 9000
+ 4483 strings out of 493921
+ 65253 string characters out of 3144864
+ 185919 words of memory out of 3000000
+ 7763 multiletter control sequences out of 15000+200000
+ 9153 words of font info for 32 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 36i,9n,43p,236b,1707s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb
-><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
-C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on A5.pdf (5 pages, 131494 bytes).
+ 36i,9n,43p,556b,1699s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files (x86)/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files (x86)/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmti10.pfb>
+Output written on A5.pdf (21 pages, 263660 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
+ 146 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

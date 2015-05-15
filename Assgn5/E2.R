@@ -4,23 +4,21 @@ data = read.table("airpollution.txt")
 pairs(data)
 
 #2.2
+
+#create simple models, plot for reference
 par(mfrow=c(2,3))
 
 oxday = lm(oxidant~day, data=data)
 plot(oxidant~day, data=data); abline(oxday)
-summary(oxday)
 
 oxwind = lm(oxidant~wind, data=data)
 plot(oxidant~wind, data=data); abline(oxwind)
-summary(oxwind)
 
 oxtemp = lm(oxidant~temperature, data=data)
 plot(oxidant~temperature, data=data); abline(oxtemp)
-summary(oxtemp)
 
 oxhum = lm(oxidant~humidity, data=data)
 plot(oxidant~humidity, data=data); abline(oxhum)
-summary(oxhum)
 
 oxins = lm(oxidant~insolation, data=data)
 plot(oxidant~insolation, data=data); abline(oxins)
@@ -52,9 +50,29 @@ summary(lm(oxidant~wind+temperature+humidity+insolation ,data=data))$r.squared
 #adding either day or insolation yields insignificant explanatory variables
 #so we stop at previous step
 
-##What test to show these are usefull?!
-
 summary(lm(oxidant~wind+temperature+humidity,data=data))
 
 #summary gives coefficients of model in estimate column
 
+#2.3
+
+summary(lm(oxidant~day+wind+temperature+humidity+insolation, data=data))
+
+#Try removing day, (highest p-value)
+summary(lm(oxidant~wind+temperature+humidity+insolation, data=data))
+
+#removing insolation, (highest p-value)
+summary(lm(oxidant~wind+temperature+humidity, data=data))
+
+#removing humidity, p-value too high still
+summary(lm(oxidant~wind+temperature, data=data))
+
+#2.4
+#Present stepwise increase, less variables, but similar result
+
+#2.5
+step_up = lm(oxidant~wind+temperature+humidity,data=data)
+
+par(mfrow=c(1,2))
+qqnorm(residuals(step_up))
+plot(fitted(step_up),residuals(step_up))
