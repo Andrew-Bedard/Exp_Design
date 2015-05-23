@@ -17,7 +17,7 @@
 
   \section*{Exercise 1}
     \subsection*{1}
-      The data in \textit{fruitflies.txt} is loaded, and a column: loglongevity, containing the logarithm of the number of days until death can be added to the data by using the R-code found in \ref{sec:RE1}
+      The data in \textit{fruitflies.txt} is loaded, and a column: loglongevity, containing the logarithm of the number of days until death can be added to the data by using the R-code found in sec 1.1
       
     \subsection*{2}
       In Fig:\ref{fig:PairFruit} a pairplot of the fruitflies data is seen. It is possibly to discern a relationship between thorax and longevity, and a more linear relationship between thorax and log(longevity).
@@ -222,7 +222,7 @@ Signif. codes:
     We may investigate the relative change in odds of passing the final assignment for students with \textit{psi} rather than those without \textit{psi} by simply taking the exponential of the change in our linear predictor, in this case taking \textit{psi} = 1 as opposed to 0 increases our linear predictor by 2.338 as we can see in Figure:\ref{fig:log_reg}, thus our difference in odds is $exp(2.338) = 10.3605$.
     
     \subsection*{6}
-    Using the alternative method of analysis, and obtaining the matrix as is outlined in the R-code section \ref{sec:RE2}
+    Using the alternative method of analysis, and obtaining the matrix as is outlined in the R-code section 2.6
         	\begin{figure}[H]
     	\begin{lstlisting}[language=R]
      [,1] [,2]
@@ -232,7 +232,7 @@ Signif. codes:
     \end{figure}
     Column [,1] represents students that did not receive \textit{psi}, where column [,2] are those students that did receive \textit{psi}. Row [1,] represents students that passed the final assignment, and row [2,] are those who did not pass. Thus 15 is the number of students that did not receive \textit{psi} and did not pass the final assignment, where 6 is the number of students that did receive \textit{psi} and also did not pass the final assignment.
     
-    Performing the Fisher Test as outline in R-code section \ref{sec:RE2}, we obtain the following:
+    Performing the Fisher Test as outline in R-code section 2.6, we obtain the following:
             	\begin{figure}[H]
     	\begin{lstlisting}[language=R]
 	Fisher's Exact Test for Count Data
@@ -261,7 +261,7 @@ odds ratio
       \end{figure}
 
     \subsection*{2}
-      In Fig\ref{fig:Hist3_2} different random poissons distributions are shown within the same location-scale family.
+      In Fig 9 different random poissons distributions are shown within the same location-scale family.
       Graphically it is easy to explain why they are in the same location-scale family.
       All the graphs seem to be more or less normally distributed,
       the only difference is that the mean and the height of the histograms are different.
