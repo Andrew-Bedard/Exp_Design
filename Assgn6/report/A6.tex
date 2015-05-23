@@ -17,15 +17,10 @@
 
   \section*{Exercise 1}
     \subsection*{1}
-      This can be added to the data by using the following R-code:
-      \begin{lstlisting}[language=R]
-data$loglongevity = log(longevity)
-      \end{lstlisting}
-      Now there is a column in the data called loglongevity.
-
+      The data in \textit{fruitflies.txt} is loaded, and a column: loglongevity, containing the logarithm of the number of days until death can be added to the data by using the R-code found in \ref{sec:RE1}
+      
     \subsection*{2}
-      In Fig\ref{fig:PairFruit} a pairplot of the fruitflies data is seen.
-      Here you can see that activity and thorax have a correlation with the longevity and thus also loglongevity.
+      In Fig:\ref{fig:PairFruit} a pairplot of the fruitflies data is seen. It is possibly to discern a relationship between thorax and longevity, and a more linear relationship between thorax and log(longevity).
       Activity and thorax themselfs have no correlation, which is good, because that is part of the experiment set up.
       \begin{figure}[H]
           \centering
@@ -35,14 +30,22 @@ data$loglongevity = log(longevity)
       \end{figure}
 
     \subsection*{3}
-      Using anova without taking thorax length into account has $p=1.798e-07$, which means we reject $H_0$.
-      This means that action has an influence on the loglongevity.
+      Using ANOVA without taking thorax length into account, we obtain:
+            \begin{lstlisting}[language=R]
+Analysis of Variance Table
+
+Response: longevity
+          Df  Sum Sq Mean Sq F value    Pr(>F)    
+activity   2  8239.2  4119.6  19.311 1.931e-07 ***
+Residuals 72 15359.8   213.3                      
+---
+Signif. codes:  
+0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1          
+      \end{lstlisting}
+      thus with a p-value of $p=1.931e^{-7}$ we reject the null hypothesis that activity does not influence longevity, thus we conclude activity does have an influence on longevity.
 
     \subsection*{4}
-      In Table\ref{table:SumAction} some information can be found on the effect of action on the loglongevity.
-      It is clear that the more sexual activity the fruit flies have, the shorter their lifespan was.
-      The only data that does not support this is the fly that lived for the longest in low, this is higher than the rest.
-      But this can be because of luck, because the mean and median are still lower than isolated.
+      From the summary of our data on activity and longevity, shown in Table\ref{table:SumAction} we can see a clear trend that as activity increases, the estimated value for longevity decreases.
       In Fig\ref{fig:BoxActivity} this influence is graphically shown.
       \begin{table}[H]
       \begin{center}
@@ -56,10 +59,12 @@ data$loglongevity = log(longevity)
           max     & 75      & 81  & 60 \\
           \hline
       \end{tabular}
-      \caption{Summary data of the different actions and the loglongevity}
+      \caption{Summary data of the different actions and longevity}
       \label{table:SumAction}
       \end{center}
       \end{table}
+      
+      Further if we observe a box plot of the log(longevity) for all three activity levels, we observe a small decrease in longevity from isolated to low, and a dramatic decrease from low to high.
       \begin{figure}[H]
           \centering
           \includegraphics[scale=0.3]{../results/BoxActivity.png}
