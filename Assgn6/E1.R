@@ -41,6 +41,10 @@ boxplot(loglongevity ~ thorax, data=iso, ylim = c(2.8, 4.6), main="iso")
 boxplot(loglongevity ~ thorax, data=low, ylim = c(2.8, 4.6), main="low")
 boxplot(loglongevity ~ thorax, data=high, ylim = c(2.8, 4.6), main="high")
 
+#1.8
+par(1,1)
+hist(thorax)
+
 #1.9
 par(mfrow = c(1,2))
 qqnorm(residuals(activityThoraxlm))

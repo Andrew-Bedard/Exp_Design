@@ -266,8 +266,47 @@ odds ratio
       \end{figure}
 
     \subsection*{3}
+    From our summary:
+        \begin{lstlisting}[language=R]
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)   
+(Intercept) -0.5102693  0.9053301  -0.564  0.57301   
+oligarchy    0.0730814  0.0345958   2.112  0.03465 * 
+pollib      -0.7129779  0.2725635  -2.616  0.00890 **
+parties      0.0307739  0.0111873   2.751  0.00595 **
+pctvote      0.0138722  0.0097526   1.422  0.15491   
+popn         0.0093429  0.0065950   1.417  0.15658   
+size        -0.0001900  0.0002485  -0.765  0.44447   
+numelec     -0.0160783  0.0654842  -0.246  0.80605   
+numregim     0.1917349  0.2292890   0.836  0.40303 
+      \end{lstlisting}
+      We are able to obtain a linear model that will allow us to estimate longevity for various conditions, thus our model is:
+      \[
+      miltcoup = -0.51 + 0.07*oligarchy - 0.71 * pollib + 0.03 * parties + 0.01 * pctvote + 0.01 * popn -0.0001 * size -0.02 * numelec + 0.19 * numregim
+      \]
+
     \subsection*{4}
+      With the step-down method we remove at each step the feature with the highest p-value.
+      In this model the steps are as follows:
+      \begin{itemize}
+        \item miltcoup ~ oligarchy + pollib + parties + pctvote + popn + size + numregim + numelec\\ The highest p-value is numelec
+        \item miltcoup ~ oligarchy + pollib + parties + pctvote + popn + size + numregim\\ The highest p-value is numregim
+        \item miltcoup ~ oligarchy + pollib + parties + pctvote + popn + size\\ The highest p-value is size
+        \item miltcoup ~ oligarchy + pollib + parties + pctvote + popn\\ The highest p-value is popn
+        \item miltcoup ~ oligarchy + pollib + parties + pctvote\\ The highest p-value is pctvote
+        \item miltcoup ~ oligarchy + pollib + parties\\ Stop here
+      \end{itemize}
+
     \subsection*{5}
+      The plots found in Fig\ref{fig:3_5} are a bit strange, but because both methods show the same behaviour, the weird shapes are not a result of us taking out too many variables
+      We do not know the reason why they show this behaviour.
+
+      \begin{figure}[H]
+          \centering
+          \includegraphics[scale=0.3]{../results/diffThoraxActivity.png}
+          \caption{Plots of the reduced model (top row) and full model (bottom row)}
+          \label{fig:3_5}
+      \end{figure}
     
   \section{R-Code}
     \subsection{Exercise 1}\label{sec:RE1}
