@@ -69,7 +69,34 @@ Signif. codes:
     We may investigate the relative change in odds of passing the final assignment for students with \textit{psi} rather than those without \textit{psi} by simply taking the exponential of the change in our linear predictor, in this case taking \textit{psi} = 1 as opposed to 0 increases our linear predictor by 2.338 as we can see in Figure:\ref{fig:log_reg}, thus our difference in odds is $exp(2.338) = 10.3605$.
     
     \subsection*{6}
+    Using the alternative method of analysis, and obtaining the matrix as is outlined in the R-code section \ref{sec:RE2}
+        	\begin{figure}[H]
+    	\begin{lstlisting}[language=R]
+     [,1] [,2]
+[1,]    3    8
+[2,]   15    6
+    	\end{lstlisting}
+    \end{figure}
+    Column [,1] represents students that did not receive \textit{psi}, where column [,2] are those students that did receive \textit{psi}. Row [1,] represents students that passed the final assignment, and row [2,] are those who did not pass. Thus 15 is the number of students that did not receive \textit{psi} and did not pass the final assignment, where 6 is the number of students that did receive \textit{psi} and also did not pass the final assignment.
+    
+    Performing the Fisher Test as outline in R-code section \ref{sec:RE2}, we obtain the following:
+            	\begin{figure}[H]
+    	\begin{lstlisting}[language=R]
+	Fisher's Exact Test for Count Data
+
+data:  x
+p-value = 0.0265
+alternative hypothesis: true odds ratio is not equal to 1
+95 percent confidence interval:
+ 0.02016297 0.95505763
+sample estimates:
+odds ratio 
+ 0.1605805 
+    	\end{lstlisting}
+    \end{figure}
+    The conclusion is that with a p-value of 0.0265, we should reject the null hypothesis that the probability of success for students who did and did not receive \textit{psi} is equal, thus we conclude \textit{psi} does increase a students chances of passing.
     \subsection*{7}
+    
     \subsection*{8}
 
   \section*{Exercise 3}
@@ -87,9 +114,6 @@ Signif. codes:
       \begin{lstlisting}[language=R]
       \end{lstlisting}
     \subsection{Exercise 3}\label{sec:RE3}
-      \begin{lstlisting}[language=R]
-      \end{lstlisting}
-    \subsection{Exercise 4}\label{sec:RE4}
       \begin{lstlisting}[language=R]
       \end{lstlisting}
 \end{document}
