@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.27)  23 MAY 2015 22:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.27)  23 MAY 2015 23:16
 entering extended mode
 **A6.tex
 (E:\School\Exp_Design\Assgn6\report\A6.tex
@@ -134,11 +134,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 \@float@every@table=\toks18
 
-(E:\School\Exp_Design\Assgn6\report\A6.aux
-
-LaTeX Warning: Label `fig:BoxActivity' multiply defined.
-
-)
+(E:\School\Exp_Design\Assgn6\report\A6.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
@@ -151,7 +147,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count102
 \scratchdimen=\dimen118
@@ -252,41 +249,9 @@ Overfull \hbox (51.00403pt too wide) in paragraph at lines 43--44
 File: ../results/BoxActivity.png Graphic file (type png)
 
 <use ../results/BoxActivity.png>
-Package pdftex.def Info: ../results/BoxActivity.png used on input line 71.
+Package pdftex.def Info: ../results/BoxActivity.png used on input line 69.
 (pdftex.def)             Requested size: 171.34145pt x 153.2738pt.
  [2]
-<../results/ScatterThorax.png, id=22, 571.13374pt x 510.90875pt>
-File: ../results/ScatterThorax.png Graphic file (type png)
-
-<use ../results/ScatterThorax.png>
-Package pdftex.def Info: ../results/ScatterThorax.png used on input line 89.
-(pdftex.def)             Requested size: 171.34145pt x 153.2738pt.
-
-<../results/diffThoraxActivity.png, id=23, 994.71625pt x 419.5675pt>
-File: ../results/diffThoraxActivity.png Graphic file (type png)
-
-<use ../results/diffThoraxActivity.png>
-Package pdftex.def Info: ../results/diffThoraxActivity.png used on input line 9
-1.
-(pdftex.def)             Requested size: 298.41718pt x 125.87122pt.
- [3 <E:/School/Exp_Design/Assgn6/results/BoxActivity.png>]
-<../results/evalWithThorax.png, id=28, 723.70375pt x 465.74pt>
-File: ../results/evalWithThorax.png Graphic file (type png)
-
-<use ../results/evalWithThorax.png>
-Package pdftex.def Info: ../results/evalWithThorax.png used on input line 104.
-(pdftex.def)             Requested size: 217.1128pt x 139.72307pt.
- [4 <E:/School/Exp_Design/Assgn6/results/ScatterThorax.png> <E:/School/Exp_Desi
-gn/Assgn6/results/diffThoraxActivity.png>]
-<../results/evalLongevity.png, id=35, 769.87625pt x 486.81876pt>
-File: ../results/evalLongevity.png Graphic file (type png)
-
-<use ../results/evalLongevity.png>
-Package pdftex.def Info: ../results/evalLongevity.png used on input line 131.
-(pdftex.def)             Requested size: 230.96466pt x 146.04675pt.
- [5 <E:/School/Exp_Design/Assgn6/results/evalWithThorax.png>]
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 144.
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
@@ -318,21 +283,157 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
 
-Overfull \hbox (51.00403pt too wide) in paragraph at lines 150--151
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 86--87
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[6 <E:/School/Exp_Design/Assgn6/results/evalLongevity.png>] [7] [8] [9]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 94.
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 101--102
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (47.15646pt too wide) detected at line 106
+\OML/cmm/m/it/10 log\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 longevity\OT1/cmr/m/n/10 
+) = 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 219 + 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10
+ 4099 \OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 activityisolated\OT1
+/cmr/m/n/10 ) + 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 2857 \OMS/cmsy/m/n/10  \OT1
+/cmr/m/n/10 (\OML/cmm/m/it/10 activitylow\OT1/cmr/m/n/10 ) + 2\OML/cmm/m/it/10 
+:\OT1/cmr/m/n/10 9789 \OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 thor
+ax\OT1/cmr/m/n/10 )
+ []
+
+[3 <E:/School/Exp_Design/Assgn6/results/BoxActivity.png>]
+
+LaTeX Warning: Reference `fig:BActivityT' on page 4 undefined on input line 125
+.
+
+<../results/ScatterThorax.png, id=26, 599.23875pt x 501.875pt>
+File: ../results/ScatterThorax.png Graphic file (type png)
+
+<use ../results/ScatterThorax.png>
+Package pdftex.def Info: ../results/ScatterThorax.png used on input line 129.
+(pdftex.def)             Requested size: 179.77301pt x 150.56366pt.
+
+<../results/diffThoraxActivity.png, id=27, 994.71625pt x 419.5675pt>
+File: ../results/diffThoraxActivity.png Graphic file (type png)
+
+<use ../results/diffThoraxActivity.png>
+Package pdftex.def Info: ../results/diffThoraxActivity.png used on input line 1
+31.
+(pdftex.def)             Requested size: 298.41718pt x 125.87122pt.
+ [4]
+<../results/evalWithThorax.png, id=31, 723.70375pt x 465.74pt>
+File: ../results/evalWithThorax.png Graphic file (type png)
+
+<use ../results/evalWithThorax.png>
+Package pdftex.def Info: ../results/evalWithThorax.png used on input line 144.
+(pdftex.def)             Requested size: 217.1128pt x 139.72307pt.
+ [5 <E:/School/Exp_Design/Assgn6/results/ScatterThorax.png> <E:/School/Exp_Desi
+gn/Assgn6/results/diffThoraxActivity.png>]
+<../results/evalLongevity.png, id=38, 769.87625pt x 486.81876pt>
+File: ../results/evalLongevity.png Graphic file (type png)
+
+<use ../results/evalLongevity.png>
+Package pdftex.def Info: ../results/evalLongevity.png used on input line 171.
+(pdftex.def)             Requested size: 230.96466pt x 146.04675pt.
+ [6 <E:/School/Exp_Design/Assgn6/results/evalWithThorax.png>]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 190--191
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[7 <E:/School/Exp_Design/Assgn6/results/evalLongevity.png>] [8]
+<../results/3_1.png, id=51, 537.00626pt x 458.71375pt>
+File: ../results/3_1.png Graphic file (type png)
+
+<use ../results/3_1.png>
+Package pdftex.def Info: ../results/3_1.png used on input line 251.
+(pdftex.def)             Requested size: 161.10312pt x 137.61519pt.
+ [9]
+<../results/3_2.png, id=55, 537.00626pt x 458.71375pt>
+File: ../results/3_2.png Graphic file (type png)
+
+<use ../results/3_2.png>
+Package pdftex.def Info: ../results/3_2.png used on input line 265.
+(pdftex.def)             Requested size: 161.10312pt x 137.61519pt.
+ [10 <E:/School/Exp_Design/Assgn6/results/3_1.png>]
+[11 <E:/School/Exp_Design/Assgn6/results/3_2.png>]
 (E:\School\Exp_Design\Assgn6\report\A6.aux)
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 4481 strings out of 493921
- 65497 string characters out of 3144864
- 153174 words of memory out of 3000000
- 7763 multiletter control sequences out of 15000+200000
+ 4498 strings out of 493921
+ 65804 string characters out of 3144864
+ 160230 words of memory out of 3000000
+ 7778 multiletter control sequences out of 15000+200000
  8496 words of font info for 30 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  36i,8n,43p,482b,1850s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -348,9 +449,9 @@ les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files
 )/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on A6.pdf (9 pages, 182325 bytes).
+Output written on A6.pdf (11 pages, 203801 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
+ 102 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
