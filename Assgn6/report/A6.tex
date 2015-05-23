@@ -49,17 +49,24 @@ Signif. codes:
     
     Thus we determine that our logistic regression model should be:
     \begin{equation}
-    \frac{Pr(\textit{pass = 1})}{Pr(\textit{pass = 0})} = \exp(-11.602 + 2.338*\textit{psi} + 3.063*\textit{gpa})
+   	Pr(\textit{pass = 1}) = \frac{\exp(-11.602 + 2.338*\textit{psi} + 3.063*\textit{gpa})}{1 + \exp(-11.602 + 2.338*\textit{psi} + 3.063*\textit{gpa})}
     \end{equation}
     \subsection*{3}
     Based on the p-value obtained in Figure:\ref{fig:log_reg}, we reject the null hypothesis that there is no effect of psi on the outcomes of the students final assessment. Further based on our parameters for the logistic regression model, we see that a positive value, ie. 1, for \textit{psi} causes an increase in probability of passing, so we conclude that \textit{psi} does in fact work.
     \subsection*{4}
     To estimate the probability that a student with a \textit{gpa} equal to 3 who receives \textit{psi} passes the assignment, we simply enter our values into equation 1, our logistic regression model.
     \[
-    \frac{Pr(\textit{pass = 1})}{Pr(\textit{pass = 0})} = \exp(-11.602 + 2.338*(1) + 3.063*(3)) = 0.9277
+    Pr(\textit{pass = 1}) = \frac{\exp(-11.602 + 2.338*(1) + 3.063*(3))}{1 + \exp(-11.602 + 2.338(1) + 3.063*(3))} = 0.4813
     \]
-    So there is a 92.77 \% chance of a student with \textit{gpa} of 3 who receives \textit{psi} of passing the final assignment.
+    So there is a 48.13 \% chance of a student with \textit{gpa} of 3 who receives \textit{psi} of passing the final assignment.
+    
+    Similarly if we wish to estimate the probability that a student with a \textit{gpa} of 3 who does not receive \textit{psi} passing the final assignment, we simply replace the value of \textit{psi} with 0, and substitute this into equation 1
+    \[
+    Pr(\textit{pass = 1}) = \frac{\exp(-11.602 + 2.338*(0) + 3.063*(3))}{1 + \exp(-11.602 + 2.338(0) + 3.063*(3))} = 0.0822
+    \]
+    Thus there is a 8.22 \% chance of a student with a \textit{gpa} of 3 who did not take \textit{psi} passing the final assignment.
     \subsection*{5}
+    
     \subsection*{6}
     \subsection*{7}
     \subsection*{8}
