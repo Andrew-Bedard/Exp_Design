@@ -17,7 +17,7 @@
 
   \section*{Exercise 1}
     \subsection*{1}
-      The data in \textit{fruitflies.txt} is loaded, and a column: loglongevity, containing the logarithm of the number of days until death can be added to the data by using the R-code found in \ref{sec:RE1}
+      The data in \textit{fruitflies.txt} is loaded, and a column: loglongevity, containing the logarithm of the number of days until death can be added to the data by using the R-code found in sec 1.1
       
     \subsection*{2}
       In Fig:\ref{fig:PairFruit} a pairplot of the fruitflies data is seen. It is possibly to discern a relationship between thorax and longevity, and a more linear relationship between thorax and log(longevity).
@@ -173,7 +173,16 @@ Residuals 71 2.9180  0.0411
     
   \section*{Exercise 2}
     \subsection*{1}
-    The data contained in \textit{psi.txt} was read in, the following figures were obtained.
+    The data contained in \textit{psi.txt} was read in, the following figure was obtained,
+    
+      \begin{figure}[H]
+          \centering
+          \includegraphics[scale=0.3]{../results/2_1.png}
+          \caption{Scatter plots of data in psi.txt}
+      \end{figure}
+      
+      As we can see, the nature of the data with factors, such as \textit{psi} 0 or 1, and \textit{pass} 0 or 1 make it difficult to analyse the data using scatter plots.    
+    
     \subsection*{2}
     Fitting a logistic regression model with psi and gpa as explanatory variables for the outcome being that the student passed their assessment or not, we obtain the following table:
     	\begin{figure}[H]
@@ -213,7 +222,7 @@ Signif. codes:
     We may investigate the relative change in odds of passing the final assignment for students with \textit{psi} rather than those without \textit{psi} by simply taking the exponential of the change in our linear predictor, in this case taking \textit{psi} = 1 as opposed to 0 increases our linear predictor by 2.338 as we can see in Figure:\ref{fig:log_reg}, thus our difference in odds is $exp(2.338) = 10.3605$.
     
     \subsection*{6}
-    Using the alternative method of analysis, and obtaining the matrix as is outlined in the R-code section \ref{sec:RE2}
+    Using the alternative method of analysis, and obtaining the matrix as is outlined in the R-code section 2.6
         	\begin{figure}[H]
     	\begin{lstlisting}[language=R]
      [,1] [,2]
@@ -223,7 +232,7 @@ Signif. codes:
     \end{figure}
     Column [,1] represents students that did not receive \textit{psi}, where column [,2] are those students that did receive \textit{psi}. Row [1,] represents students that passed the final assignment, and row [2,] are those who did not pass. Thus 15 is the number of students that did not receive \textit{psi} and did not pass the final assignment, where 6 is the number of students that did receive \textit{psi} and also did not pass the final assignment.
     
-    Performing the Fisher Test as outline in R-code section \ref{sec:RE2}, we obtain the following:
+    Performing the Fisher Test as outline in R-code section 2.6, we obtain the following:
             	\begin{figure}[H]
     	\begin{lstlisting}[language=R]
 	Fisher's Exact Test for Count Data
@@ -239,9 +248,9 @@ odds ratio
     \end{figure}
     The conclusion is that with a p-value of 0.0265, we should reject the null hypothesis that the probability of success for students who did and did not receive \textit{psi} is equal, thus we conclude \textit{psi} does increase a students chances of passing.
     \subsection*{7}
-    
+    This second approach is not wrong.
     \subsection*{8}
-
+	This second approach is has one main advantage, it is very simple, however it does not produce very detailed results as with the first method. The first method is more complicated, but it allows us to explore the behaviour of explanatory variables in depth.
   \section*{Exercise 3}
     \subsection*{1}
       \begin{figure}[H]
@@ -252,7 +261,7 @@ odds ratio
       \end{figure}
 
     \subsection*{2}
-      In Fig\ref{fig:Hist3_2} different random poissons distributions are shown within the same location-scale family.
+      In Fig 9 different random poissons distributions are shown within the same location-scale family.
       Graphically it is easy to explain why they are in the same location-scale family.
       All the graphs seem to be more or less normally distributed,
       the only difference is that the mean and the height of the histograms are different.
@@ -311,11 +320,223 @@ numregim     0.1917349  0.2292890   0.836  0.40303
   \section{R-Code}
     \subsection{Exercise 1}\label{sec:RE1}
       \begin{lstlisting}[language=R]
+      data = read.table("fruitflies.txt", header=T)
+attach(data)
+
+#1.1
+#loading data
+data$loglongevity = log(longevity)
+attach(data)
+
+#1.2
+#Various plots
+par(mfrow=c(1,2))
+plot(activity, loglongevity)
+plot(thorax, loglongevity); abline(thorax, loglongevity)
+par(mfrow=c(1,1))
+pairs(data)
+
+
+#1.3
+activitylm = lm(loglongevity~activity,data=data)
+# we reject H0 so the activity has an influence on the longevity
+anova(activitylm)
+
+#1.4
+#box plots of log(longevity) and activity
+boxplot(loglongevity~activity)
+iso = data[activity=="isolated", ]
+low = data[activity=="low", ]
+high = data[activity=="high", ]
+summary(iso)
+summary(low)
+summary(high)
+summary(activitylm)
+
+#1.5
+activityThoraxlm = lm(loglongevity~activity+thorax,data=data)
+# we reject H0 so the activity and thorax has an influence on the longevity
+anova(activityThoraxlm)
+
+#1.6
+summary(activityThoraxlm)
+mean(data$thorax)
+#high
+mean(data$thorax)*2.97899+1.21893
+#isolated
+mean(data$thorax)*2.97899+1.21893+0.40998
+#low
+mean(data$thorax)*2.97899+1.21893+0.28570
+
+min(data$thorax)
+#high
+min(data$thorax)*2.97899+1.21893
+#isolated
+min(data$thorax)*2.97899+1.21893+0.40998
+#low
+min(data$thorax)*2.97899+1.21893+0.28570
+
+#1.7
+plot(thorax,loglongevity, xlab="thorax length",ylab="log(longevity)")
+par(mfrow = c(1,3))
+boxplot(loglongevity ~ thorax, data=iso, ylim = c(2.8, 4.6), main="iso")
+boxplot(loglongevity ~ thorax, data=low, ylim = c(2.8, 4.6), main="low")
+boxplot(loglongevity ~ thorax, data=high, ylim = c(2.8, 4.6), main="high")
+
+#1.9
+par(mfrow = c(1,2))
+qqnorm(residuals(activityThoraxlm))
+plot(fitted(activityThoraxlm), residuals(activityThoraxlm))
+
+#1.10
+longevitylm = lm(longevity~activity+thorax)
+anova(longevitylm)
+par(mfrow = c(1,2))
+qqnorm(residuals(longevitylm))
+plot(fitted(longevitylm), residuals(longevitylm))
+
       \end{lstlisting}
     \subsection{Exercise 2}\label{sec:RE2}
       \begin{lstlisting}[language=R]
+      #2.1
+data = read.table("psi.txt", header=T)
+attach(data)
+
+#Table and histogram
+tot=xtabs(~psi+passed); tot
+pairs(data)
+
+#2.2
+
+#Estimation
+passedlm = glm(passed~psi+gpa,family=binomial)
+summary(passedlm)
+
+data$psi=factor(data$psi)
+data$gpa=factor(data$gpa)
+passedlm2 = glm(passed~psi+gpa, family=binomial)
+summary(passedlm2)
+
+plot(c(0,coef(passedlm2)[2:3]),type="l")
+
+#2.3
+#Addording to p-values, psi works
+
+#2.4
+
+#function to predict passing, x=psi, y=gpa
+passest <- function(x,y) {exp(-11.602 + 2.338*x + 3.063*y)/(1 + exp(-11.602 + 2.338*x + 3.063*y))}
+
+#student with gpa 3 and received psi
+passest(1,3)
+#student with gpa 3 and did not receive psi
+passest(0,3)
+
+#2.5
+#Increase in odds from having psi vs not having psi
+passodds <- function(p,q) {exp(-11.602 + 2.338*p + 3.063*q)}
+
+#2.6
+x=matrix(c(3,15,8,6),2,2);x
+#if we look at tot, we can see 15 represents students that
+#did not receive psi, and did not pass
+#6 are those students who did receive psi, but still did not pass
+fisher.test(x)
+
+#test concludes that the effects of psi and pass are not
+#independant
+
+#2.7
+
       \end{lstlisting}
     \subsection{Exercise 3}\label{sec:RE3}
       \begin{lstlisting}[language=R]
+      data = read.table("africa.txt", header=T)
+attach(data)
+
+#3.1
+par(mfrow=c(2,3))
+hist(rpois(20,5))
+hist(rpois(20,10))
+hist(rpois(20,30))
+hist(rpois(100,5))
+hist(rpois(100,10))
+hist(rpois(100,30))
+
+hist(rpois(300,10))
+hist(rpois(300,20))
+hist(rpois(300,30))
+hist(rpois(400,10))
+hist(rpois(400,20))
+hist(rpois(400,30))
+
+#3.2
+hist(rpois(400,20))
+hist(rpois(400,30))
+hist(rpois(400,40))
+hist(rpois(400,50))
+hist(rpois(400,60))
+hist(rpois(400,70))
+par(mfrow=c(1,1))
+
+#3.3
+
+fullafricalm = glm(miltcoup~oligarchy+pollib+parties+pctvote
+               +popn+size+numelec+numregim, family=poisson,data=data)
+summary(fullafricalm)
+
+#3.4
+#remove numelec, has highest p-value
+
+africalm = glm(miltcoup~oligarchy+pollib+parties+pctvote
+               +popn+size+numregim, family=poisson,data=data)
+summary(africalm)
+
+#remove numregim, has highest p-value
+
+africalm = glm(miltcoup~oligarchy+pollib+parties+pctvote
+               +popn+size, family=poisson,data=data)
+summary(africalm)
+
+#remove size, has highest p-value
+
+africalm = glm(miltcoup~oligarchy+pollib+parties+pctvote
+               +popn, family=poisson,data=data)
+summary(africalm)
+
+#remove popn, has highest p-value
+
+africalm = glm(miltcoup~oligarchy+pollib+parties+pctvote,
+               family=poisson,data=data)
+summary(africalm)
+
+#remove pctvote, has highest p-value
+
+africalm = glm(miltcoup~oligarchy+pollib+parties,
+               family=poisson,data=data)
+summary(africalm)
+
+confint(africalm)
+coef(africalm)
+
+#3.5
+
+#plot of model
+plot(fitted(africalm),residuals(africalm))
+plot(log(fitted(africalm)),residuals(africalm))
+plot(log(fitted(africalm)),residuals(africalm,type="response"))
+#plots of full model
+plot(fitted(fullafricalm),residuals(fullafricalm))
+plot(log(fitted(fullafricalm)),residuals(fullafricalm))
+plot(log(fitted(fullafricalm)),residuals(fullafricalm,type="response"))
+
+pairs(miltcoup~oligarchy+pollib+parties,data=data)
+
+data$pollib = as.factor(data$pollib)
+africalm = glm(miltcoup~oligarchy+pollib+parties,
+               family=poisson,data=data)
+summary(africalm)
+
+pairs(miltcoup~oligarchy+parties,data=data)
       \end{lstlisting}
 \end{document}
