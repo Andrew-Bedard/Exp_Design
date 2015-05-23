@@ -4,7 +4,7 @@ attach(data)
 
 #Table and histogram
 tot=xtabs(~psi+passed); tot
-hist(data[,1],main="passed")
+pairs(data)
 
 #2.2
 
