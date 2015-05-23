@@ -17,15 +17,115 @@
 
   \section*{Exercise 1}
     \subsection*{1}
+      This can be added to the data by using the following R-code:
+      \begin{lstlisting}[language=R]
+data$loglongevity = log(longevity)
+      \end{lstlisting}
+      Now there is a column in the data called loglongevity.
+
     \subsection*{2}
+      In Fig\ref{fig:PairFruit} a pairplot of the fruitflies data is seen.
+      Here you can see that activity and thorax have a correlation with the longevity and thus also loglongevity.
+      Activity and thorax themselfs have no correlation, which is good, because that is part of the experiment set up.
+      \begin{figure}[H]
+          \centering
+          \includegraphics[scale=0.6]{../results/fruitflies2.png}
+          \caption{Pairsplot Fruitflies data}
+          \label{fig:PairFruit}
+      \end{figure}
+
     \subsection*{3}
+      Using anova without taking thorax length into account has $p=1.798e-07$, which means we reject $H_0$.
+      This means that action has an influence on the loglongevity.
+
     \subsection*{4}
+      In Table\ref{table:SumAction} some information can be found on the effect of action on the loglongevity.
+      It is clear that the more sexual activity the fruit flies have, the shorter their lifespan was.
+      The only data that does not support this is the fly that lived for the longest in low, this is higher than the rest.
+      But this can be because of luck, because the mean and median are still lower than isolated.
+      In Fig\ref{fig:BoxActivity} this influence is graphically shown.
+      \begin{table}[H]
+      \begin{center}
+      \begin{tabular}{l|lll}
+          \hline
+                  & isolated& low & high \\
+          \hline
+          min     & 37      & 21  & 16 \\
+          median  & 62      & 56  & 40 \\
+          mean    & 63.56   & 56.76 & 38.72  \\
+          max     & 75      & 81  & 60 \\
+          \hline
+      \end{tabular}
+      \caption{Summary data of the different actions and the loglongevity}
+      \label{table:SumAction}
+      \end{center}
+      \end{table}
+      \begin{figure}[H]
+          \centering
+          \includegraphics[scale=0.6]{../results/BoxActivity.png}
+          \caption{Boxplot of the influence of activity on loglongevity}
+          \label{fig:BoxActivity}
+      \end{figure}
+
     \subsection*{5}
+      Using anova, this time with taking thorax length into account has p lower than $0.05$, which means we reject $H_0$.
+      This means that both action and thorax have an influence on the loglongevity.
+
     \subsection*{6}
+      Seen in Fig\ref{fig:BoxActivity}, it is clear that sexual activity decreases the loglongevity and thus also the longevity.
+
     \subsection*{7}
+      Thorax length increases the longevity and this stays the same over the different activities.
+      The difference of the longevity between the flies with the smallest thorax and the biggest thorax are lager when there is more sexual activity.
+      \begin{figure}[H]
+          \centering
+          \subfigure[Thorax]
+          {\includegraphics[scale=0.6]{../results/ScatterThorax.png}}
+          \subfigure[Thorax and Activity]
+          {\includegraphics[scale=0.6]{../results/diffThoraxActivity.png}}
+          \caption{Boxplot of the influence of activity on loglongevity}
+          \label{fig:BoxActivity}
+      \end{figure}
+
     \subsection*{8}
+      My preference goes out to the analysis without thorax length, this is because the analysis of the data is harder the more variables are included. You could say the analysis with thorax length is wrong, this is not important for the research question of the data.
+
     \subsection*{9}
+      In Fig\ref{fig:eval} the analysis that includes thorax length is evaluated.
+      The qqplot shows that the residuals are normally distributed and the Fitted vs Residuals plot shows that the data has no heteroscedasticity.
+      \begin{figure}[H]
+          \centering
+          \includegraphics[scale=0.6]{../results/evalWithThorax.png}
+          \caption{Evaluation of the analysis that includes thorax length}
+          \label{fig:eval}
+      \end{figure}
+
     \subsection*{10}
+      The ancova analysis with the longevity instead of the longevity has the following result:
+      \begin{lstlisting}[language=R]
+Response: longevity
+          Df Sum Sq Mean Sq F value    Pr(>F)    
+activity   2 8239.2  4119.6  38.120 5.686e-12 ***
+thorax     1 7686.8  7686.8  71.127 2.624e-12 ***
+Residuals 71 7673.0   108.1    
+      \end{lstlisting}
+      While the ancova analysis with the loglongevity had the following result:
+      \begin{lstlisting}[language=R]
+Response: loglongevity
+          Df Sum Sq Mean Sq F value    Pr(>F)    
+activity   2 3.6665  1.8332  44.606 2.838e-13 ***
+thorax     1 3.8786  3.8786  94.374 1.139e-14 ***
+Residuals 71 2.9180  0.0411             
+      \end{lstlisting}
+      This shows that with the longevity the influence of activity and thorax are bigger than with the loglongevity.
+      In Fig\ref{fig:eval} the analysis of the longevity is evaluated.
+      The qqplot shows that the residuals are normally distributed and the Fitted vs Residuals plot shows that the data has heteroscedasticity.
+      \begin{figure}[H]
+          \centering
+          \includegraphics[scale=0.6]{../results/evalLongevity.png}
+          \caption{Evaluation of the analysis that includes thorax length}
+          \label{fig:evalLongevity}
+      \end{figure}
     
   \section*{Exercise 2}
     \subsection*{1}
