@@ -25,7 +25,7 @@ plot(c(0,coef(passedlm2)[2:3]),type="l")
 #2.4
 
 #function to predict passing, x=psi, y=gpa
-passest <- function(x,y) {exp(-11.602 + 2.338*x + 3.063*y)}
+passest <- function(x,y) {exp(-11.602 + 2.338*x + 3.063*y)/(1 + exp(-11.602 + 2.338*x + 3.063*y))}
 
 #student with gpa 3 and received psi
 passest(1,3)
@@ -33,6 +33,8 @@ passest(1,3)
 passest(0,3)
 
 #2.5
+#Increase in odds from having psi vs not having psi
+passodds <- function(p,q) {exp(-11.602 + 2.338*p + 3.063*q)}
 
 #2.6
 x=matrix(c(3,15,8,6),2,2);x
