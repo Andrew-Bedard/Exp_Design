@@ -1,10 +1,32 @@
-#3.1
-
-
-
-#3.3
 data = read.table("africa.txt", header=T)
 attach(data)
+
+#3.1
+par(mfrow=c(2,3))
+hist(rpois(20,5))
+hist(rpois(20,10))
+hist(rpois(20,30))
+hist(rpois(100,5))
+hist(rpois(100,10))
+hist(rpois(100,30))
+
+hist(rpois(300,10))
+hist(rpois(300,20))
+hist(rpois(300,30))
+hist(rpois(400,10))
+hist(rpois(400,20))
+hist(rpois(400,30))
+
+#3.2
+hist(rpois(400,20))
+hist(rpois(400,30))
+hist(rpois(400,40))
+hist(rpois(400,50))
+hist(rpois(400,60))
+hist(rpois(400,70))
+par(mfrow=c(1,1))
+
+#3.3
 
 fullafricalm = glm(miltcoup~oligarchy+pollib+parties+pctvote
                +popn+size+numelec+numregim, family=poisson,data=data)
