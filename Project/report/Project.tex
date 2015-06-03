@@ -16,10 +16,24 @@
   \maketitle
 
   \section{Introduction}
-    In this paper the process of analyzing a certain dataset is laid out.
-    The dataset used is calcium.dat, which can be found at \url{http://www.amstat.org/publications/jse/jse_data_archive.htm}
+    In this paper the process of analysing a certain dataset is laid out.
+    The dataset used is calcium.dat, which can be found at \url{http://www.amstat.org/publications/jse/jse_data_archive.htm}.
+    This dataset is used for this project is because it has a good number of entries and enough features to be able to do data analysis on.
+    In the rest of this paper the experiment is explained, the data is analysed, the found results are shown and all of this will be discussed at the end.
+    In the appendix the used R code is shown.
 
   \section{The Experiment}
+    The experiment that was set up had as goal to see if age and sex has an influence on certain concentrations in the body.
+    The concentrations that were measured are:
+    \begin{itemize}
+      \item Alkaline Phosphatase International Units/Liter
+      \item Calcium mmol/L 
+      \item Inorganic Phosphorus mmol/L
+    \end{itemize}
+    There are 6 different labs from which the data is extracted.
+    Next to these features, the sex, age, agegroup and patient observation number are recorded.
+    In the calcium.dat the original data is stored with errors, in calciumgood.dat the data is already cleaned up.
+    In this project only the calcium.dat data is used to explain how the cleaning up of the data is done.
 
   \section{Data Analysis}
     First off a pairs plot was made of the data to be able to see how the data relates to each other.
