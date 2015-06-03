@@ -1,5 +1,7 @@
 data = read.table('calcium.dat.txt', na.strings="_", header=TRUE)
 
+library(corrplot)
+
 pairs(data)
 
 # from pairs you can already see, lab 3 messed up the data
@@ -41,7 +43,7 @@ pairs(data)
 # but its looking much better
 
 #Correlation plot
-library(corrplot)
+
 no_na <- na.omit(data)
 M <- cor(no_na)
 corrplot(M, method = "color", type = "lower")
@@ -66,32 +68,65 @@ qqnorm(data$CAMMOL)
 plot(data$CAMMOL)
 hist(data$CAMMOL)
 
-data$CAMMOL = (data$CAMMOL)^2
+qqnorm(data$ALKSPHOS)
+plot(data$ALKSPHOS)
+hist(data$ALKSPHOS)
 
-qqnorm(data$CAMMOL)
-plot(data$CAMMOL)
-hist(data$CAMMOL, breaks = 20)
+boxplot(data$ALKSPHOS~data$AGEGRP)
+boxplot(data$CAMMOL~data$AGEGRP)
+boxplot(data$PHOSMMOL~data$AGEGRP)
 
-attach(data)
+boxplot(data$ALKSPHOS~data$SEX)
+boxplot(data$CAMMOL~data$SEX)
+boxplot(data$PHOSMMOL~data$SEX)
 
-boxplot(ALKSPHOS~AGEGRP)
-boxplot(CAMMOL~AGEGRP)
-boxplot(PHOSMMOL~AGEGRP)
+boxplot(data$ALKSPHOS~data$LAB)
+boxplot(data$CAMMOL~data$LAB)
+boxplot(data$PHOSMMOL~data$LAB)
 
-boxplot(ALKSPHOS~SEX)
-boxplot(CAMMOL~SEX)
-boxplot(PHOSMMOL~SEX)
 
-boxplot(ALKSPHOS~LAB)
-boxplot(CAMMOL~LAB)
-boxplot(PHOSMMOL~LAB)
+#!!!!!!!!!!!!!!!!!!!!!!!#
+#This is not working nicely with the interraction
+#plots, it doesnt like NA values, but it also doesnt
+#like the lengths being different
+#tomorrow I will try to replace NA values with the mean
+#as this shouldnt affect the interraction plots outcome
 
-alklm = lm(CAMMOL~AGE+SEX+LAB+ALKSPHOS+AGEGRP+PHOSMMOL,data=data)
-summary(alklm)
+SEX = na.omit(data$SEX)
+LAB = na.omit(data$LAB)
+CAMMOL = na.omit(data$CAMMOL)
+ALKSPHOS = na.omit(data$ALKSPHOS)
+PHOSMMOL = na.omit(data$PHOSMMOL)
+
+#!!!!!!!!!!!!!!!!!!!!!!!#
+
+#Interaction Plots
+#We need to justify the assumptions that concentrations will
+#Depend only on sex and lab, ie, not on age/age group
+interaction.plot(SEX,LAB,CAMMOL)
+interaction.plot(LAB,SEX,CAMMOL)
+
+interaction.plot(SEX,LAB,ALKSPHOS)
+interaction.plot(LAB,SEX,ALKSPHOS)
+
+interaction.plot(SEX,LAB,PHOSMMOL)
+interaction.plot(LAB,SEX,PHOSMMOL)
+
+
+#Top down linear models
+#CAMMOL
+summary(lm(CAMMOL^2~AGE+SEX+LAB+AGEGRP,data=data))
+summary(lm(CAMMOL~AGE+SEX+LAB,data=data))
+summary(lm(CAMMOL~SEX+LAB,data=data))
+camlm1 = lm(CAMMOL~SEX+LAB,data=data)
+plot(cooks.distance(camlm1))
+qqnorm(log(residuals(camlm1)))
+plot(fitted(camlm1),log(residuals(camlm1)))
+
+
 
 summary(lm(CAMMOL~AGE))$r.squared
 summary(lm(CAMMOL~SEX))$r.squared
-summary(lm(CAMMOL~ALKSPHOS))$r.squared
 summary(lm(CAMMOL~LAB))$r.squared
 summary(lm(CAMMOL~PHOSMMOL))$r.squared
 summary(lm(CAMMOL~AGEGRP))$r.squared
