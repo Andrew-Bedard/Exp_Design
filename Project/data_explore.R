@@ -40,16 +40,23 @@ pairs(data)
 # still some outliers that need to be dealt with
 # but its looking much better
 
+#Correlation plot
+library(corrplot)
+no_na <- na.omit(data)
+M <- cor(no_na)
+corrplot(M, method = "color", type = "lower")
+
+#Few things should be factors
 data$SEX <- as.factor(data$SEX)
 data$LAB <- as.factor(data$LAB)
 data$AGEGRP <- as.factor(data$AGEGRP)
 
+#Lets see if we can normalize some of the data
 qqnorm(data$PHOSMMOL)
 plot(data$PHOSMMOL)
 hist(data$PHOSMMOL)
 
 data$PHOSMMOL = (data$PHOSMMOL)^2
-
 
 qqnorm(data$PHOSMMOL)
 plot(data$PHOSMMOL)
@@ -63,8 +70,7 @@ data$CAMMOL = (data$CAMMOL)^2
 
 qqnorm(data$CAMMOL)
 plot(data$CAMMOL)
-hist(data$CAMMOL)
-
+hist(data$CAMMOL, breaks = 20)
 
 attach(data)
 
@@ -104,3 +110,7 @@ summary(lm(CAMMOL~SEX+LAB+AGEGRP))$r.squared
 summary(lm(CAMMOL~SEX+LAB+ALKSPHOS+AGE))$r.squared
 summary(lm(CAMMOL~SEX+LAB+ALKSPHOS+PHOSMMOL))$r.squared
 summary(lm(CAMMOL~SEX+LAB+ALKSPHOS+AGEGRP))$r.squared
+
+lm2 = lm(CAMMOL~SEX+LAB+ALKSPHOS)
+plot(cooks.distance(lm2))
+
