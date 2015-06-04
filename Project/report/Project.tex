@@ -7,9 +7,9 @@
 \usepackage{float}
 \floatstyle{plaintop}
 \restylefloat{table}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 
-\title{Experimental Design and Data Analysis: \\Calcium, inorganic phosphorus and alkaline phosphatase levels in elderly patients}
+\title{Experimental Design and Data Analysis: \\ \large{Calcium, inorganic phosphorus and alkaline phosphatase levels\\ in elderly patients}}
 \author{Andrew Bedard(2566978) \& Simone van Gompel(2567525) \\ Group 19}
 
 \begin{document}
@@ -27,9 +27,9 @@
     The experiment that was set up had as goal to see if age and sex has an influence on certain concentrations in the body.
     The concentrations that were measured are:
     \begin{itemize}
-      \item Alkaline Phosphatase International Units/Liter
-      \item Calcium mmol/L 
-      \item Inorganic Phosphorus mmol/L
+      \item Alkaline Phosphatase International Units/Liter (Alksphos)
+      \item Calcium mmol/L (Cammol)
+      \item Inorganic Phosphorus mmol/L (Phosmmol)
     \end{itemize}
     There are 6 different labs from which the data is extracted.
     Next to these features, the sex, age, agegroup and patient observation number are recorded.
@@ -42,7 +42,7 @@
       The data needed to be prepared to be able to read it in R.
       This preparation exists of replacing the empty fields by an underscore, with this the data can be read in R.
       First off a pairs plot was made of the data to be able to see how the data relates to each other.
-      In Fig\ref{fig:FirstPairs} the foremost problem is clear, the outliers in the data are big and unlogical.
+      In Fig\ref{fig:OrgPairs} the foremost problem is clear, the outliers in the data are big and unlogical.
       Furthermore has Lab more than 6 categories, these problems can be explained by human error.
       And lastly the lab 3 has strange measurements with the cammol, this might be because of confusion of the measurement unit.
       The following values were changed:
@@ -53,19 +53,16 @@
         \item Removed Phosmmol over 2
         \item Divided Cammol of Lab 3 by 10 (this is visually tested by using a pairs plot)
       \end{itemize}
-      After removal the same plot is made, see: Fig\ref{fig:SecondPairs}.
-      Here you can see the correlations between the features better than in Fig\ref{fig:FirstPairs}.
-      \begin{figure}[H]
+      After removal the same plot is made, see: Fig\ref{fig:UpdPairs}.
+      Here you can see the correlations between the features better than in Fig\ref{fig:OrgPairs}.
+      \begin{figure}
           \centering
-          \includegraphics[scale=0.5]{../results/FirstPairs.png}
-          \caption{Pairsplot of the original data}
-          \label{fig:FirstPairs}
-      \end{figure}
-      \begin{figure}[H]
-          \centering
-          \includegraphics[scale=0.5]{../results/SecondPairs.png}
-          \caption{Pairsplot of the updated data}
-          \label{fig:SecondPairs}
+          \subfigure[Original Data]
+          {\includegraphics[scale=0.3]{../results/FirstPairs.png}\label{fig:OrgPairs}}
+          \subfigure[Updated Data]
+          {\includegraphics[scale=0.3]{../results/SecondPairs.png}\label{fig:UpdPairs}}
+          \caption{Pairsplot of the data}
+          \label{fig:Pairs}
       \end{figure}
 
     \subsection{Analysis}
@@ -74,43 +71,152 @@
       The different age groups are: 1=65-69, 2=70-74, 3=75-79, 4=80-84, 5=85-89 Years.
       In Fig\ref{fig:BoxAgegrp} the relation between the different concentrations and the age groups are visually represented.
 
-      \begin{figure}[H]
+      \begin{figure}
           \centering
-          \subfigure[Alkphos]{\includegraphics[scale=0.2]{../results/BoxAlksphosAgegrp.png}}
+          \subfigure[Alksphos]{\includegraphics[scale=0.2]{../results/BoxAlksphosAgegrp.png}}
           \subfigure[Cammol]{\includegraphics[scale=0.2]{../results/BoxCammolAgegrp.png}}
           \subfigure[Phosmmol]{\includegraphics[scale=0.2]{../results/BoxPhosmmolAgegrp.png}}
           \caption{Boxplots of the concentrations with the age groups}
           \label{fig:BoxAgegrp}
       \end{figure}
 
-        There is some difference between the different age groups with all of the concentrations.
-        But with Alksphos the difference only seems to be in the variety of the values, the same holds for Cammol.
-        For Phosmmol there does seems to be a difference in the age groups, the median drops with the older ages.
-        The difference in the first two concentrations is because of the number of people in the different age groups, see Table\ref{table:Agegrp}.
-        This shows that there are only three patients in the last age group and not too much in the group before that.
-        This explains that the variety seems to lower with the higher age groups.
-        For the rest of the analysis the last age group can be discarded, because it has not enough data to be able to analyze.
-        
-        \begin{table}
-          \begin{center}
-            \begin{tabular}{l|lllll}
-            \hline
-            Groups&1&2&3&4&5\\
-            \hline
-            Patients&56&70&38&10&3\\
-            \hline
-            \end{tabular}
-          \end{center}
-          \caption{The number of patients per age group}
-          \label{table:Agegrp}
-        \end{table}
+      There is some difference between the different age groups with all of the concentrations.
+      But with Alksphos the difference only seems to be in the variety of the values, the same holds for Cammol.
+      For Phosmmol there does seems to be a difference in the age groups, the median drops with the older ages.
+      The difference in the first two concentrations is because of the number of people in the different age groups, see Table\ref{table:Agegrp}.
+      This shows that there are only three patients in the last age group and not too much in the group before that.
+      This explains that the variety seems to lower with the higher age groups.
+      For the rest of the analysis the last age group can be discarded, because it has not enough data to be able to analyze.
+      
+      \begin{table}
+        \begin{center}
+          \begin{tabular}{|l|lllll|}
+          \hline
+          Groups&1&2&3&4&5\\
+          \hline
+          Patients&56&70&38&10&3\\
+          \hline
+          \end{tabular}
+        \end{center}
+        \caption{The number of patients per age group}
+        \label{table:Agegrp}
+      \end{table}
 
+      To see if sex, lab and age have an influence on the concentrations, the interaction plots in Fig\ref{fig:IntLabSex} and Fig\ref{fig:IntAgeSex} are made.
+      This shows that all three features have an influence on the measured concentrations.
+      The age has an influence over the concentrations, which is good for the research question. 
+      But the lab and sex also influence the outcome, which means that these need to be taken into account with modeling the data.
+
+      \begin{figure}[H]
+          \centering
+          \subfigure[Alksphos]{\includegraphics[scale=0.15]{../results/AlkLabSex.png}}
+          \subfigure[Cammol]{\includegraphics[scale=0.15]{../results/CamLabSex.png}}
+          \subfigure[Phosmmol]{\includegraphics[scale=0.15]{../results/PhosLabSex.png}}
+          \caption{Interaction plots of the sex and labs of the different concentrations}
+          \label{fig:IntLabSex}
+      \end{figure}
+      \begin{figure}[H]
+          \centering
+          \subfigure[Alksphos]{\includegraphics[scale=0.15]{../results/AlkAgeSex.png}}
+          \subfigure[Cammol]{\includegraphics[scale=0.15]{../results/CamAgeSex.png}}
+          \subfigure[Phosmmol]{\includegraphics[scale=0.15]{../results/PhosAgeSex.png}}
+          \caption{Interaction plots of the sex and age groups of the different concentrations}
+          \label{fig:IntAgeSex}
+      \end{figure}
+
+    \subsection{Modeling}
+      Modeling the data can be done in several ways.
+      The first one tried is a step down linear regression approach for each of the concentrations.
+      For Alksphos it follows the following steps:
+      \begin{itemize}
+        \tiny{\item $ALKSPHOS ~ AGE + SEX + LAB + AGEGRP$}
+        \tiny{\item $ALKSPHOS ~ AGE + SEX + LAB$}
+        \tiny{\item $ALKSPHOS ~ SEX + LAB$}
+        \tiny{\item $ALKSPHOS = 88.96 + 17.91*SEX2 - 11.69*LAB2 - 16.25*LAB3 + 18.03*LAB4 - 30.20*LAB5$}
+      \end{itemize}
+      For Cammol it follows the following steps:
+      \begin{itemize}
+        \tiny{\item $CAMMOL ~ AGE + SEX + LAB + AGEGRP$}
+        \tiny{\item $CAMMOL ~ AGE + SEX + LAB$}
+        \tiny{\item $CAMMOL ~ SEX + LAB$}
+        \tiny{\item $CAMMOL = 2.29 + 0.06*SEX2 + 0.11*LAB2 + 0.03*LAB3 + 0.14*LAB4 + 0.07*LAB5$}
+      \end{itemize}
+      For Phosmmol it follows the following steps:
+      \begin{itemize}
+        \tiny{\item $PHOSMMOL ~ AGE + SEX + LAB + AGEGRP$}
+        \tiny{\item $PHOSMMOL ~ AGE + SEX + LAB$}
+        \tiny{\item $PHOSMMOL ~ AGE + SEX$}
+        \tiny{\item $PHOSMMOL = 2.02 - 0.01*AGE + 0.17*SEX2$}
+      \end{itemize}
+      As our research question is about what influence age has on the concentration and only Phosmmol has a model with age in it, this is not a good approach for this data.
 
   \section{Results}
+    Don't think this section is necessary.
 
   \section{Discussion}
+    The data was realistic to work with, it contained some errors. At the start of the project, this was a challenge. To get all the data to correspond to realistic data.
+    The good data was also supplied, but we decided against using it for the experience of working with error prone data.
+    After the preprocessing the real data analysis could begin.
+    The research question that was decided on was: What influence does age have on the given concentrations in the body?
+    The reason to not only look at age and the three concentrations was to be able to see if more features had an influence on the concentrations.
+    If this was not done the results would not be correct, because the features lab and sex also had an effect on the concentrations.
+    In the models created it was clear that age did not have as big an influence as first thought.
+    In two of the three models, age was not included.
+    This means that age has a small influence on the measured concentrations, which is the answer to our research question.
     
   \section{R-Code}
     \begin{lstlisting}[language=R]
+data = read.table('calcium.dat.txt', na.strings="_", header=TRUE)
+# exploration
+pairs(data)
+# data preparation
+data[!is.na(data$AGE) & !(data$AGE <= 110),]$AGE<-NA
+data[!is.na(data$SEX) & !(data$SEX == 1|data$SEX ==2),]$SEX<-NA
+data[!is.na(data$LAB) & !(data$LAB < 6),]$LAB<-NA
+data[!is.na(data$PHOSMMOL) & !(data$PHOSMMOL < 2),]$PHOSMMOL<-NA
+data$CAMMOL[!is.na(data$CAMMOL) & (data$CAMMOL > 10)] <- (data$CAMMOL[!is.na(data$CAMMOL) & (data$CAMMOL > 10)])/10
+data$SEX <- as.factor(data$SEX)
+data$LAB <- as.factor(data$LAB)
+data$AGEGRP <- as.factor(data$AGEGRP)
+# exploration
+pairs(data)
+summary(data$AGEGRP)
+# data preperation, replace NA with mean
+sex = data$SEX
+sex[is.na(sex)]<-mean(na.omit(data$SEX))
+lab = data$LAB
+lab[is.na(lab)]<-mean(na.omit(data$LAB))
+cammol = data$CAMMOL
+cammol[is.na(cammol)]<-mean(na.omit(data$CAMMOL))
+alksphos = data$ALKSPHOS
+alksphos[is.na(alksphos)]<-mean(na.omit(data$ALKSPHOS))
+phosmmol = data$PHOSMMOL
+phosmmol[is.na(phosmmol)]<-mean(na.omit(data$PHOSMMOL))
+# data preperation, make sex M and F instead of 1 and 2
+Sex = as.character(sex)
+Sex[sex == 1] = "M"
+Sex[sex == 2] = "F"
+Sex = as.factor(Sex)
+AgeGroup = AGEGRP
+# interaction plots
+interaction.plot(lab,Sex,cammol)
+interaction.plot(lab,Sex,alksphos)
+interaction.plot(lab,Sex,phosmmol)
+interaction.plot(AgeGroup,Sex,cammol)
+interaction.plot(AgeGroup,Sex,alksphos)
+interaction.plot(AgeGroup,Sex,phosmmol)
+# step down linear regression
+#ALKSPHOS
+summary(lm(ALKSPHOS~AGE+SEX+LAB+AGEGRP,data=data))
+summary(lm(ALKSPHOS~AGE+SEX+LAB,data=data))
+summary(lm(ALKSPHOS~SEX+LAB,data=data))
+#CAMMOL
+summary(lm(CAMMOL~AGE+SEX+LAB+AGEGRP,data=data))
+summary(lm(CAMMOL~AGE+SEX+LAB,data=data))
+summary(lm(CAMMOL~SEX+LAB,data=data))
+#PHOSMMOL
+summary(lm(PHOSMMOL~AGE+SEX+LAB+AGEGRP,data=data))
+summary(lm(PHOSMMOL~AGE+SEX+LAB,data=data))
+summary(lm(PHOSMMOL~AGE+SEX,data=data))
     \end{lstlisting}
 \end{document}
