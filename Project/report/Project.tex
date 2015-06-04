@@ -8,6 +8,7 @@
 \floatstyle{plaintop}
 \restylefloat{table}
 \usepackage[hidelinks]{hyperref}
+\usepackage[margin=1.3in]{geometry}
 
 \title{Experimental Design and Data Analysis: \\ \large{Calcium, inorganic phosphorus and alkaline phosphatase levels\\ in elderly patients}}
 \author{Andrew Bedard(2566978) \& Simone van Gompel(2567525) \\ Group 19}
@@ -17,35 +18,43 @@
   \maketitle
 
   \section{Introduction}
-    In this paper the process of analysing a certain dataset is laid out.
-    The dataset used is calcium.dat, which can be found at \url{http://www.amstat.org/publications/jse/jse_data_archive.htm}.
-    This dataset is used for this project, because it has a good number of entries and enough features to be able to do data analysis on.
-    In the rest of this paper the experiment is explained, the data is analyzed, the results are shown and the process is discussed.
-    In the appendix the used R code is shown.
+  In this paper we seek to determine whether there are significant differences in the concentrations of 3 substances in the blood of elderly patients, based on gender and age groups.
+    The dataset used is calcium.dat, which can be found at \url{http://www.amstat.org/publications/jse/jse_data_archive.htm}. This dataset was chosen for this project because of its reasonable size (1424 data points), and because it contained real clinical data that would give us a chance to exercise our ability to use data that likely contains errors. All tests in this paper are done with a significance value of 0.05, and the R code used is shown in the appendix.
 
   \section{The Experiment}
     The experiment was set up with the goal to see if age and sex has an influence on certain concentrations in the body.
     The concentrations that were measured are:
     \begin{itemize}
-      \item Alkaline Phosphatase International Units/Liter (Alksphos)
+      \item Alkaline Phosphatase International Units/Litre (Alksphos)
       \item Calcium mmol/L (Cammol)
       \item Inorganic Phosphorus mmol/L (Phosmmol)
     \end{itemize}
     There are 6 different labs from which the data is extracted.
-    Next to these features, the sex, age, agegroup and patient observation number are recorded.
-    In the calcium.dat the original data is stored with errors, in calciumgood.dat the data is already cleaned up.
-    In this project only the calcium.dat data is used to explain how the cleaning up of the data is done.
-    The research question we want to answer is: What influence does age have on the given concentrations in the body?
+    Next to these features, the sex, age, age-group and patient observation number are recorded.
+    In the calcium.dat the original data is stored with errors, in calciumgood.dat the data is already cleaned up, but for this paper only the calcium.dat data is considered.
+    The research question we want to answer is: What influence does age and sex have on the given concentrations in the body for patients over the age of 65, and can a predictive model be created to estimate these values?
 
   \section{Data Analysis}
     \subsection{Preparation}
-      The data needed to be prepared to be able to read it in R.
-      This preparation exists of replacing the empty fields by an underscore, with this the data can be read in R.
-      First off a pairs plot was made of the data to be able to see how the data relates to each other.
-      In Fig\ref{fig:OrgPairs} the foremost problem is clear, the outliers in the data are big and not logical.
-      Furthermore has Lab more than 6 categories, these problems can be explained by human error.
-      And lastly the lab 3 has strange measurements with the cammol, this might be because of confusion of the measurement unit.
-      The following values were changed:
+    Before loading the data into R, there were a few steps that needed to be taken. First, the table reading method in R will not work correctly if there are missing data points with no representations, so these points were manually replaced with an underscore to allow us to tell R to replace these underscores with \textit{NA}. Next headers were used to simplify our code, and let us know when we are referring to each variable by name, these were OBSNO, AGE, SEX, ALKSPHOS, LAB, CAMMOL, PHOSMMOL, AGEGRP, which represent patient number, age, sex, alkaline phosphatase in international units/litre, calcium in mmol/litre, inorganic phosphorus in mmol/litre and age group of patient respectively.
+      This allowed us to create a pairs plot to get a general overview of the data, and in Fig: \ref{fig:OrgPairs}, just from observing how many points lie a great distance from the main clusters in each pair, it is clear there are a large number of outliers in our original data.
+
+      \begin{figure}
+          \centering
+          {\includegraphics[scale=0.6]{../results/FirstPairs.png}\label{fig:OrgPairs}}
+          \caption{Pairsplot of original data}
+          \label{fig:Pairs}
+      \end{figure}
+      
+           For example, lab 3 has strange measurements for cammol, which appears to be a misplaced decimal, causing all measurements to be an order of magnitude larger than all other measurements for cammol. This, as well as the other behaviour of the data for cammol, alksphos and phosmmol can be seen in QQ-plots of all data for each substance.(Fig: \ref{fig:qq1}) 
+      \begin{figure}
+		\centering
+		{\includegraphics[scale=0.3]{../results/dat1_qq.png}}
+		\caption{QQ plot of raw data, from left to right, Cammol, alksphos, phosmmol}
+		\label{fig:qq1}
+	\end{figure}
+
+It is clear from Fig: \ref{fig:qq1} that our populations are certainly not normal, and this is perhaps due to the outliers. By experimentation, the values were changed in the following manner:
       \begin{itemize}
         \item Removed Ages over 110
         \item Removed Sex which is not in the category 1 or 2
@@ -55,98 +64,34 @@
         \item Removed Cammol over 3 and under 1.9
         \item Removed Alksphos over 150 and under 20
       \end{itemize}
-      After removal the same plot is made, see: Fig\ref{fig:UpdPairs}.
-      Here you can see the correlations between the features better than in Fig\ref{fig:OrgPairs}.
-      \begin{figure}
-          \centering
-          \subfigure[Original Data]
-          {\includegraphics[scale=0.3]{../results/FirstPairs.png}\label{fig:OrgPairs}}
-          \subfigure[Updated Data]
-          {\includegraphics[scale=0.3]{../results/SecondPairs.png}\label{fig:UpdPairs}}
-          \caption{Pairsplot of the data}
-          \label{fig:Pairs}
-      \end{figure}
 
+Now from the Normal QQ-Plots of the transformed data Fig: \ref{fig:qq2}, we can see that we indeed have normal, or at least reasonably normal distributions. It should be noted that the stair like pattern for cammol and phosmmol concentrations are likely due to rounding.
+
+	\begin{figure}
+		\centering
+		{\includegraphics[scale=0.3]{../results/dat2_qq.png}}
+		\caption{QQ plot after removing outliers, from left to right, Cammol, alksphos, phosmmol}
+		\label{fig:qq2}
+	\end{figure}
+	
     \subsection{Analysis}
       The feature that needs to be analyzed is age, this can be done by either using the feature age or the feature age group.
       The age group exists of 5 levels and is thus categorical.
       The different age groups are: 1=65-69, 2=70-74, 3=75-79, 4=80-84, 5=85-89 Years.
-      In Fig\ref{fig:BoxAgegrp} the relation between the different concentrations and the age groups are visually represented.
+      In Fig\ref{fig:BoxSex} the relation between the different concentrations and the sex groups are visually represented.
 
-      \begin{figure}[H]
+      \begin{figure}
           \centering
-          \subfigure[Alksphos]{\includegraphics[scale=0.2]{../results/BoxAlksphosAgegrp.png}}
-          \subfigure[Cammol]{\includegraphics[scale=0.2]{../results/BoxCammolAgegrp.png}}
-          \subfigure[Phosmmol]{\includegraphics[scale=0.2]{../results/BoxPhosmmolAgegrp.png}}
-          \caption{Boxplots of the concentrations with the age groups}
-          \label{fig:BoxAgegrp}
+          \subfigure[Alksphos]{\includegraphics[scale=0.3]{../results/BoxAlksphosSex.png}}
+          \subfigure[Cammol]{\includegraphics[scale=0.3]{../results/BoxCammolSex.png}}
+          \subfigure[Phosmmol]{\includegraphics[scale=0.3]{../results/BoxPhosmmolSex.png}}
+          \caption{Boxplots of the concentrations between sexes}
+          \label{fig:BoxSex}
       \end{figure}
-
-	Analysing whether the data in CAMMOL, ALKSPHOS and PHOSMMOL is normal:
-	
-	\begin{figure}[H]
-		\centering
-		{\includegraphics[scale=0.3]{../results/dat1_qq.png}}
-		\caption{QQ plot of raw data}
-		\label{fig:qq1}
-	\end{figure}
-	
-	Obviously these are not normal, most likely due to outliers. After removing outliers we obtain:
-	
-	\begin{figure}[H]
-		\centering
-		{\includegraphics[scale=0.3]{../results/dat2_qq.png}}
-		\caption{QQ plot after removing outliers}
-		\label{fig:qq2}
-	\end{figure}
-	
-	Clearly these are more likely normal, even though we do have a step type pattern, likely due to rounding.
-	
-      As see in Fig\ref{fig:BoxAgegrp} there is some difference between the different age groups with all of the concentrations.
-      But with Alksphos the difference only seems to be in the variety of the values, the same holds for Cammol.
-      For Phosmmol there does seems to be a difference in the age groups, the median drops with the older ages.
-      The difference in the first two concentrations is because of the number of people in the different age groups, see Table\ref{table:Agegrp}.
-      This shows that there are only three patients in the last age group and not too much in the group before that.
-      This explains that the variety seems to lower with the higher age groups.
-      
-      \begin{table}[H]
-        \begin{center}
-          \scriptsize
-          \begin{tabular}{|l|lllll|}
-          \hline
-          Groups&1&2&3&4&5\\
-          \hline
-          Patients&56&70&38&10&3\\
-          \hline
-          \end{tabular}
-        \end{center}
-        \caption{The number of patients per age group}
-        \label{table:Agegrp}
-      \end{table}
-
-      To see if sex, lab and age have an influence on the concentrations, the interaction plots in Fig\ref{fig:IntLabSex} and Fig\ref{fig:IntAgeSex} are made.
-      This shows that all three features have an influence on the measured concentrations.
-      The age has an influence over the concentrations, which is good for the research question. 
-      But the lab and sex also influence the outcome, which means that these need to be taken into account with modeling the data.
-
-      \begin{figure}[H]
-          \centering
-          \subfigure[Alksphos]{\includegraphics[scale=0.2]{../results/AlkLabSex.png}}
-          \subfigure[Cammol]{\includegraphics[scale=0.2]{../results/CamLabSex.png}}
-          \subfigure[Phosmmol]{\includegraphics[scale=0.2]{../results/PhosLabSex.png}}
-          \caption{Interaction plots of the sex and labs of the different concentrations}
-          \label{fig:IntLabSex}
-      \end{figure}
-      \begin{figure}[H]
-          \centering
-          \subfigure[Alksphos]{\includegraphics[scale=0.2]{../results/AlkAgeSex.png}}
-          \subfigure[Cammol]{\includegraphics[scale=0.2]{../results/CamAgeSex.png}}
-          \subfigure[Phosmmol]{\includegraphics[scale=0.2]{../results/PhosAgeSex.png}}
-          \caption{Interaction plots of the sex and age groups of the different concentrations}
-          \label{fig:IntAgeSex}
-      \end{figure}
-      
-          \begin{table}[H]
+		
+  There seems to be a subtle difference between the sexes for all concentrations, with females having slightly higher concentrations across all substances. To get a better understanding of these relationships we perform the Kruskal-Wallis rank sum test for each of our factors:Sex, Lab, and Agegrp ignoring all others, to determine whether our populations are identical across factors. The results can be seen in table: \ref{table:krusk}
+  
+    \begin{table}[H]
     \begin{center}
     \scriptsize
     \begin{tabular}{|ll|}
@@ -173,57 +118,94 @@
     \label{table:krusk}
     \end{center}
     \end{table}
+    
+  For Cammol, we reject the null hypothesis that our populations are the same across genders and across labs.For Alksphos, we reject the null hypothesis that our populations are the same across genders and across labs, and for Phosmmol we reject the null hypothesis that our populations are the same across genders and age groups.
 
-    \begin{table}
+      The next step is to see if sex, lab and age have an influence on the concentrations while interacting with each other, the interaction plots in Fig\ref{fig:IntLabSex} and Fig\ref{fig:IntAgeSex} are made. From these plots it appears there may in fact be an interaction, though because they are parallel at times, and other times not, it makes it difficult to determine graphically if these interactions are significant, for this we use a 2-way ANOVA test, which can be seen in tables: \ref{table:AnCammol} \ref{table:AnAlsphos} \ref{table:AnPhosmmol}
+
+      \begin{figure}[h]
+          \centering
+          \subfigure[Alksphos]{\includegraphics[scale=0.2]{../results/AlkLabSex.png}}
+          \subfigure[Cammol]{\includegraphics[scale=0.2]{../results/CamLabSex.png}}
+          \subfigure[Phosmmol]{\includegraphics[scale=0.2]{../results/PhosLabSex.png}}
+          \caption{Interaction plots of the sex and labs of the different concentrations}
+          \label{fig:IntLabSex}
+      \end{figure}
+      \begin{figure}[H]
+          \centering
+          \subfigure[Alksphos]{\includegraphics[scale=0.2]{../results/AlkAgeSex.png}}
+          \subfigure[Cammol]{\includegraphics[scale=0.2]{../results/CamAgeSex.png}}
+          \subfigure[Phosmmol]{\includegraphics[scale=0.2]{../results/PhosAgeSex.png}}
+          \caption{Interaction plots of the sex and age groups of the different concentrations}
+          \label{fig:IntAgeSex}
+      \end{figure}
+      
+
+    \begin{table}[H]
     \begin{center}
     \scriptsize
     \begin{tabular}{|l|l|l|l|}
       \hline
-      &$SEX * LAB$&$SEX * AGEGRP$&$LAB*AGEGRP$\\
+      $VAR1 * VAR2$:&$SEX * LAB$&$SEX * AGEGRP$&$LAB*AGEGRP$\\
       \hline
       $Var1$       & 0.00012 & 0.0003835 & 1.491e-05\\
       $Var2$       & 0.00015 & 0.9361766 & 0.4083\\
       $Var1:Var2$  & 0.51331 & 0.1214165 & 0.6595\\
       \hline
     \end{tabular}
-    \caption{Anova, response variable: Cammol}
+    \caption{p-values for 2-way ANOVA, response variable: Cammol}
     \label{table:AnCammol}
     \end{center}
     \end{table}
 
-    \begin{table}
+    \begin{table}[H]
     \begin{center}
     \scriptsize
     \begin{tabular}{|l|l|l|l|}
       \hline
-      &$SEX * LAB$&$SEX * AGEGRP$&$LAB*AGEGRP$\\
+      $VAR1 * VAR2$:&$SEX * LAB$&$SEX * AGEGRP$&$LAB*AGEGRP$\\
       \hline
       $Var1$       & 0.05781 & 0.07838 & 0.03025\\
       $Var2$       & 0.01471 & 0.63871 & 0.72707\\
       $Var1:Var2$  & 0.53010 & 0.08933 & 0.58935\\
       \hline
     \end{tabular}
-    \caption{Anova, response variable: Alsphos}
+    \caption{p-values for 2-way ANOVA, response variable: Alsphos}
     \label{table:AnAlsphos}
     \end{center}
     \end{table}
 
-    \begin{table}
+    \begin{table}[H]
     \begin{center}
     \scriptsize
     \begin{tabular}{|l|l|l|l|}
       \hline
-      &$SEX * LAB$&$SEX * AGEGRP$&$LAB*AGEGRP$\\
+      $VAR1 * VAR2$:&$SEX * LAB$&$SEX * AGEGRP$&$LAB*AGEGRP$\\
       \hline
       $Var1$       & 0.002991 & 0.003218 & 0.18946\\
       $Var2$       & 0.006101 & 0.007732 & 0.02311\\
       $Var1:Var2$  & 0.207392 & 0.402506 & 0.16321\\
       \hline
     \end{tabular}
-    \caption{Anova, response variable: Phosmmol}
+    \caption{p-values for 2-way ANOVA, response variable: Phosmmol}
     \label{table:AnPhosmmol}
     \end{center}
     \end{table}
+ 
+Based on tables: \ref{table:AnCammol} \ref{table:AnAlsphos} \ref{table:AnPhosmmol}, we fail to reject the null hypothesis for all interactions between any 2 factors, thus these interactions are not in fact significant.
+
+We further explore the QQ plots and residual plots for the linear models created to perform the 2 way ANOVA to judge the quality of our results. As we can see with both plots in Fig: \ref{fig:qq3}, there is no reason to believe that our residuals are not normal, thus our assumptions are reasonable.
+    
+    \begin{figure}[H]
+		\centering
+		\subfigure[QQ plot of residuals for all 9 linear models]
+		{\includegraphics[scale=0.25]{../results/qq3.png}}
+		\subfigure[Plots of fitted residuals for all 9 linear models]
+		{\includegraphics[scale=0.25]{../results/resid3.png}}
+		\caption{Graphical tests for normality of residuals}
+		\label{fig:qq3}
+	\end{figure}
+	
     
     \subsection{Modeling}
       Modeling the data can be done in several ways.
@@ -249,13 +231,14 @@
         \scriptsize{\item $PHOSMMOL \sim AGE + SEX$}
         \scriptsize{\item $PHOSMMOL = 2.02 - 0.01*AGE + 0.17*SEX2$}
       \end{itemize}
-      As our research question is about what influence age has on the concentration and only Phosmmol has a model with age in it, this is not a good approach for this data.
+      As our research question is about what influence age has on the concentration and only Phosmmol has a model where age was a significant explanatory variable, this is not a good approach for this data.
+      
+      The results of the step up model were identical, thus they shall not be considered in this paper.
 
   \section{Discussion}
-    The data was realistic to work with, it contained some errors. At the start of the project, this was a challenge. To get all the data to correspond to realistic data.
-    The good data was also supplied, but we decided against using it for the experience of working with error prone data.
-    After the preprocessing the real data analysis could begin.
-    The research question that was decided on was: What influence does age have on the given concentrations in the body?
+    The data was realistic to work with as it contained many errors, likely due to human error, and at the start of the project, this was a challenge.
+    The already corrected data was also supplied, but we decided against using it for the experience of working with error prone data.
+    To answer our research question, does age and sex have an influence 
     The reason to not only look at age and the three concentrations was to be able to see if more features had an influence on the concentrations.
     If this was not done the results would not be correct, because the features lab and sex also had an effect on the concentrations.
     In the models created it was clear that age did not have as big an influence as first thought.
