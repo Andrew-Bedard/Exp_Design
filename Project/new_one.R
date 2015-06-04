@@ -76,7 +76,7 @@ anova(lm(PHOSMMOL~LAB*AGEGRP,data=data))
 
 #plots for checking normality of risiduals
 
-par(mfrow=c(1,3))
+par(mfrow=c(3,3))
 qqnorm(residuals(lm(CAMMOL~SEX*LAB,data=data)))
 qqnorm(residuals(lm(CAMMOL~SEX*AGEGRP,data=data)))
 qqnorm(residuals(lm(CAMMOL~LAB*AGEGRP,data=data)))
@@ -89,14 +89,14 @@ qqnorm(residuals(lm(PHOSMMOL~SEX*LAB,data=data)))
 qqnorm(residuals(lm(PHOSMMOL~SEX*AGEGRP,data=data)))
 qqnorm(residuals(lm(PHOSMMOL~LAB*AGEGRP,data=data)))
 
-plot(fitted(lm(CAMMOL~SEX*LAB,data=data)),residuals(lm(CAMMOL~SEX*LAB,data=data)))
-plot(fitted(lm(CAMMOL~SEX*AGEGRP,data=data)),residuals(lm(CAMMOL~SEX*AGEGRP,data=data)))
-plot(fitted(lm(CAMMOL~LAB*AGEGRP,data=data)),residuals(lm(CAMMOL~LAB*AGEGRP,data=data)))
+plot(fitted(lm(CAMMOL~SEX*LAB,data=data)),residuals(lm(CAMMOL~SEX*LAB,data=data)),ylab='')
+plot(fitted(lm(CAMMOL~SEX*AGEGRP,data=data)),residuals(lm(CAMMOL~SEX*AGEGRP,data=data)),ylab='')
+plot(fitted(lm(CAMMOL~LAB*AGEGRP,data=data)),residuals(lm(CAMMOL~LAB*AGEGRP,data=data)),ylab='')
 
-plot(fitted(lm(ALKSPHOS~SEX*LAB,data=data)),residuals(lm(ALKSPHOS~SEX*LAB,data=data)))
-plot(fitted(lm(ALKSPHOS~SEX*AGEGRP,data=data)),residuals(lm(ALKSPHOS~SEX*AGEGRP,data=data)))
-plot(fitted(lm(ALKSPHOS~LAB*AGEGRP,data=data)),residuals(lm(ALKSPHOS~LAB*AGEGRP,data=data)))
+plot(fitted(lm(ALKSPHOS~SEX*LAB,data=data)),residuals(lm(ALKSPHOS~SEX*LAB,data=data)),ylab='')
+plot(fitted(lm(ALKSPHOS~SEX*AGEGRP,data=data)),residuals(lm(ALKSPHOS~SEX*AGEGRP,data=data)),ylab='')
+plot(fitted(lm(ALKSPHOS~LAB*AGEGRP,data=data)),residuals(lm(ALKSPHOS~LAB*AGEGRP,data=data)),ylab='')
 
-plot(fitted(lm(PHOSMMOL~SEX*LAB,data=data)),residuals(lm(PHOSMMOL~SEX*LAB,data=data)))
-plot(fitted(lm(PHOSMMOL~SEX*AGEGRP,data=data)),residuals(lm(PHOSMMOL~SEX*AGEGRP,data=data)))
-plot(fitted(lm(PHOSMMOL~LAB*AGEGRP,data=data)),residuals(lm(PHOSMMOL~LAB*AGEGRP,data=data)))
+plot(fitted(lm(PHOSMMOL~SEX*LAB,data=data)),residuals(lm(PHOSMMOL~SEX*LAB,data=data)),ylab='')
+plot(fitted(lm(PHOSMMOL~SEX*AGEGRP,data=data)),residuals(lm(PHOSMMOL~SEX*AGEGRP,data=data)),ylab='')
+plot(fitted(lm(PHOSMMOL~LAB*AGEGRP,data=data)),residuals(lm(PHOSMMOL~LAB*AGEGRP,data=data)),ylab='')
