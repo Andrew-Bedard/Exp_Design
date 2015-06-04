@@ -19,12 +19,12 @@
   \section{Introduction}
     In this paper the process of analysing a certain dataset is laid out.
     The dataset used is calcium.dat, which can be found at \url{http://www.amstat.org/publications/jse/jse_data_archive.htm}.
-    This dataset is used for this project is because it has a good number of entries and enough features to be able to do data analysis on.
-    In the rest of this paper the experiment is explained, the data is analysed, the found results are shown and all of this will be discussed at the end.
+    This dataset is used for this project, because it has a good number of entries and enough features to be able to do data analysis on.
+    In the rest of this paper the experiment is explained, the data is analyzed, the results are shown and the process is discussed.
     In the appendix the used R code is shown.
 
   \section{The Experiment}
-    The experiment that was set up had as goal to see if age and sex has an influence on certain concentrations in the body.
+    The experiment was set up with the goal to see if age and sex has an influence on certain concentrations in the body.
     The concentrations that were measured are:
     \begin{itemize}
       \item Alkaline Phosphatase International Units/Liter (Alksphos)
@@ -42,7 +42,7 @@
       The data needed to be prepared to be able to read it in R.
       This preparation exists of replacing the empty fields by an underscore, with this the data can be read in R.
       First off a pairs plot was made of the data to be able to see how the data relates to each other.
-      In Fig\ref{fig:OrgPairs} the foremost problem is clear, the outliers in the data are big and unlogical.
+      In Fig\ref{fig:OrgPairs} the foremost problem is clear, the outliers in the data are big and not logical.
       Furthermore has Lab more than 6 categories, these problems can be explained by human error.
       And lastly the lab 3 has strange measurements with the cammol, this might be because of confusion of the measurement unit.
       The following values were changed:
@@ -86,7 +86,6 @@
       The difference in the first two concentrations is because of the number of people in the different age groups, see Table\ref{table:Agegrp}.
       This shows that there are only three patients in the last age group and not too much in the group before that.
       This explains that the variety seems to lower with the higher age groups.
-      For the rest of the analysis the last age group can be discarded, because it has not enough data to be able to analyze.
       
       \begin{table}
         \begin{center}
@@ -129,24 +128,24 @@
       The first one tried is a step down linear regression approach for each of the concentrations.
       For Alksphos it follows the following steps:
       \begin{itemize}
-        \tiny{\item $ALKSPHOS ~ AGE + SEX + LAB + AGEGRP$}
-        \tiny{\item $ALKSPHOS ~ AGE + SEX + LAB$}
-        \tiny{\item $ALKSPHOS ~ SEX + LAB$}
-        \tiny{\item $ALKSPHOS = 88.96 + 17.91*SEX2 - 11.69*LAB2 - 16.25*LAB3 + 18.03*LAB4 - 30.20*LAB5$}
+        \small{\item $ALKSPHOS \sim AGE + SEX + LAB + AGEGRP$}
+        \small{\item $ALKSPHOS \sim AGE + SEX + LAB$}
+        \small{\item $ALKSPHOS \sim SEX + LAB$}
+        \small{\item $ALKSPHOS = 88.96 + 17.91*SEX2 - 11.69*LAB2 - 16.25*LAB3 + 18.03*LAB4 - 30.20*LAB5$}
       \end{itemize}
       For Cammol it follows the following steps:
       \begin{itemize}
-        \tiny{\item $CAMMOL ~ AGE + SEX + LAB + AGEGRP$}
-        \tiny{\item $CAMMOL ~ AGE + SEX + LAB$}
-        \tiny{\item $CAMMOL ~ SEX + LAB$}
-        \tiny{\item $CAMMOL = 2.29 + 0.06*SEX2 + 0.11*LAB2 + 0.03*LAB3 + 0.14*LAB4 + 0.07*LAB5$}
+        \small{\item $CAMMOL \sim AGE + SEX + LAB + AGEGRP$}
+        \small{\item $CAMMOL \sim AGE + SEX + LAB$}
+        \small{\item $CAMMOL \sim SEX + LAB$}
+        \small{\item $CAMMOL = 2.29 + 0.06*SEX2 + 0.11*LAB2 + 0.03*LAB3 + 0.14*LAB4 + 0.07*LAB5$}
       \end{itemize}
       For Phosmmol it follows the following steps:
       \begin{itemize}
-        \tiny{\item $PHOSMMOL ~ AGE + SEX + LAB + AGEGRP$}
-        \tiny{\item $PHOSMMOL ~ AGE + SEX + LAB$}
-        \tiny{\item $PHOSMMOL ~ AGE + SEX$}
-        \tiny{\item $PHOSMMOL = 2.02 - 0.01*AGE + 0.17*SEX2$}
+        \small{\item $PHOSMMOL \sim AGE + SEX + LAB + AGEGRP$}
+        \small{\item $PHOSMMOL \sim AGE + SEX + LAB$}
+        \small{\item $PHOSMMOL \sim AGE + SEX$}
+        \small{\item $PHOSMMOL = 2.02 - 0.01*AGE + 0.17*SEX2$}
       \end{itemize}
       As our research question is about what influence age has on the concentration and only Phosmmol has a model with age in it, this is not a good approach for this data.
 
