@@ -27,9 +27,9 @@
     The experiment that was set up had as goal to see if age and sex has an influence on certain concentrations in the body.
     The concentrations that were measured are:
     \begin{itemize}
-      \item Alkaline Phosphatase International Units/Liter
-      \item Calcium mmol/L 
-      \item Inorganic Phosphorus mmol/L
+      \item Alkaline Phosphatase International Units/Liter (Alksphos)
+      \item Calcium mmol/L (Cammol)
+      \item Inorganic Phosphorus mmol/L (Phosmmol)
     \end{itemize}
     There are 6 different labs from which the data is extracted.
     Next to these features, the sex, age, agegroup and patient observation number are recorded.
@@ -73,7 +73,7 @@
 
       \begin{figure}
           \centering
-          \subfigure[Alkphos]{\includegraphics[scale=0.2]{../results/BoxAlksphosAgegrp.png}}
+          \subfigure[Alksphos]{\includegraphics[scale=0.2]{../results/BoxAlksphosAgegrp.png}}
           \subfigure[Cammol]{\includegraphics[scale=0.2]{../results/BoxCammolAgegrp.png}}
           \subfigure[Phosmmol]{\includegraphics[scale=0.2]{../results/BoxPhosmmolAgegrp.png}}
           \caption{Boxplots of the concentrations with the age groups}
@@ -104,25 +104,51 @@
 
       To see if sex, lab and age have an influence on the concentrations, the interaction plots in Fig\ref{fig:IntLabSex} and Fig\ref{fig:IntAgeSex} are made.
       This shows that all three features have an influence on the measured concentrations.
+      The age has an influence over the concentrations, which is good for the research question. 
+      But the lab and sex also influence the outcome, which means that these need to be taken into account with modeling the data.
 
-      \begin{figure}
+      \begin{figure}[H]
           \centering
-          \subfigure[Alkphos]{\includegraphics[scale=0.2]{../results/AlkLabSex.png}}
-          \subfigure[Cammol]{\includegraphics[scale=0.2]{../results/CamLabSex.png}}
-          \subfigure[Phosmmol]{\includegraphics[scale=0.2]{../results/PhosLabSex.png}}
+          \subfigure[Alksphos]{\includegraphics[scale=0.15]{../results/AlkLabSex.png}}
+          \subfigure[Cammol]{\includegraphics[scale=0.15]{../results/CamLabSex.png}}
+          \subfigure[Phosmmol]{\includegraphics[scale=0.15]{../results/PhosLabSex.png}}
           \caption{Interaction plots of the sex and labs of the different concentrations}
           \label{fig:IntLabSex}
       \end{figure}
-      \begin{figure}
+      \begin{figure}[H]
           \centering
-          \subfigure[Alkphos]{\includegraphics[scale=0.2]{../results/AlkLabSex.png}}
-          \subfigure[Cammol]{\includegraphics[scale=0.2]{../results/CamLabSex.png}}
-          \subfigure[Phosmmol]{\includegraphics[scale=0.2]{../results/PhosLabSex.png}}
-          \caption{Interaction plots of the sex and age of the different concentrations}
+          \subfigure[Alksphos]{\includegraphics[scale=0.15]{../results/AlkAgeSex.png}}
+          \subfigure[Cammol]{\includegraphics[scale=0.15]{../results/CamAgeSex.png}}
+          \subfigure[Phosmmol]{\includegraphics[scale=0.15]{../results/PhosAgeSex.png}}
+          \caption{Interaction plots of the sex and age groups of the different concentrations}
           \label{fig:IntAgeSex}
       \end{figure}
 
-      Next a simple step down linear regression is run on the data.
+    \subsection{Modeling}
+      Modeling the data can be done in several ways.
+      The first one tried is a step down linear regression approach for each of the concentrations.
+      For Alksphos it follows the following steps:
+      \begin{itemize}
+        \tiny{\item $ALKSPHOS ~ AGE + SEX + LAB + AGEGRP$}
+        \tiny{\item $ALKSPHOS ~ AGE + SEX + LAB$}
+        \tiny{\item $ALKSPHOS ~ SEX + LAB$}
+        \tiny{\item $ALKSPHOS = 88.96 + 17.91*SEX2 - 11.69*LAB2 - 16.25*LAB3 + 18.03*LAB4 - 30.20*LAB5$}
+      \end{itemize}
+      For Cammol it follows the following steps:
+      \begin{itemize}
+        \tiny{\item $CAMMOL ~ AGE + SEX + LAB + AGEGRP$}
+        \tiny{\item $CAMMOL ~ AGE + SEX + LAB$}
+        \tiny{\item $CAMMOL ~ SEX + LAB$}
+        \tiny{\item $CAMMOL = 2.29 + 0.06*SEX2 + 0.11*LAB2 + 0.03*LAB3 + 0.14*LAB4 + 0.07*LAB5$}
+      \end{itemize}
+      For Phosmmol it follows the following steps:
+      \begin{itemize}
+        \tiny{\item $PHOSMMOL ~ AGE + SEX + LAB + AGEGRP$}
+        \tiny{\item $PHOSMMOL ~ AGE + SEX + LAB$}
+        \tiny{\item $PHOSMMOL ~ AGE + SEX$}
+        \tiny{\item $PHOSMMOL = 2.02 - 0.01*AGE + 0.17*SEX2$}
+      \end{itemize}
+      As our research question is about what influence age has on the concentration and only Phosmmol has a model with age in it, this is not a good approach for this data.
 
   \section{Results}
     Don't think this section is necessary.
