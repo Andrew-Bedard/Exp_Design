@@ -8,6 +8,7 @@
 \floatstyle{plaintop}
 \restylefloat{table}
 \usepackage[hidelinks]{hyperref}
+\usepackage[margin=1.3in]{geometry}
 
 \title{Experimental Design and Data Analysis: \\ \large{Calcium, inorganic phosphorus and alkaline phosphatase levels\\ in elderly patients}}
 \author{Andrew Bedard(2566978) \& Simone van Gompel(2567525) \\ Group 19}
@@ -69,22 +70,22 @@
       The feature that needs to be analyzed is age, this can be done by either using the feature age or the feature age group.
       The age group exists of 5 levels and is thus categorical.
       The different age groups are: 1=65-69, 2=70-74, 3=75-79, 4=80-84, 5=85-89 Years.
-      In Fig\ref{fig:BoxAgegrp} the relation between the different concentrations and the age groups are visually represented.
+      In Fig\ref{fig:BoxSex} the relation between the different concentrations and the age groups are visually represented.
 
       \begin{figure}[H]
           \centering
-          \subfigure[Alksphos]{\includegraphics[scale=0.2]{../results/BoxAlksphosAgegrp.png}}
-          \subfigure[Cammol]{\includegraphics[scale=0.2]{../results/BoxCammolAgegrp.png}}
-          \subfigure[Phosmmol]{\includegraphics[scale=0.2]{../results/BoxPhosmmolAgegrp.png}}
-          \caption{Boxplots of the concentrations with the age groups}
-          \label{fig:BoxAgegrp}
+          \subfigure[Alksphos]{\includegraphics[scale=0.2]{../results/BoxAlksphosSex.png}}
+          \subfigure[Cammol]{\includegraphics[scale=0.2]{../results/BoxCammolSex.png}}
+          \subfigure[Phosmmol]{\includegraphics[scale=0.2]{../results/BoxPhosmmolSex.png}}
+          \caption{Boxplots of the concentrations between sexes}
+          \label{fig:BoxSex}
       \end{figure}
 
 	Analysing whether the data in CAMMOL, ALKSPHOS and PHOSMMOL is normal:
 	
 	\begin{figure}[H]
 		\centering
-		{\includegraphics[scale=0.4]{../results/dat1_qq.png}}
+		{\includegraphics[scale=0.3]{../results/dat1_qq.png}}
 		\caption{QQ plot of raw data}
 		\label{fig:qq1}
 	\end{figure}
@@ -93,7 +94,7 @@
 	
 	\begin{figure}[H]
 		\centering
-		{\includegraphics[scale=0.4]{../results/dat2_qq.png}}
+		{\includegraphics[scale=0.3]{../results/dat2_qq.png}}
 		\caption{QQ plot after removing outliers}
 		\label{fig:qq2}
 	\end{figure}
@@ -277,6 +278,17 @@ Signif. codes:
     \caption{phos 2 way anova}
     \label{fig:phos2way}
     \end{figure}
+    
+    \begin{figure}[H]
+		\centering
+		\subfigure[QQ plot of residuals for all 9 linear models]
+		{\includegraphics[scale=0.25]{../results/qq3.png}}
+		\subfigure[Plots of fitted residuals for all 9 linear models]
+		{\includegraphics[scale=0.25]{../results/resid3.png}}
+		\caption{Graphical tests for normality of residuals}
+		\label{fig:qq3}
+	\end{figure}
+	
     
     \subsection{Modeling}
       Modeling the data can be done in several ways.
