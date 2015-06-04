@@ -93,6 +93,7 @@ Now from the Normal QQ-Plots of the transformed data Fig: \ref{fig:qq2}, we can 
   
     \begin{table}[H]
     \begin{center}
+    \scriptsize
     \begin{tabular}{|ll|}
         \hline
         Variable & \textit{p} \\
@@ -142,6 +143,7 @@ Now from the Normal QQ-Plots of the transformed data Fig: \ref{fig:qq2}, we can 
 
     \begin{table}[H]
     \begin{center}
+    \scriptsize
     \begin{tabular}{|l|l|l|l|}
       \hline
       $VAR1 * VAR2$:&$SEX * LAB$&$SEX * AGEGRP$&$LAB*AGEGRP$\\
@@ -158,6 +160,7 @@ Now from the Normal QQ-Plots of the transformed data Fig: \ref{fig:qq2}, we can 
 
     \begin{table}[H]
     \begin{center}
+    \scriptsize
     \begin{tabular}{|l|l|l|l|}
       \hline
       $VAR1 * VAR2$:&$SEX * LAB$&$SEX * AGEGRP$&$LAB*AGEGRP$\\
@@ -174,6 +177,7 @@ Now from the Normal QQ-Plots of the transformed data Fig: \ref{fig:qq2}, we can 
 
     \begin{table}[H]
     \begin{center}
+    \scriptsize
     \begin{tabular}{|l|l|l|l|}
       \hline
       $VAR1 * VAR2$:&$SEX * LAB$&$SEX * AGEGRP$&$LAB*AGEGRP$\\
@@ -208,24 +212,24 @@ We further explore the QQ plots and residual plots for the linear models created
       The first one tried is a step down linear regression approach for each of the concentrations.
       For Alksphos it follows the following steps:
       \begin{itemize}
-        \small{\item $ALKSPHOS \sim AGE + SEX + LAB + AGEGRP$}
-        \small{\item $ALKSPHOS \sim AGE + SEX + LAB$}
-        \small{\item $ALKSPHOS \sim SEX + LAB$}
-        \small{\item $ALKSPHOS = 88.96 + 17.91*SEX2 - 11.69*LAB2 - 16.25*LAB3 + 18.03*LAB4 - 30.20*LAB5$}
+        \scriptsize{\item $ALKSPHOS \sim AGE + SEX + LAB + AGEGRP$}
+        \scriptsize{\item $ALKSPHOS \sim AGE + SEX + LAB$}
+        \scriptsize{\item $ALKSPHOS \sim SEX + LAB$}
+        \scriptsize{\item $ALKSPHOS = 88.96 + 17.91*SEX2 - 11.69*LAB2 - 16.25*LAB3 + 18.03*LAB4 - 30.20*LAB5$}
       \end{itemize}
       For Cammol it follows the following steps:
       \begin{itemize}
-        \small{\item $CAMMOL \sim AGE + SEX + LAB + AGEGRP$}
-        \small{\item $CAMMOL \sim AGE + SEX + LAB$}
-        \small{\item $CAMMOL \sim SEX + LAB$}
-        \small{\item $CAMMOL = 2.29 + 0.06*SEX2 + 0.11*LAB2 + 0.03*LAB3 + 0.14*LAB4 + 0.07*LAB5$}
+        \scriptsize{\item $CAMMOL \sim AGE + SEX + LAB + AGEGRP$}
+        \scriptsize{\item $CAMMOL \sim AGE + SEX + LAB$}
+        \scriptsize{\item $CAMMOL \sim SEX + LAB$}
+        \scriptsize{\item $CAMMOL = 2.29 + 0.06*SEX2 + 0.11*LAB2 + 0.03*LAB3 + 0.14*LAB4 + 0.07*LAB5$}
       \end{itemize}
       For Phosmmol it follows the following steps:
       \begin{itemize}
-        \small{\item $PHOSMMOL \sim AGE + SEX + LAB + AGEGRP$}
-        \small{\item $PHOSMMOL \sim AGE + SEX + LAB$}
-        \small{\item $PHOSMMOL \sim AGE + SEX$}
-        \small{\item $PHOSMMOL = 2.02 - 0.01*AGE + 0.17*SEX2$}
+        \scriptsize{\item $PHOSMMOL \sim AGE + SEX + LAB + AGEGRP$}
+        \scriptsize{\item $PHOSMMOL \sim AGE + SEX + LAB$}
+        \scriptsize{\item $PHOSMMOL \sim AGE + SEX$}
+        \scriptsize{\item $PHOSMMOL = 2.02 - 0.01*AGE + 0.17*SEX2$}
       \end{itemize}
       As our research question is about what influence age has on the concentration and only Phosmmol has a model where age was a significant explanatory variable, this is not a good approach for this data.
       
@@ -239,47 +243,67 @@ We further explore the QQ plots and residual plots for the linear models created
     Finally we considered the possibility of creating a linear model to explain and predict concentrations, but as we discovered, Age was only a significant factor for Phosmmol, as was discovered before, and thus, our model will not produce any predictive power based on the age of the patient for anything other than Phosmmol concentration. So we consider the linear model to be of almost no help.
     
   \section{R-Code}
-    \begin{lstlisting}[language=R]
+    \small{\begin{lstlisting}[language=R]
 data = read.table('calcium.dat.txt', na.strings="_", header=TRUE)
+
 # exploration
 pairs(data)
+par(mfrow=c(1,3))
+qqnorm(data$CAMMOL)
+qqnorm(data$ALKSPHOS)
+qqnorm(data$PHOSMMOL)
+
 # data preparation
-data[!is.na(data$AGE) & !(data$AGE <= 110),]$AGE<-NA
-data[!is.na(data$SEX) & !(data$SEX == 1|data$SEX ==2),]$SEX<-NA
-data[!is.na(data$LAB) & !(data$LAB < 6),]$LAB<-NA
-data[!is.na(data$PHOSMMOL) & !(data$PHOSMMOL < 2),]$PHOSMMOL<-NA
-data$CAMMOL[!is.na(data$CAMMOL) & (data$CAMMOL > 10)] <- 
-          (data$CAMMOL[!is.na(data$CAMMOL) & (data$CAMMOL > 10)])/10
-data$SEX <- as.factor(data$SEX)
-data$LAB <- as.factor(data$LAB)
-data$AGEGRP <- as.factor(data$AGEGRP)
+data[!is.na(data$AGE) & !(data$AGE <= 110),]$AGE=NA
+data[!is.na(data$SEX) & !(data$SEX == 1|data$SEX ==2),]$SEX=NA
+data[!is.na(data$LAB) & !(data$LAB < 6),]$LAB=NA
+data[!is.na(data$PHOSMMOL) & !(data$PHOSMMOL < 2),]$PHOSMMOL=NA
+data$CAMMOL[!is.na(data$CAMMOL) & (data$CAMMOL > 10)] 
+      = (data$CAMMOL[!is.na(data$CAMMOL) & (data$CAMMOL > 10)])/10
+data[!is.na(data$CAMMOL) & ((data$CAMMOL < 1.9)|(data$CAMMOL >= 3)),]$CAMMOL = NA
+data[!is.na(data$ALKSPHOS) & ((data$ALKSPHOS > 150)|(data$ALKSPHOS < 20)),]$ALKSPHOS
+      =NA
+data$SEX = as.factor(data$SEX)
+data$LAB = as.factor(data$LAB)
+data$AGEGRP = as.factor(data$AGEGRP)
+
 # exploration
+par(mfrow=c(1,1))
 pairs(data)
+par(mfrow=c(1,3))
+qqnorm(data$CAMMOL)
+qqnorm(data$ALKSPHOS)
+qqnorm(data$PHOSMMOL)
 summary(data$AGEGRP)
+
 # data preperation, replace NA with mean
 sex = data$SEX
-sex[is.na(sex)]<-mean(na.omit(data$SEX))
+sex[is.na(sex)]=mean(na.omit(data$SEX))
 lab = data$LAB
-lab[is.na(lab)]<-mean(na.omit(data$LAB))
+lab[is.na(lab)]=mean(na.omit(data$LAB))
 cammol = data$CAMMOL
-cammol[is.na(cammol)]<-mean(na.omit(data$CAMMOL))
+cammol[is.na(cammol)]=mean(na.omit(data$CAMMOL))
 alksphos = data$ALKSPHOS
-alksphos[is.na(alksphos)]<-mean(na.omit(data$ALKSPHOS))
+alksphos[is.na(alksphos)]=mean(na.omit(data$ALKSPHOS))
 phosmmol = data$PHOSMMOL
-phosmmol[is.na(phosmmol)]<-mean(na.omit(data$PHOSMMOL))
+phosmmol[is.na(phosmmol)]=mean(na.omit(data$PHOSMMOL))
+
 # data preperation, make sex M and F instead of 1 and 2
 Sex = as.character(sex)
 Sex[sex == 1] = "M"
 Sex[sex == 2] = "F"
 Sex = as.factor(Sex)
 AgeGroup = AGEGRP
+
 # interaction plots
+par(mfrow=c(1,1))
 interaction.plot(lab,Sex,cammol)
 interaction.plot(lab,Sex,alksphos)
 interaction.plot(lab,Sex,phosmmol)
 interaction.plot(AgeGroup,Sex,cammol)
 interaction.plot(AgeGroup,Sex,alksphos)
 interaction.plot(AgeGroup,Sex,phosmmol)
+
 # step down linear regression
 #ALKSPHOS
 summary(lm(ALKSPHOS~AGE+SEX+LAB+AGEGRP,data=data))
@@ -293,5 +317,35 @@ summary(lm(CAMMOL~SEX+LAB,data=data))
 summary(lm(PHOSMMOL~AGE+SEX+LAB+AGEGRP,data=data))
 summary(lm(PHOSMMOL~AGE+SEX+LAB,data=data))
 summary(lm(PHOSMMOL~AGE+SEX,data=data))
-    \end{lstlisting}
+
+#If you looks at graphs, I dont think its fair to
+#assume our data is normal. So use non-parametric test
+#instead of 1 way anova
+kruskal.test(CAMMOL,SEX,data=data)
+kruskal.test(CAMMOL,LAB,data=data)
+kruskal.test(CAMMOL,AGEGRP,data=data)
+
+kruskal.test(ALKSPHOS,SEX,data=data)
+kruskal.test(ALKSPHOS,LAB,data=data)
+kruskal.test(ALKSPHOS,AGEGRP,data=data)
+
+kruskal.test(PHOSMMOL,SEX,data=data)
+kruskal.test(PHOSMMOL,LAB,data=data)
+kruskal.test(PHOSMMOL,AGEGRP,data=data)
+
+#due to difficulties with blocks being of different
+#sizes we cannot use friedman test, regular 2-way 
+#anova will be used.
+anova(lm(CAMMOL~SEX*LAB,data=data))
+anova(lm(CAMMOL~SEX*AGEGRP,data=data))
+anova(lm(CAMMOL~LAB*AGEGRP,data=data))
+
+anova(lm(ALKSPHOS~SEX*LAB,data=data))
+anova(lm(ALKSPHOS~SEX*AGEGRP,data=data))
+anova(lm(ALKSPHOS~LAB*AGEGRP,data=data))
+
+anova(lm(PHOSMMOL~SEX*LAB,data=data))
+anova(lm(PHOSMMOL~SEX*AGEGRP,data=data))
+anova(lm(PHOSMMOL~LAB*AGEGRP,data=data))
+    \end{lstlisting}}
 \end{document}
