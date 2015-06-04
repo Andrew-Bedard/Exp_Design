@@ -188,5 +188,6 @@ summary(alksex)
 
 phosex = lm(PHOSMMOL~SEX,data=data)
 summary(phosex)
+anova(phosex)
 
 qqnorm(data$CAMMOL)
