@@ -5,6 +5,11 @@ data = read.table('calcium.dat.txt', na.strings="_", header=TRUE)
 # you don't need to cast to a data frame
 #data <- data.frame(data)
 
+par(mfrow=c(1,3))
+qqnorm(data$CAMMOL)
+qqnorm(data$ALKSPHOS)
+qqnorm(data$PHOSMMOL)
+
 # set all age data which is not na and not smaller than 110 (so the outliers) at NA
 data[!is.na(data$AGE) & !(data$AGE <= 110),]$AGE<-NA
 
@@ -12,14 +17,20 @@ data[!is.na(data$SEX) & !(data$SEX == 1|data$SEX ==2),]$SEX<-NA
 
 data[!is.na(data$LAB) & !(data$LAB < 6),]$LAB<-NA
 
-data[!is.na(data$PHOSMMOL) & !(data$PHOSMMOL < 2),]$PHOSMMOL<-NA
+data[!is.na(data$PHOSMMOL) & ((data$PHOSMMOL > 2)|(data$PHOSMMOL < 0.2)),]$PHOSMMOL<-NA
 
 # replacing the messed up values of lab 3 with the values divided by 10
 # seems reasonable
 data$CAMMOL[!is.na(data$CAMMOL) & (data$CAMMOL > 10)] <- (data$CAMMOL[!is.na(data$CAMMOL) & (data$CAMMOL > 10)])/10
-data$CAMMOL[!is.na(data$CAMMOL) & (data$CAMMOL < 1.9),]$CAMMOL <- NA
+data[!is.na(data$CAMMOL) & ((data$CAMMOL < 1.9)|(data$CAMMOL >= 3)),]$CAMMOL <- NA
 
-data$CAMMOL[!is.na(data$ALKSPHOS) & (data$ALKSPHOS > 150),]$ALKSPHOS <- NA
+data[!is.na(data$ALKSPHOS) & ((data$ALKSPHOS > 150)|(data$ALKSPHOS < 20)),]$ALKSPHOS <- NA
+
+
+qqnorm(data$CAMMOL)
+qqnorm(data$ALKSPHOS)
+qqnorm(data$PHOSMMOL)
+
 
 data$SEX <- as.factor(data$SEX)
 data$LAB <- as.factor(data$LAB)
@@ -48,12 +59,6 @@ kruskal.test(PHOSMMOL,AGEGRP,data=data)
 #sizes we cannot use friedman test, regular 2-way 
 #anova will be used.
 
-data = na.omit(data)
-data$SEX <- as.factor(data$SEX)
-data$LAB <- as.factor(data$LAB)
-data$AGEGRP <- as.factor(data$AGEGRP)
-
-
 anova(lm(CAMMOL~SEX*LAB,data=data))
 anova(lm(CAMMOL~SEX*AGEGRP,data=data))
 anova(lm(CAMMOL~LAB*AGEGRP,data=data))
@@ -66,6 +71,32 @@ anova(lm(PHOSMMOL~SEX*LAB,data=data))
 anova(lm(PHOSMMOL~SEX*AGEGRP,data=data))
 anova(lm(PHOSMMOL~LAB*AGEGRP,data=data))
 
-#most results suggest there is no interaction effect
-#between the factors with the one exception being
-#Lab and Agegroup for PHOSMMOL
+
+#NO interactions
+
+#plots for checking normality of risiduals
+
+par(mfrow=c(1,3))
+qqnorm(residuals(lm(CAMMOL~SEX*LAB,data=data)))
+qqnorm(residuals(lm(CAMMOL~SEX*AGEGRP,data=data)))
+qqnorm(residuals(lm(CAMMOL~LAB*AGEGRP,data=data)))
+
+qqnorm(residuals(lm(ALKSPHOS~SEX*LAB,data=data)))
+qqnorm(residuals(lm(ALKSPHOS~SEX*AGEGRP,data=data)))
+qqnorm(residuals(lm(ALKSPHOS~LAB*AGEGRP,data=data)))
+
+qqnorm(residuals(lm(PHOSMMOL~SEX*LAB,data=data)))
+qqnorm(residuals(lm(PHOSMMOL~SEX*AGEGRP,data=data)))
+qqnorm(residuals(lm(PHOSMMOL~LAB*AGEGRP,data=data)))
+
+plot(fitted(lm(CAMMOL~SEX*LAB,data=data)),residuals(lm(CAMMOL~SEX*LAB,data=data)))
+plot(fitted(lm(CAMMOL~SEX*AGEGRP,data=data)),residuals(lm(CAMMOL~SEX*AGEGRP,data=data)))
+plot(fitted(lm(CAMMOL~LAB*AGEGRP,data=data)),residuals(lm(CAMMOL~LAB*AGEGRP,data=data)))
+
+plot(fitted(lm(ALKSPHOS~SEX*LAB,data=data)),residuals(lm(ALKSPHOS~SEX*LAB,data=data)))
+plot(fitted(lm(ALKSPHOS~SEX*AGEGRP,data=data)),residuals(lm(ALKSPHOS~SEX*AGEGRP,data=data)))
+plot(fitted(lm(ALKSPHOS~LAB*AGEGRP,data=data)),residuals(lm(ALKSPHOS~LAB*AGEGRP,data=data)))
+
+plot(fitted(lm(PHOSMMOL~SEX*LAB,data=data)),residuals(lm(PHOSMMOL~SEX*LAB,data=data)))
+plot(fitted(lm(PHOSMMOL~SEX*AGEGRP,data=data)),residuals(lm(PHOSMMOL~SEX*AGEGRP,data=data)))
+plot(fitted(lm(PHOSMMOL~LAB*AGEGRP,data=data)),residuals(lm(PHOSMMOL~LAB*AGEGRP,data=data)))

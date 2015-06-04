@@ -71,7 +71,7 @@
       The different age groups are: 1=65-69, 2=70-74, 3=75-79, 4=80-84, 5=85-89 Years.
       In Fig\ref{fig:BoxAgegrp} the relation between the different concentrations and the age groups are visually represented.
 
-      \begin{figure}
+      \begin{figure}[H]
           \centering
           \subfigure[Alksphos]{\includegraphics[scale=0.2]{../results/BoxAlksphosAgegrp.png}}
           \subfigure[Cammol]{\includegraphics[scale=0.2]{../results/BoxCammolAgegrp.png}}
@@ -80,6 +80,26 @@
           \label{fig:BoxAgegrp}
       \end{figure}
 
+	Analysing whether the data in CAMMOL, ALKSPHOS and PHOSMMOL is normal:
+	
+	\begin{figure}[H]
+		\centering
+		{\includegraphics[scale=0.4]{../results/dat1_qq.png}}
+		\caption{QQ plot of raw data}
+		\label{fig:qq1}
+	\end{figure}
+	
+	Obviously these are not normal, most likely due to outliers. After removing outliers we obtain:
+	
+	\begin{figure}[H]
+		\centering
+		{\includegraphics[scale=0.4]{../results/dat2_qq.png}}
+		\caption{QQ plot after removing outliers}
+		\label{fig:qq2}
+	\end{figure}
+	
+	Clearly these are more likely normal, even though we do have a step type pattern, likely due to rounding.
+	
       There is some difference between the different age groups with all of the concentrations.
       But with Alksphos the difference only seems to be in the variety of the values, the same holds for Cammol.
       For Phosmmol there does seems to be a difference in the age groups, the median drops with the older ages.
@@ -87,7 +107,7 @@
       This shows that there are only three patients in the last age group and not too much in the group before that.
       This explains that the variety seems to lower with the higher age groups.
       
-      \begin{table}
+      \begin{table}[H]
         \begin{center}
           \begin{tabular}{|l|lllll|}
           \hline
@@ -108,21 +128,156 @@
 
       \begin{figure}[H]
           \centering
-          \subfigure[Alksphos]{\includegraphics[scale=0.15]{../results/AlkLabSex.png}}
-          \subfigure[Cammol]{\includegraphics[scale=0.15]{../results/CamLabSex.png}}
-          \subfigure[Phosmmol]{\includegraphics[scale=0.15]{../results/PhosLabSex.png}}
+          \subfigure[Alksphos]{\includegraphics[scale=0.2]{../results/AlkLabSex.png}}
+          \subfigure[Cammol]{\includegraphics[scale=0.2]{../results/CamLabSex.png}}
+          \subfigure[Phosmmol]{\includegraphics[scale=0.2]{../results/PhosLabSex.png}}
           \caption{Interaction plots of the sex and labs of the different concentrations}
           \label{fig:IntLabSex}
       \end{figure}
       \begin{figure}[H]
           \centering
-          \subfigure[Alksphos]{\includegraphics[scale=0.15]{../results/AlkAgeSex.png}}
-          \subfigure[Cammol]{\includegraphics[scale=0.15]{../results/CamAgeSex.png}}
-          \subfigure[Phosmmol]{\includegraphics[scale=0.15]{../results/PhosAgeSex.png}}
+          \subfigure[Alksphos]{\includegraphics[scale=0.2]{../results/AlkAgeSex.png}}
+          \subfigure[Cammol]{\includegraphics[scale=0.2]{../results/CamAgeSex.png}}
+          \subfigure[Phosmmol]{\includegraphics[scale=0.2]{../results/PhosAgeSex.png}}
           \caption{Interaction plots of the sex and age groups of the different concentrations}
           \label{fig:IntAgeSex}
       \end{figure}
+      
+          \begin{table}[H]
+    \begin{center}
+    \begin{tabular}{|ll|}
+        \hline
+        Variable & \textit{p} \\
+        \hline 
+        \hline
+        CAMMOL\textasciitilde SEX & 0.001539 \\
+        CAMMOL\textasciitilde LAB & 1.433e-05 \\
+        CAMMOL\textasciitilde AGEGRP & 0.5451 \\
+        \hline
+        \hline 
+        ALKSPHOS\textasciitilde SEX & 0.007631 \\
+        ALKSPHOS\textasciitilde LAB & 0.001325 \\
+        ALKSPHOS\textasciitilde AGEGRP & 0.6927 \\
+        \hline
+        \hline 
+        PHOSMMOL\textasciitilde SEX & 0.007711 \\
+        PHOSMMOL\textasciitilde LAB & 0.159 \\
+        PHOSMMOL\textasciitilde AGEGRP & 0.006144 \\
+        \hline
+    \end{tabular}
+    \caption{Kruskal-Wallis rank sum test}
+    \label{table:krusk}
+    \end{center}
+    \end{table}
+    
+  	\begin{figure}[H]
+	\begin{lstlisting}[language=R]
+  
+    Analysis of Variance Table
 
+Response: CAMMOL
+
+CAMMOL~SEX*LAB
+           Df  Sum Sq  Mean Sq F value    Pr(>F)    
+SEX         1 0.23561 0.235614 15.5360 0.0001228 ***
+LAB         4 0.36707 0.091769  6.0511 0.0001511 ***
+SEX:LAB     4 0.04984 0.012459  0.8215 0.5133135    
+Residuals 153 2.32036 0.015166                      
+---
+
+CAMMOL~SEX*AGEGRP
+            Df  Sum Sq  Mean Sq F value    Pr(>F)    
+SEX          1 0.22188 0.221883 13.1564 0.0003835 ***
+AGEGRP       4 0.01373 0.003432  0.2035 0.9361766    
+SEX:AGEGRP   3 0.09939 0.033131  1.9644 0.1214165    
+Residuals  162 2.73214 0.016865                      
+---
+
+CAMMOL~LAB*AGEGRP
+            Df  Sum Sq  Mean Sq F value    Pr(>F)    
+LAB          4 0.49141 0.122853  7.5640 1.491e-05 ***
+AGEGRP       4 0.06515 0.016287  1.0028    0.4083    
+LAB:AGEGRP  14 0.18371 0.013122  0.8079    0.6595    
+Residuals  142 2.30633 0.016242                      
+---
+Signif. codes:  
+0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+    \end{lstlisting}
+    \caption{Summary of computed linear model}
+    \label{fig:cam2way}
+    \end{figure}
+
+  	\begin{figure}[H]
+	\begin{lstlisting}[language=R]
+  
+    Analysis of Variance Table
+
+Response: ALKSPHOS
+
+ALKSPHOS~SEX*LAB
+           Df Sum Sq Mean Sq F value  Pr(>F)  
+SEX         1   1939 1938.76  3.6568 0.05781 .
+LAB         4   6806 1701.42  3.2092 0.01471 *
+SEX:LAB     4   1686  421.61  0.7952 0.53010  
+Residuals 145  76875  530.18                  
+---
+ALKSPHOS~SEX*AGEGRP
+            Df Sum Sq Mean Sq F value  Pr(>F)  
+SEX          1   1702 1701.75  3.1397 0.07838 .
+AGEGRP       4   1375  343.84  0.6344 0.63871  
+SEX:AGEGRP   3   3591 1197.11  2.2087 0.08933 .
+Residuals  154  83468  542.00                  
+---
+ALKSPHOS~LAB*AGEGRP
+            Df Sum Sq Mean Sq F value  Pr(>F)  
+LAB          4   6057 1514.19  2.7606 0.03025 *
+AGEGRP       4   1123  280.79  0.5119 0.72707  
+LAB:AGEGRP  13   6180  475.42  0.8668 0.58935  
+Residuals  135  74048  548.50                  
+---
+Signif. codes:  
+0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+    \end{lstlisting}
+    \caption{alk 2 way anova}
+    \label{fig:alk2way}
+    \end{figure}
+    
+  	\begin{figure}[H]
+	\begin{lstlisting}[language=R]
+  
+    Analysis of Variance Table
+
+Response: PHOSMMOL
+
+PHOSMMOL~SEX*LAB
+           Df Sum Sq  Mean Sq F value   Pr(>F)   
+SEX         1 0.2500 0.250022  9.1038 0.002991 **
+LAB         4 0.4122 0.103060  3.7526 0.006101 **
+SEX:LAB     4 0.1639 0.040972  1.4919 0.207392   
+Residuals 152 4.1744 0.027463                    
+---                
+
+PHOSMMOL~SEX*AGEGRP
+            Df Sum Sq  Mean Sq F value   Pr(>F)   
+SEX          1 0.2392 0.239170  8.9478 0.003218 **
+AGEGRP       4 0.3847 0.096177  3.5981 0.007732 **
+SEX:AGEGRP   3 0.0788 0.026266  0.9827 0.402506   
+Residuals  160 4.2767 0.026730                
+---
+PHOSMMOL~LAB*AGEGRP
+            Df Sum Sq  Mean Sq F value  Pr(>F)  
+LAB          4 0.1703 0.042569  1.5556 0.18946  
+AGEGRP       4 0.3204 0.080096  2.9270 0.02311 *
+LAB:AGEGRP  13 0.5003 0.038486  1.4064 0.16321  
+Residuals  142 3.8858 0.027365                  
+---
+Signif. codes:  
+0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+    \end{lstlisting}
+    \caption{phos 2 way anova}
+    \label{fig:phos2way}
+    \end{figure}
+    
     \subsection{Modeling}
       Modeling the data can be done in several ways.
       The first one tried is a step down linear regression approach for each of the concentrations.
@@ -148,9 +303,6 @@
         \small{\item $PHOSMMOL = 2.02 - 0.01*AGE + 0.17*SEX2$}
       \end{itemize}
       As our research question is about what influence age has on the concentration and only Phosmmol has a model with age in it, this is not a good approach for this data.
-
-  \section{Results}
-    Don't think this section is necessary.
 
   \section{Discussion}
     The data was realistic to work with, it contained some errors. At the start of the project, this was a challenge. To get all the data to correspond to realistic data.
