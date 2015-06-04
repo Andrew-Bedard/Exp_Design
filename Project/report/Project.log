@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.10)  4 JUN 2015 22:46
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.10)  4 JUN 2015 23:16
 entering extended mode
 **Project.tex
 (C:\Users\Simone\Documents\Master\ExpDesign\Project\report\Project.tex
@@ -331,111 +331,108 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 File: ../results/FirstPairs.png Graphic file (type png)
 
 <use ../results/FirstPairs.png>
-Package pdftex.def Info: ../results/FirstPairs.png used on input line 61.
+Package pdftex.def Info: ../results/FirstPairs.png used on input line 63.
 (pdftex.def)             Requested size: 161.10312pt x 137.61519pt.
 
 <../results/SecondPairs.png, id=52, 537.00626pt x 458.71375pt>
 File: ../results/SecondPairs.png Graphic file (type png)
 
 <use ../results/SecondPairs.png>
-Package pdftex.def Info: ../results/SecondPairs.png used on input line 63.
+Package pdftex.def Info: ../results/SecondPairs.png used on input line 65.
 (pdftex.def)             Requested size: 161.10312pt x 137.61519pt.
-
-<../results/BoxAlksphosAgegrp.png, id=54, 537.00626pt x 458.71375pt>
+ [2 <C:/Users/Simone/Documents/Master/ExpDesign/Project/results/FirstPairs.png>
+ <C:/Users/Simone/Documents/Master/ExpDesign/Project/results/SecondPairs.png>]
+<../results/BoxAlksphosAgegrp.png, id=64, 537.00626pt x 458.71375pt>
 File: ../results/BoxAlksphosAgegrp.png Graphic file (type png)
 
 <use ../results/BoxAlksphosAgegrp.png>
-Package pdftex.def Info: ../results/BoxAlksphosAgegrp.png used on input line 76
+Package pdftex.def Info: ../results/BoxAlksphosAgegrp.png used on input line 78
 .
 (pdftex.def)             Requested size: 107.39934pt x 91.74112pt.
 
-<../results/BoxCammolAgegrp.png, id=55, 537.00626pt x 458.71375pt>
+<../results/BoxCammolAgegrp.png, id=65, 537.00626pt x 458.71375pt>
 File: ../results/BoxCammolAgegrp.png Graphic file (type png)
 
 <use ../results/BoxCammolAgegrp.png>
-Package pdftex.def Info: ../results/BoxCammolAgegrp.png used on input line 77.
+Package pdftex.def Info: ../results/BoxCammolAgegrp.png used on input line 79.
 (pdftex.def)             Requested size: 107.39934pt x 91.74112pt.
 
-<../results/BoxPhosmmolAgegrp.png, id=56, 537.00626pt x 458.71375pt>
+<../results/BoxPhosmmolAgegrp.png, id=66, 537.00626pt x 458.71375pt>
 File: ../results/BoxPhosmmolAgegrp.png Graphic file (type png)
 
 <use ../results/BoxPhosmmolAgegrp.png>
-Package pdftex.def Info: ../results/BoxPhosmmolAgegrp.png used on input line 78
+Package pdftex.def Info: ../results/BoxPhosmmolAgegrp.png used on input line 80
 .
 (pdftex.def)             Requested size: 107.39934pt x 91.74112pt.
- [2 <C:/Users/Simone/Documents/Master/ExpDesign/Project/results/FirstPairs.png>
- <C:/Users/Simone/Documents/Master/ExpDesign/Project/results/SecondPairs.png>]
+
 <../results/dat1_qq.png, id=67, 818.05624pt x 390.45876pt>
 File: ../results/dat1_qq.png Graphic file (type png)
 
 <use ../results/dat1_qq.png>
-Package pdftex.def Info: ../results/dat1_qq.png used on input line 87.
-(pdftex.def)             Requested size: 327.21669pt x 156.18073pt.
+Package pdftex.def Info: ../results/dat1_qq.png used on input line 89.
+(pdftex.def)             Requested size: 245.41876pt x 117.13852pt.
 
 <../results/dat2_qq.png, id=68, 834.11626pt x 450.68375pt>
 File: ../results/dat2_qq.png Graphic file (type png)
 
 <use ../results/dat2_qq.png>
-Package pdftex.def Info: ../results/dat2_qq.png used on input line 96.
-(pdftex.def)             Requested size: 333.6406pt x 180.2703pt.
+Package pdftex.def Info: ../results/dat2_qq.png used on input line 98.
+(pdftex.def)             Requested size: 250.2368pt x 135.20616pt.
  [3 <C:/Users/Simone/Documents/Master/ExpDesign/Project/results/BoxAlksphosAgeg
 rp.png> <C:/Users/Simone/Documents/Master/ExpDesign/Project/results/BoxCammolAg
 egrp.png> <C:/Users/Simone/Documents/Master/ExpDesign/Project/results/BoxPhosmm
 olAgegrp.png> <C:/Users/Simone/Documents/Master/ExpDesign/Project/results/dat1_
 qq.png>]
-<../results/AlkLabSex.png, id=85, 537.00626pt x 458.71375pt>
+<../results/AlkLabSex.png, id=86, 537.00626pt x 458.71375pt>
 File: ../results/AlkLabSex.png Graphic file (type png)
 
 <use ../results/AlkLabSex.png>
-Package pdftex.def Info: ../results/AlkLabSex.png used on input line 131.
+Package pdftex.def Info: ../results/AlkLabSex.png used on input line 134.
 (pdftex.def)             Requested size: 107.39934pt x 91.74112pt.
 
-<../results/CamLabSex.png, id=86, 537.00626pt x 458.71375pt>
+<../results/CamLabSex.png, id=87, 537.00626pt x 458.71375pt>
 File: ../results/CamLabSex.png Graphic file (type png)
 
 <use ../results/CamLabSex.png>
-Package pdftex.def Info: ../results/CamLabSex.png used on input line 132.
+Package pdftex.def Info: ../results/CamLabSex.png used on input line 135.
 (pdftex.def)             Requested size: 107.39934pt x 91.74112pt.
 
-<../results/PhosLabSex.png, id=87, 537.00626pt x 458.71375pt>
+<../results/PhosLabSex.png, id=88, 537.00626pt x 458.71375pt>
 File: ../results/PhosLabSex.png Graphic file (type png)
 
 <use ../results/PhosLabSex.png>
-Package pdftex.def Info: ../results/PhosLabSex.png used on input line 133.
+Package pdftex.def Info: ../results/PhosLabSex.png used on input line 136.
 (pdftex.def)             Requested size: 107.39934pt x 91.74112pt.
 
-<../results/AlkAgeSex.png, id=88, 537.00626pt x 458.71375pt>
+<../results/AlkAgeSex.png, id=89, 537.00626pt x 458.71375pt>
 File: ../results/AlkAgeSex.png Graphic file (type png)
 
 <use ../results/AlkAgeSex.png>
-Package pdftex.def Info: ../results/AlkAgeSex.png used on input line 139.
+Package pdftex.def Info: ../results/AlkAgeSex.png used on input line 142.
 (pdftex.def)             Requested size: 107.39934pt x 91.74112pt.
 
-<../results/CamAgeSex.png, id=89, 537.00626pt x 458.71375pt>
+<../results/CamAgeSex.png, id=90, 537.00626pt x 458.71375pt>
 File: ../results/CamAgeSex.png Graphic file (type png)
 
 <use ../results/CamAgeSex.png>
-Package pdftex.def Info: ../results/CamAgeSex.png used on input line 140.
+Package pdftex.def Info: ../results/CamAgeSex.png used on input line 143.
 (pdftex.def)             Requested size: 107.39934pt x 91.74112pt.
 
-<../results/PhosAgeSex.png, id=90, 537.00626pt x 458.71375pt>
+<../results/PhosAgeSex.png, id=91, 537.00626pt x 458.71375pt>
 File: ../results/PhosAgeSex.png Graphic file (type png)
 
 <use ../results/PhosAgeSex.png>
-Package pdftex.def Info: ../results/PhosAgeSex.png used on input line 141.
+Package pdftex.def Info: ../results/PhosAgeSex.png used on input line 144.
 (pdftex.def)             Requested size: 107.39934pt x 91.74112pt.
- [4 <C:/Users/Simone/Documents/Master/ExpDesign/Project/results/dat2_qq.png>] [
-5 <C:/Users/Simone/Documents/Master/ExpDesign/Project/results/AlkLabSex.png> <C
-:/Users/Simone/Documents/Master/ExpDesign/Project/results/CamLabSex.png> <C:/Us
-ers/Simone/Documents/Master/ExpDesign/Project/results/PhosLabSex.png> <C:/Users
-/Simone/Documents/Master/ExpDesign/Project/results/AlkAgeSex.png> <C:/Users/Sim
-one/Documents/Master/ExpDesign/Project/results/CamAgeSex.png> <C:/Users/Simone/
-Documents/Master/ExpDesign/Project/results/PhosAgeSex.png>]
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 226.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 226.
- [6]
+ [4 <C:/Users/Simone/Documents/Master/ExpDesign/Project/results/dat2_qq.png>]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <7> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 233.
+ [5 <C:/Users/Simone/Documents/Master/ExpDesign/Project/results/AlkLabSex.png> 
+<C:/Users/Simone/Documents/Master/ExpDesign/Project/results/CamLabSex.png> <C:/
+Users/Simone/Documents/Master/ExpDesign/Project/results/PhosLabSex.png> <C:/Use
+rs/Simone/Documents/Master/ExpDesign/Project/results/AlkAgeSex.png> <C:/Users/S
+imone/Documents/Master/ExpDesign/Project/results/CamAgeSex.png> <C:/Users/Simon
+e/Documents/Master/ExpDesign/Project/results/PhosAgeSex.png>] [6]
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
@@ -445,70 +442,91 @@ File: lstlang2.sty 2014/09/06 1.5e listings language file
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang3.sty"
 File: lstlang3.sty 2014/09/06 1.5e listings language file
 )
-Overfull \hbox (45.00397pt too wide) in paragraph at lines 260--261
+Overfull \hbox (15.75119pt too wide) in paragraph at lines 267--269
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 264.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 277.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 264.
-LaTeX Font Info:    Font shape `OML/cmr/bx/n' in size <10> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 264.
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 277.
+LaTeX Font Info:    Font shape `OML/cmr/bx/n' in size <9> not available
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 277.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 277.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 278.
 
-Overfull \hbox (33.00385pt too wide) in paragraph at lines 265--266
+Overfull \hbox (4.65115pt too wide) in paragraph at lines 278--279
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (39.0039pt too wide) in paragraph at lines 267--268
+Overfull \hbox (10.20117pt too wide) in paragraph at lines 280--281
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (63.00415pt too wide) in paragraph at lines 269--270
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (26.85123pt too wide) in paragraph at lines 282--283
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 314.
- [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 314.
- (C:\Users\Simone\Documents\Master\ExpDesign\Project\report\Project.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 314.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 314.
+
+Overfull \hbox (110.1015pt too wide) in paragraph at lines 283--284
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (121.20154pt too wide) in paragraph at lines 284--285
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[7] [8]
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 359.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 371.
+ [9]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 371.
+
+(C:\Users\Simone\Documents\Master\ExpDesign\Project\report\Project.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 371.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 371.
 Package rerunfilecheck Info: File `Project.out' has not changed.
 (rerunfilecheck)             Checksum: 5FC6014C2219BB5323CC5305239AB741;412.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 314.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 371.
  ) 
 Here is how much of TeX's memory you used:
- 8391 strings out of 493921
- 126121 string characters out of 3144873
- 249037 words of memory out of 3000000
- 11523 multiletter control sequences out of 15000+200000
- 9679 words of font info for 34 fonts, out of 3000000 for 9000
+ 8453 strings out of 493921
+ 127000 string characters out of 3144873
+ 255843 words of memory out of 3000000
+ 11532 multiletter control sequences out of 15000+200000
+ 10282 words of font info for 36 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 36i,8n,43p,241b,2368s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/
-Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Pro
-gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Project.pdf (8 pages, 268206 bytes).
+ 36i,8n,43p,241b,2374s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmbsy9
+.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.p
+fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Program Files (x86)/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Project.pdf (9 pages, 314499 bytes).
 PDF statistics:
- 260 PDF objects out of 1000 (max. 8388607)
- 93 named destinations out of 1000 (max. 500000)
+ 340 PDF objects out of 1000 (max. 8388607)
+ 144 named destinations out of 1000 (max. 500000)
  130 words of extra memory for PDF output out of 10000 (max. 10000000)
 
