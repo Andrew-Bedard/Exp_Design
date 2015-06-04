@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.27)  4 JUN 2015 23:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.27)  4 JUN 2015 23:41
 entering extended mode
 **Project.tex
 (E:\School\Exp_Design\Project\report\Project.tex
@@ -423,71 +423,70 @@ Package pdftex.def Info: ../results/BoxPhosmmolSex.png used on input line 87.
 (pdftex.def)             Requested size: 127.07573pt x 145.14337pt.
  [3 <E:/School/Exp_Design/Project/results/dat1_qq.png> <E:/School/Exp_Design/Pr
 oject/results/dat2_qq.png>]
-<../results/AlkLabSex.png, id=80, 537.00626pt x 458.71375pt>
+<../results/AlkLabSex.png, id=83, 537.00626pt x 458.71375pt>
 File: ../results/AlkLabSex.png Graphic file (type png)
 
 <use ../results/AlkLabSex.png>
 Package pdftex.def Info: ../results/AlkLabSex.png used on input line 144.
 (pdftex.def)             Requested size: 107.39934pt x 91.74112pt.
 
-<../results/CamLabSex.png, id=81, 537.00626pt x 458.71375pt>
+<../results/CamLabSex.png, id=84, 537.00626pt x 458.71375pt>
 File: ../results/CamLabSex.png Graphic file (type png)
 
 <use ../results/CamLabSex.png>
 Package pdftex.def Info: ../results/CamLabSex.png used on input line 145.
 (pdftex.def)             Requested size: 107.39934pt x 91.74112pt.
 
-<../results/PhosLabSex.png, id=82, 537.00626pt x 458.71375pt>
+<../results/PhosLabSex.png, id=85, 537.00626pt x 458.71375pt>
 File: ../results/PhosLabSex.png Graphic file (type png)
 
 <use ../results/PhosLabSex.png>
 Package pdftex.def Info: ../results/PhosLabSex.png used on input line 146.
 (pdftex.def)             Requested size: 107.39934pt x 91.74112pt.
-
-<../results/AlkAgeSex.png, id=83, 537.00626pt x 458.71375pt>
+ [4 <E:/School/Exp_Design/Project/results/BoxAlksphosSex.png> <E:/School/Exp_De
+sign/Project/results/BoxCammolSex.png> <E:/School/Exp_Design/Project/results/Bo
+xPhosmmolSex.png>]
+<../results/AlkAgeSex.png, id=103, 537.00626pt x 458.71375pt>
 File: ../results/AlkAgeSex.png Graphic file (type png)
 
 <use ../results/AlkAgeSex.png>
 Package pdftex.def Info: ../results/AlkAgeSex.png used on input line 152.
 (pdftex.def)             Requested size: 107.39934pt x 91.74112pt.
 
-<../results/CamAgeSex.png, id=84, 537.00626pt x 458.71375pt>
+<../results/CamAgeSex.png, id=104, 537.00626pt x 458.71375pt>
 File: ../results/CamAgeSex.png Graphic file (type png)
 
 <use ../results/CamAgeSex.png>
 Package pdftex.def Info: ../results/CamAgeSex.png used on input line 153.
 (pdftex.def)             Requested size: 107.39934pt x 91.74112pt.
 
-<../results/PhosAgeSex.png, id=85, 537.00626pt x 458.71375pt>
+<../results/PhosAgeSex.png, id=105, 537.00626pt x 458.71375pt>
 File: ../results/PhosAgeSex.png Graphic file (type png)
 
 <use ../results/PhosAgeSex.png>
 Package pdftex.def Info: ../results/PhosAgeSex.png used on input line 154.
 (pdftex.def)             Requested size: 107.39934pt x 91.74112pt.
- [4 <E:/School/Exp_Design/Project/results/BoxAlksphosSex.png> <E:/School/Exp_De
-sign/Project/results/BoxCammolSex.png> <E:/School/Exp_Design/Project/results/Bo
-xPhosmmolSex.png>]
-<../results/qq3.png, id=100, 835.12pt x 687.56876pt>
-File: ../results/qq3.png Graphic file (type png)
- <use ../results/qq3.png>
-Package pdftex.def Info: ../results/qq3.png used on input line 217.
-(pdftex.def)             Requested size: 208.77948pt x 171.89177pt.
-
-<../results/resid3.png, id=101, 818.05624pt x 683.55376pt>
-File: ../results/resid3.png Graphic file (type png)
-
-<use ../results/resid3.png>
-Package pdftex.def Info: ../results/resid3.png used on input line 219.
-(pdftex.def)             Requested size: 204.51355pt x 170.88802pt.
  [5 <E:/School/Exp_Design/Project/results/AlkLabSex.png> <E:/School/Exp_Design/
 Project/results/CamLabSex.png> <E:/School/Exp_Design/Project/results/PhosLabSex
 .png> <E:/School/Exp_Design/Project/results/AlkAgeSex.png> <E:/School/Exp_Desig
 n/Project/results/CamAgeSex.png> <E:/School/Exp_Design/Project/results/PhosAgeS
 ex.png>]
+<../results/qq3.png, id=123, 835.12pt x 687.56876pt>
+File: ../results/qq3.png Graphic file (type png)
+ <use ../results/qq3.png>
+Package pdftex.def Info: ../results/qq3.png used on input line 211.
+(pdftex.def)             Requested size: 208.77948pt x 171.89177pt.
+
+<../results/resid3.png, id=124, 818.05624pt x 683.55376pt>
+File: ../results/resid3.png Graphic file (type png)
+
+<use ../results/resid3.png>
+Package pdftex.def Info: ../results/resid3.png used on input line 213.
+(pdftex.def)             Requested size: 204.51355pt x 170.88802pt.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 230.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 224.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 230.
+(Font)              <9> on input line 224.
  [6 <E:/School/Exp_Design/Project/results/qq3.png> <E:/School/Exp_Design/Projec
 t/results/resid3.png>]
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
@@ -499,36 +498,36 @@ File: lstlang2.sty 2014/09/06 1.5e listings language file
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang3.sty"
 File: lstlang3.sty 2014/09/06 1.5e listings language file
 )
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 268.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 262.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 268.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 262.
 LaTeX Font Info:    Font shape `OML/cmr/bx/n' in size <10> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 268.
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 262.
  [7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 318.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 312.
  [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 318.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 312.
 
 (E:\School\Exp_Design\Project\report\Project.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 318.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 318.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 312.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 312.
 Package rerunfilecheck Info: File `Project.out' has not changed.
 (rerunfilecheck)             Checksum: 5FC6014C2219BB5323CC5305239AB741;412.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 318.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 312.
  ) 
 Here is how much of TeX's memory you used:
  8831 strings out of 493921
  132300 string characters out of 3144864
- 258286 words of memory out of 3000000
+ 260325 words of memory out of 3000000
  11955 multiletter control sequences out of 15000+200000
  9679 words of font info for 34 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -547,9 +546,9 @@ iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files (x86)/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Project.pdf (8 pages, 286228 bytes).
+Output written on Project.pdf (8 pages, 286844 bytes).
 PDF statistics:
- 264 PDF objects out of 1000 (max. 8388607)
+ 267 PDF objects out of 1000 (max. 8388607)
  94 named destinations out of 1000 (max. 500000)
  135 words of extra memory for PDF output out of 10000 (max. 10000000)
 

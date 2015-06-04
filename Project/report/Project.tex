@@ -119,27 +119,10 @@ Now from the Normal QQ-Plots of the transformed data Fig: \ref{fig:qq2}, we can 
     \end{table}
     
   For Cammol, we reject the null hypothesis that our populations are the same across genders and across labs.For Alksphos, we reject the null hypothesis that our populations are the same across genders and across labs, and for Phosmmol we reject the null hypothesis that our populations are the same across genders and age groups.
-      
-      \begin{table}[H]
-        \begin{center}
-          \begin{tabular}{|l|lllll|}
-          \hline
-          Groups&1&2&3&4&5\\
-          \hline
-          Patients&56&70&38&10&3\\
-          \hline
-          \end{tabular}
-        \end{center}
-        \caption{The number of patients per age group}
-        \label{table:Agegrp}
-      \end{table}
 
-      The next step is to see if sex, lab and age have an influence on the concentrations while interacting with each other, the interaction plots in Fig\ref{fig:IntLabSex} and Fig\ref{fig:IntAgeSex} are made.
-      This shows that all three features have an influence on the measured concentrations.
-      The age has an influence over the concentrations, which is good for the research question. 
-      But the lab and sex also influence the outcome, which means that these need to be taken into account with modeling the data.
+      The next step is to see if sex, lab and age have an influence on the concentrations while interacting with each other, the interaction plots in Fig\ref{fig:IntLabSex} and Fig\ref{fig:IntAgeSex} are made. From these plots it appears there may in fact be an interaction, though because they are parallel at times, and other times not, it makes it difficult to determine graphically if these interactions are significant, for this we use a 2-way ANOVA test, which can be seen in tables: \ref{table:AnCammol} \ref{table:AnAlsphos} \ref{table:AnPhosmmol}
 
-      \begin{figure}[H]
+      \begin{figure}[h]
           \centering
           \subfigure[Alksphos]{\includegraphics[scale=0.2]{../results/AlkLabSex.png}}
           \subfigure[Cammol]{\includegraphics[scale=0.2]{../results/CamLabSex.png}}
@@ -157,30 +140,27 @@ Now from the Normal QQ-Plots of the transformed data Fig: \ref{fig:qq2}, we can 
       \end{figure}
       
 
-    \begin{table}
+    \begin{table}[H]
     \begin{center}
     \begin{tabular}{|l|l|l|l|}
       \hline
-      &$SEX * LAB$&$SEX * AGEGRP$&$LAB*AGEGRP$\\
+      $VAR1 * VAR2$:&$SEX * LAB$&$SEX * AGEGRP$&$LAB*AGEGRP$\\
       \hline
-      $Sex$       &0.00012&0.0003835&\\
-      $Lab$       &0.00015&         &1.491e-05\\
-      $AGEGRP$    &       &0.9361766&0.4083\\
-      $Sex:Lab$   &0.51331&         &\\
-      $Sex:AGEGRP$&       &0.1214165&\\
-      $Lab:AGEGRP$&       &         &0.6595\\
+      $Var1$       & 0.00012 & 0.0003835 & 1.491e-05\\
+      $Var2$       & 0.00015 & 0.9361766 & 0.4083\\
+      $Var1:Var2$  & 0.51331 & 0.1214165 & 0.6595\\
       \hline
     \end{tabular}
-    \caption{Anova, response variable: Cammol}
+    \caption{p-values for 2-way ANOVA, response variable: Cammol}
     \label{table:AnCammol}
     \end{center}
     \end{table}
 
-    \begin{table}
+    \begin{table}[H]
     \begin{center}
     \begin{tabular}{|l|l|l|l|}
       \hline
-      &$SEX * LAB$&$SEX * AGEGRP$&$LAB*AGEGRP$\\
+      $VAR1 * VAR2$:&$SEX * LAB$&$SEX * AGEGRP$&$LAB*AGEGRP$\\
       \hline
       $Var1$       & 0.05781 & 0.07838 & 0.03025\\
       $Var2$       & 0.01471 & 0.63871 & 0.72707\\
@@ -192,24 +172,25 @@ Now from the Normal QQ-Plots of the transformed data Fig: \ref{fig:qq2}, we can 
     \end{center}
     \end{table}
 
-    \begin{table}
+    \begin{table}[H]
     \begin{center}
     \begin{tabular}{|l|l|l|l|}
       \hline
-      &$SEX * LAB$&$SEX * AGEGRP$&$LAB*AGEGRP$\\
+      $VAR1 * VAR2$:&$SEX * LAB$&$SEX * AGEGRP$&$LAB*AGEGRP$\\
       \hline
-      $Sex$       &0.002991&0.003218  &\\
-      $Lab$       &0.006101&         &0.18946\\
-      $AGEGRP$    &       &0.007732  &0.02311\\
-      $Sex:Lab$   &0.207392&         &\\
-      $Sex:AGEGRP$&       &0.402506  &\\
-      $Lab:AGEGRP$&       &         &0.16321\\
+      $Var1$       & 0.002991 & 0.003218 & 0.18946\\
+      $Var2$       & 0.006101 & 0.007732 & 0.02311\\
+      $Var1:Var2$  & 0.207392 & 0.402506 & 0.16321\\
       \hline
     \end{tabular}
-    \caption{Anova, response variable: Phosmmol}
+    \caption{p-values for 2-way ANOVA, response variable: Phosmmol}
     \label{table:AnPhosmmol}
     \end{center}
     \end{table}
+ 
+Based on tables: \ref{table:AnCammol} \ref{table:AnAlsphos} \ref{table:AnPhosmmol}, we fail to reject the null hypothesis for all interactions between any 2 factors, thus these interactions are not in fact significant.
+
+We further explore the QQ plots and residual plots for the linear models created to perform the 2 way ANOVA to judge the quality of our results. As we can see with both plots in Fig: \ref{fig:qq3}, there is no reason to believe that our residuals are not normal, thus our assumptions are reasonable.
     
     \begin{figure}[H]
 		\centering
@@ -246,13 +227,14 @@ Now from the Normal QQ-Plots of the transformed data Fig: \ref{fig:qq2}, we can 
         \small{\item $PHOSMMOL \sim AGE + SEX$}
         \small{\item $PHOSMMOL = 2.02 - 0.01*AGE + 0.17*SEX2$}
       \end{itemize}
-      As our research question is about what influence age has on the concentration and only Phosmmol has a model with age in it, this is not a good approach for this data.
+      As our research question is about what influence age has on the concentration and only Phosmmol has a model where age was a significant explanatory variable, this is not a good approach for this data.
+      
+      The results of the step up model were identical, thus they shall not be considered in this paper.
 
   \section{Discussion}
-    The data was realistic to work with, it contained some errors. At the start of the project, this was a challenge. To get all the data to correspond to realistic data.
-    The good data was also supplied, but we decided against using it for the experience of working with error prone data.
-    After the preprocessing the real data analysis could begin.
-    The research question that was decided on was: What influence does age have on the given concentrations in the body?
+    The data was realistic to work with as it contained many errors, likely due to human error, and at the start of the project, this was a challenge.
+    The already corrected data was also supplied, but we decided against using it for the experience of working with error prone data.
+    To answer our research question, does age and sex have an influence 
     The reason to not only look at age and the three concentrations was to be able to see if more features had an influence on the concentrations.
     If this was not done the results would not be correct, because the features lab and sex also had an effect on the concentrations.
     In the models created it was clear that age did not have as big an influence as first thought.
