@@ -86,70 +86,107 @@ boxplot(data$PHOSMMOL~data$LAB)
 
 
 #!!!!!!!!!!!!!!!!!!!!!!!#
-#This is not working nicely with the interraction
-#plots, it doesnt like NA values, but it also doesnt
-#like the lengths being different
-#tomorrow I will try to replace NA values with the mean
-#as this shouldnt affect the interraction plots outcome
+#the interraction plots dont like NA values
 
-sex = data$SEX
-sex[is.na(sex)]<-mean(na.omit(data$SEX))
-lab = data$LAB
-lab[is.na(lab)]<-mean(na.omit(data$LAB))
-cammol = data$CAMMOL
-cammol[is.na(cammol)]<-mean(na.omit(data$CAMMOL))
-alksphos = data$ALKSPHOS
-alksphos[is.na(alksphos)]<-mean(na.omit(data$ALKSPHOS))
-phosmmol = data$PHOSMMOL
-phosmmol[is.na(phosmmol)]<-mean(na.omit(data$PHOSMMOL))
+sex = no_na$SEX
+lab = no_na$LAB
+age = no_na$AGE
+agegrp = no_na$AGEGRP
+cammol = no_na$CAMMOL
+alksphos = no_na$ALKSPHOS
+phosmmol = no_na$PHOSMMOL
 
-#!!!!!!!!!!!!!!!!!!!!!!!#
 
 #Interaction Plots
-#We need to justify the assumptions that concentrations will
-#Depend only on sex and lab, ie, not on age/age group
+
 interaction.plot(sex,lab,cammol)
 interaction.plot(lab,sex,cammol)
+interaction.plot(lab,agegrp,cammol)
+interaction.plot(agegrp,lab,cammol)
+interaction.plot(sex,agegrp,cammol)
+interaction.plot(agegrp,sex,cammol)
+
 
 interaction.plot(sex,lab,alksphos)
 interaction.plot(lab,sex,alksphos)
+interaction.plot(lab,agegrp,alksphos)
+interaction.plot(agegrp,lab,alksphos)
+interaction.plot(sex,agegrp,alksphos)
+interaction.plot(agegrp,sex,alksphos)
 
 interaction.plot(sex,lab,phosmmol)
 interaction.plot(lab,sex,phosmmol)
+interaction.plot(lab,agegrp,phosmmol)
+interaction.plot(agegrp,lab,phosmmol)
+interaction.plot(sex,agegrp,phosmmol)
+interaction.plot(agegrp,sex,phosmmol)
+
+agegrp<-as.factor(agegrp)
+sex<-as.factor(sex)
+lab<-as.factor(lab)
+id<-no_na$OBSNO
+friedman.test(cammol,agegrp,sex)
+friedman.test(cammol,sex,id)
+
+data$SEX <- as.factor(data$SEX)
+data$LAB <- as.factor(data$LAB)
+data$AGEGRP <- as.factor(data$AGEGRP)
+attach(data)
+
 
 #Top down linear models
 #CAMMOL
-summary(lm(CAMMOL^2~AGE+SEX+LAB+AGEGRP,data=data))
+summary(lm(CAMMOL~AGE+SEX+LAB+AGEGRP,data=data))
 summary(lm(CAMMOL~AGE+SEX+LAB,data=data))
 summary(lm(CAMMOL~SEX+LAB,data=data))
-camlm1 = lm(CAMMOL~SEX+LAB,data=data)
+camlm1 = lm(log(CAMMOL)~SEX+LAB,data=data)
 plot(cooks.distance(camlm1))
-qqnorm(log(residuals(camlm1)))
-plot(fitted(camlm1),log(residuals(camlm1)))
+qqnorm(residuals(camlm1))
+plot(fitted(camlm1),residuals(camlm1))
 
 
 
-summary(lm(CAMMOL~AGE))$r.squared
-summary(lm(CAMMOL~SEX))$r.squared
-summary(lm(CAMMOL~LAB))$r.squared
-summary(lm(CAMMOL~PHOSMMOL))$r.squared
-summary(lm(CAMMOL~AGEGRP))$r.squared
 
-summary(lm(CAMMOL~SEX+AGE))$r.squared
-summary(lm(CAMMOL~SEX+ALKSPHOS))$r.squared
-summary(lm(CAMMOL~SEX+LAB))$r.squared
-summary(lm(CAMMOL~SEX+PHOSMMOL))$r.squared
-summary(lm(CAMMOL~SEX+AGEGRP))$r.squared
+summary(lm(log(CAMMOL)~AGE))$r.squared
+summary(lm(log(CAMMOL)~SEX))$r.squared
+summary(lm(log(CAMMOL)~LAB))$r.squared
+summary(lm(log(CAMMOL)~AGEGRP))$r.squared
+summary(lm(log(CAMMOL)~AGE*SEX*LAB*AGEGRP))$r.squared
 
-summary(lm(CAMMOL~SEX+LAB+AGE))$r.squared
-summary(lm(CAMMOL~SEX+LAB+ALKSPHOS))$r.squared
-summary(lm(CAMMOL~SEX+LAB+PHOSMMOL))$r.squared
-summary(lm(CAMMOL~SEX+LAB+AGEGRP))$r.squared
+summary(lm(log(CAMMOL)~AGE*SEX*LAB*AGEGRP+AGE))$r.squared
+summary(lm(log(CAMMOL)~AGE*SEX*LAB*AGEGRP+SEX))$r.squared
+summary(lm(log(CAMMOL)~AGE*SEX*LAB*AGEGRP+LAB))$r.squared
+summary(lm(log(CAMMOL)~AGE*SEX*LAB*AGEGRP+AGEGRP))$r.squared
 
-summary(lm(CAMMOL~SEX+LAB+ALKSPHOS+AGE))$r.squared
-summary(lm(CAMMOL~SEX+LAB+ALKSPHOS+PHOSMMOL))$r.squared
-summary(lm(CAMMOL~SEX+LAB+ALKSPHOS+AGEGRP))$r.squared
-
-lm2 = lm(CAMMOL~SEX+LAB+ALKSPHOS)
+lm2 = lm(log(CAMMOL)~AGE*SEX*LAB*AGEGRP+AGEGRP)
 plot(cooks.distance(lm2))
+qqnorm(residuals(lm2))
+plot(fitted(lm2),residuals(lm2))
 
+data=data[-149,]
+data=data[-22,]
+
+shapiro.test(residuals(lm2))
+
+
+labaov=lm(CAMMOL~AGE+LAB,data=data)
+anova(labaov)
+drop1(labaov,test="F")
+
+aovlab=lm(CAMMOL~LAB*AGE,data=data)
+summary(aovlab)
+
+
+camglm=glm(CAMMOL~AGE+SEX+LAB+AGEGRP,data=data)
+summary(camglm)
+
+camsex = lm(CAMMOL~SEX,data=data)
+summary(camsex)
+
+alksex = lm(ALKSPHOS~SEX,data=data)
+summary(alksex)
+
+phosex = lm(PHOSMMOL~SEX,data=data)
+summary(phosex)
+
+qqnorm(data$CAMMOL)
