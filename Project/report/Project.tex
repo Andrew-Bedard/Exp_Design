@@ -234,12 +234,9 @@ We further explore the QQ plots and residual plots for the linear models created
   \section{Discussion}
     The data was realistic to work with as it contained many errors, likely due to human error, and at the start of the project, this was a challenge.
     The already corrected data was also supplied, but we decided against using it for the experience of working with error prone data.
-    To answer our research question, does age and sex have an influence 
-    The reason to not only look at age and the three concentrations was to be able to see if more features had an influence on the concentrations.
-    If this was not done the results would not be correct, because the features lab and sex also had an effect on the concentrations.
-    In the models created it was clear that age did not have as big an influence as first thought.
-    In two of the three models, age was not included.
-    This means that age has a small influence on the measured concentrations, which is the answer to our research question.
+    To answer our research question, does age and sex have an effect on the concentration of various substances in elderly patients blood, our results it mixed. Clearly from table: \ref{table:krusk} we discovered that there is a difference when we consider each sex individually, as can be seen in figure: \ref{fig:BoxSex} females have a higher concentration of all three substances. However the age group was only significant for Phosmmol, and furthermore the Lab that did the testing of the samples was a significant factor in both Cammol and Alksphos concentrations, which is far from ideal in a clinical setting. To further this, we considered the possibility that there was an interaction factor between our three factors of sex, lab and age group, and from the resulting 2-way ANOVA analysis, we concluded that there was in fact no significant interaction factor between them.
+    
+    Finally we considered the possibility of creating a linear model to explain and predict concentrations, but as we discovered, Age was only a significant factor for Phosmmol, as was discovered before, and thus, our model will not produce any predictive power based on the age of the patient for anything other than Phosmmol concentration. So we consider the linear model to be of almost no help.
     
   \section{R-Code}
     \begin{lstlisting}[language=R]
