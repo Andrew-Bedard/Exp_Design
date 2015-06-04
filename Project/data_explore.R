@@ -92,26 +92,30 @@ boxplot(data$PHOSMMOL~data$LAB)
 #tomorrow I will try to replace NA values with the mean
 #as this shouldnt affect the interraction plots outcome
 
-SEX = na.omit(data$SEX)
-LAB = na.omit(data$LAB)
-CAMMOL = na.omit(data$CAMMOL)
-ALKSPHOS = na.omit(data$ALKSPHOS)
-PHOSMMOL = na.omit(data$PHOSMMOL)
+sex = data$SEX
+sex[is.na(sex)]<-mean(na.omit(data$SEX))
+lab = data$LAB
+lab[is.na(lab)]<-mean(na.omit(data$LAB))
+cammol = data$CAMMOL
+cammol[is.na(cammol)]<-mean(na.omit(data$CAMMOL))
+alksphos = data$ALKSPHOS
+alksphos[is.na(alksphos)]<-mean(na.omit(data$ALKSPHOS))
+phosmmol = data$PHOSMMOL
+phosmmol[is.na(phosmmol)]<-mean(na.omit(data$PHOSMMOL))
 
 #!!!!!!!!!!!!!!!!!!!!!!!#
 
 #Interaction Plots
 #We need to justify the assumptions that concentrations will
 #Depend only on sex and lab, ie, not on age/age group
-interaction.plot(SEX,LAB,CAMMOL)
-interaction.plot(LAB,SEX,CAMMOL)
+interaction.plot(sex,lab,cammol)
+interaction.plot(lab,sex,cammol)
 
-interaction.plot(SEX,LAB,ALKSPHOS)
-interaction.plot(LAB,SEX,ALKSPHOS)
+interaction.plot(sex,lab,alksphos)
+interaction.plot(lab,sex,alksphos)
 
-interaction.plot(SEX,LAB,PHOSMMOL)
-interaction.plot(LAB,SEX,PHOSMMOL)
-
+interaction.plot(sex,lab,phosmmol)
+interaction.plot(lab,sex,phosmmol)
 
 #Top down linear models
 #CAMMOL
